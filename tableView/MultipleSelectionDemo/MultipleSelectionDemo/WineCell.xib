@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WineCell" id="ZEf-T4-vtc" customClass="WineCell">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZEf-T4-vtc" id="pOO-p4-Slr">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iGT-ox-hZ7" userLabel="Wine Image View">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="YXV-RT-2sO"/>
+                            <constraint firstAttribute="width" constant="60" id="eUw-6z-mhY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJm-uw-I0r" userLabel="Wine Name Label">
+                        <rect key="frame" x="90" y="10" width="270" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVE-kg-DnG" userLabel="Wine Money Label">
+                        <rect key="frame" x="90" y="53" width="270" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VVE-kg-DnG" firstAttribute="leading" secondItem="iGT-ox-hZ7" secondAttribute="trailing" constant="20" id="472-F7-dMZ"/>
+                    <constraint firstItem="VVE-kg-DnG" firstAttribute="bottom" secondItem="iGT-ox-hZ7" secondAttribute="bottom" id="4E1-Df-vBe"/>
+                    <constraint firstAttribute="trailing" secondItem="VVE-kg-DnG" secondAttribute="trailing" constant="20" id="8qP-BB-YG2"/>
+                    <constraint firstAttribute="trailing" secondItem="GJm-uw-I0r" secondAttribute="trailing" constant="20" id="A1F-pn-AMN"/>
+                    <constraint firstItem="iGT-ox-hZ7" firstAttribute="leading" secondItem="pOO-p4-Slr" secondAttribute="leading" constant="10" id="Rvw-sr-beS"/>
+                    <constraint firstItem="GJm-uw-I0r" firstAttribute="leading" secondItem="iGT-ox-hZ7" secondAttribute="trailing" constant="20" id="XRw-lx-asG"/>
+                    <constraint firstItem="GJm-uw-I0r" firstAttribute="top" secondItem="iGT-ox-hZ7" secondAttribute="top" id="p3y-b5-ZqT"/>
+                    <constraint firstItem="iGT-ox-hZ7" firstAttribute="top" secondItem="pOO-p4-Slr" secondAttribute="top" constant="10" id="rOk-64-eHb"/>
+                    <constraint firstAttribute="bottom" secondItem="iGT-ox-hZ7" secondAttribute="bottom" constant="9.5" id="rqT-lA-AGI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="moneyWine" destination="VVE-kg-DnG" id="2FK-GP-0fP"/>
+                <outlet property="nameLabel" destination="GJm-uw-I0r" id="mJU-cg-kui"/>
+                <outlet property="wineImageView" destination="iGT-ox-hZ7" id="Vot-0b-JdT"/>
+            </connections>
+            <point key="canvasLocation" x="374" y="316"/>
+        </tableViewCell>
+    </objects>
+</document>
