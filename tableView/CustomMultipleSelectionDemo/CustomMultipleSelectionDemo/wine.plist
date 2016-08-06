@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string>1.jpg</string>
+		<key>money</key>
+		<string>39</string>
+		<key>name</key>
+		<string>德国OETTINGER奥丁格大麦啤酒500ml*4罐/组</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>2.jpg</string>
+		<key>money</key>
+		<string>40</string>
+		<key>name</key>
+		<string>德拉克（Durlacher） 黑啤酒 330ml*6听</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>3.jpg</string>
+		<key>money</key>
+		<string>109</string>
+		<key>name</key>
+		<string>奥塔利金爵 啤酒500ml*12 匈牙利原装低度进口啤酒酒水饮品</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>4.jpg</string>
+		<key>money</key>
+		<string>158</string>
+		<key>name</key>
+		<string>德国啤酒 原装进口啤酒 flensburger/弗伦斯堡啤酒 土豪金啤 5L 桶装啤酒</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>5.jpg</string>
+		<key>money</key>
+		<string>66</string>
+		<key>name</key>
+		<string>青岛啤酒 经典 醇厚 啤酒500ml*12听/箱 国产 整箱</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>6.jpg</string>
+		<key>money</key>
+		<string>140</string>
+		<key>name</key>
+		<string>京姿 百威罐装330ml*24 啤酒</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>7.jpg</string>
+		<key>money</key>
+		<string>58</string>
+		<key>name</key>
+		<string>德国OETTINGER奥丁格自然浑浊型小麦啤酒500ml*4罐/组</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>8.jpg</string>
+		<key>money</key>
+		<string>695</string>
+		<key>name</key>
+		<string>Martell马爹利名士1000ML 进口洋酒 名仕干邑白兰地1L</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>9.jpg</string>
+		<key>money</key>
+		<string>108</string>
+		<key>name</key>
+		<string>奥美加银龙舌兰【OLMECA TEQUILA】38% 750ml</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>10.jpg</string>
+		<key>money</key>
+		<string>1386</string>
+		<key>name</key>
+		<string>人头马天醇XO特优香槟干邑白兰地700ml</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>11.jpg</string>
+		<key>money</key>
+		<string>1080</string>
+		<key>name</key>
+		<string>40°法国马爹利蓝带干邑白兰地700ml</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>12.jpg</string>
+		<key>money</key>
+		<string>598</string>
+		<key>name</key>
+		<string>沙皇伏特加塞珞700ml限量版</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>13.jpg</string>
+		<key>money</key>
+		<string>92</string>
+		<key>name</key>
+		<string>百加得黑朗姆酒 烈酒 750ml</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>14.jpg</string>
+		<key>money</key>
+		<string>99</string>
+		<key>name</key>
+		<string>Seagrams Gin 750ML 40度</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>15.jpg</string>
+		<key>money</key>
+		<string>1060</string>
+		<key>name</key>
+		<string>马爹利蓝带干邑白兰地 700ml</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>16.jpg</string>
+		<key>money</key>
+		<string>158</string>
+		<key>name</key>
+		<string>张裕解百纳干红葡萄酒双支礼盒 750ml*2</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>17.jpg</string>
+		<key>money</key>
+		<string>1230</string>
+		<key>name</key>
+		<string>爱之湾+兰贵人组合</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>18.jpg</string>
+		<key>money</key>
+		<string>138</string>
+		<key>name</key>
+		<string>菲卡珍藏莎当妮葡萄酒750ml</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>19.jpg</string>
+		<key>money</key>
+		<string>1580</string>
+		<key>name</key>
+		<string>拉图嘉利庄园干红葡萄酒</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>20.jpg</string>
+		<key>money</key>
+		<string>1890</string>
+		<key>name</key>
+		<string>报恩城堡干红葡萄酒 六支装</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>21.jpg</string>
+		<key>money</key>
+		<string>2360</string>
+		<key>name</key>
+		<string>豪克玛歌庄园干红葡萄酒 750ml 1支装</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>22.jpg</string>
+		<key>money</key>
+		<string>98</string>
+		<key>name</key>
+		<string>白浪莎庄园干红葡萄酒 750ml</string>
+	</dict>
+</array>
+</plist>
