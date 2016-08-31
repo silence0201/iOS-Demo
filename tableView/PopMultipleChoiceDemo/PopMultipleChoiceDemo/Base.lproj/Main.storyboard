@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6j-iO-O3j">
+                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                                <state key="normal" title="选择"/>
+                                <connections>
+                                    <action selector="choice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wBl-Ho-51D"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6o-rA-QFg">
+                                <rect key="frame" x="0.0" y="244" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="X6o-rA-QFg" secondAttribute="trailing" id="6Vd-s9-OwX"/>
+                            <constraint firstItem="g6j-iO-O3j" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="B2T-p3-7ad"/>
+                            <constraint firstItem="X6o-rA-QFg" firstAttribute="centerX" secondItem="g6j-iO-O3j" secondAttribute="centerX" id="Nxk-ws-XnP"/>
+                            <constraint firstItem="g6j-iO-O3j" firstAttribute="top" secondItem="X6o-rA-QFg" secondAttribute="bottom" constant="20" id="cat-Cb-pb0"/>
+                            <constraint firstItem="X6o-rA-QFg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cwr-ie-gaV"/>
+                            <constraint firstItem="X6o-rA-QFg" firstAttribute="top" secondItem="g6j-iO-O3j" secondAttribute="top" constant="20" id="kTp-gC-F3E"/>
+                            <constraint firstItem="g6j-iO-O3j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ubU-5n-BC7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="kTp-gC-F3E"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="X6o-rA-QFg" id="rZh-hV-BA5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343" y="474"/>
+        </scene>
+    </scenes>
+</document>
