@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="unE-1K-Izc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="sPa-CZ-GQB">
+            <objects>
+                <collectionViewController id="unE-1K-Izc" customClass="ViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="eBy-Cb-EoY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SmY-bK-j1W">
+                            <size key="itemSize" width="202" height="218"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="1Zr-ki-oTj" customClass="SIImageCell">
+                                <rect key="frame" x="0.0" y="0.0" width="202" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="202" height="218"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bXs-vd-cPB">
+                                            <rect key="frame" x="0.0" y="0.0" width="202" height="218"/>
+                                        </imageView>
+                                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="qOI-gD-QuX">
+                                            <rect key="frame" x="82" y="161" width="39" height="37"/>
+                                        </pageControl>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plR-rI-Yem">
+                                            <rect key="frame" x="0.0" y="125" width="202" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="qOI-gD-QuX" secondAttribute="bottom" constant="20" id="Frf-CU-2Xm"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="plR-rI-Yem" secondAttribute="trailing" constant="-8" id="KBv-1R-86z"/>
+                                    <constraint firstItem="bXs-vd-cPB" firstAttribute="top" secondItem="1Zr-ki-oTj" secondAttribute="top" id="NIc-Ea-27F"/>
+                                    <constraint firstItem="plR-rI-Yem" firstAttribute="leading" secondItem="1Zr-ki-oTj" secondAttribute="leadingMargin" constant="-8" id="PLT-Nj-weK"/>
+                                    <constraint firstAttribute="bottom" secondItem="bXs-vd-cPB" secondAttribute="bottom" id="Ruh-Lu-ueb"/>
+                                    <constraint firstAttribute="trailing" secondItem="bXs-vd-cPB" secondAttribute="trailing" id="bml-nu-2t1"/>
+                                    <constraint firstItem="qOI-gD-QuX" firstAttribute="centerX" secondItem="1Zr-ki-oTj" secondAttribute="centerX" id="mda-KG-Z4N"/>
+                                    <constraint firstItem="bXs-vd-cPB" firstAttribute="leading" secondItem="1Zr-ki-oTj" secondAttribute="leading" id="qvq-8y-AX8"/>
+                                    <constraint firstItem="qOI-gD-QuX" firstAttribute="top" secondItem="plR-rI-Yem" secondAttribute="bottom" constant="15" id="zbE-HY-mVQ"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="bXs-vd-cPB" id="G9b-a5-KtA"/>
+                                    <outlet property="indexView" destination="plR-rI-Yem" id="kCV-5k-8t0"/>
+                                    <outlet property="pageControl" destination="qOI-gD-QuX" id="SvA-bo-Owk"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="unE-1K-Izc" id="RkB-DM-Cfu"/>
+                            <outlet property="delegate" destination="unE-1K-Izc" id="qU7-ei-fy7"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <outlet property="flowLayout" destination="SmY-bK-j1W" id="jmz-31-hnt"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fc0-cS-Dcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="393"/>
+        </scene>
+    </scenes>
+</document>
