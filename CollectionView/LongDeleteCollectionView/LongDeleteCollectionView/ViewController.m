@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"长安删除" ;
     
     [self initData] ;
     [self initUI] ;
