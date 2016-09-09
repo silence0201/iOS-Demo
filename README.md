@@ -31,7 +31,17 @@
 * [TableViewSlideButtonDemo](tableView/TableViewSlideButtonDemo/README.md):tableView侧滑按钮
 * [ListTableView](tableView/ListTableView/README.md):折叠表单的简单实现  
 * [PopMultipleChoiceDemo](tableView/PopMultipleChoiceDemo/README.md):弹出多选表格
-* 
+* [TableViewImageZoom](tableView/TableViewImageZoom/README.md):简单实现Tableview头部图片缩放效果
+* [LinkSelectDemo](tableView/LinkSelectDemo/README.md):联动TableView
 
+#####`viewController`:viewController的使用
+* [childViewControllerDemo](viewController/childViewControllerDemo/README.md):利用子控制器管理控制器
+* [MultiViewSegmentControlDemo](viewController/MultiViewSegmentControlDemo/README.md):利用Segment切换控制器
+* [SubViewControllerDemo](viewController/SubViewControllerDemo/README.md):利用ScrollerView管理多控制器
+* [PageViewControllerDemo](viewController/PageViewControllerDemo/README.md):PageViewController的简单使用
+* [SpreadDemo](viewController/SpreadDemo/README.md):侧拉弹出控制器
+
+#####`search`:搜索框应用
+* [SearchDisplayControllerDemo](search/SearchDisplayControllerDemo/README.md):搜索框的简单实现
 
 
