@@ -30,6 +30,7 @@
 - (void)viewDidLoad{
     [super viewDidLoad] ;
     
+    self.title = @"仿美团选择菜单" ;
     self.view.backgroundColor = [UIColor whiteColor] ;
     
     _selectIndex = 0 ;
