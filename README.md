@@ -11,3 +11,8 @@
 * [CollectionSimpleDemo](CollectionView/CollectionSimpleDemo/README.md):CollectionView简单使用
 * [LongDeleteCollectionView](CollectionView/LongDeleteCollectionView/README.md):利用CollectionView实现长按删除
 
+#####`guide`:引导页面  
+* [guidePageDemo](guide/guidePageDemo/README.md):简单应用引导页面
+* [AdvertiseDemo](guide/AdvertiseDemo/README.md):广告启动页面
+
+
