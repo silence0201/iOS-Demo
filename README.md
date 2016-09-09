@@ -44,4 +44,8 @@
 #####`search`:搜索框应用
 * [SearchDisplayControllerDemo](search/SearchDisplayControllerDemo/README.md):搜索框的简单实现
 
+#####`simpleFunction`:一些小功能
+* [HideTextDemo](simpleFunction/HideTextDemo/README.md):隐藏中文输入的文字
+
+
 
