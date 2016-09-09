@@ -15,4 +15,17 @@
 * [guidePageDemo](guide/guidePageDemo/README.md):简单应用引导页面
 * [AdvertiseDemo](guide/AdvertiseDemo/README.md):广告启动页面
 
+#####`mask`:蒙版效果
+* [maskViewDemo](mask/maskViewDemo/README.md)
+
+#####`navigation`:导航控制器使用
+
+* [NavigationBarDemo](navigation/NavigationBarDemo/README.md):导航栏渐变透明效果
+
+#####`popView`:弹出框
+* [SelectList](popView/SelectList/README.md):仿微信弹出框
+
+
+
+
 
