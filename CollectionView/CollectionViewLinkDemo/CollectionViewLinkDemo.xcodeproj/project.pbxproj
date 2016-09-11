@@ -29,11 +29,11 @@
 		E850A3AD1D844041006C3C9F /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E850A39E1D844041006C3C9F /* UIImageView+WebCache.m */; };
 		E850A3AE1D844041006C3C9F /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E850A3A01D844041006C3C9F /* UIView+WebCacheOperation.m */; };
 		E850A3B11D844084006C3C9F /* liwushuo.json in Resources */ = {isa = PBXBuildFile; fileRef = E850A3B01D844084006C3C9F /* liwushuo.json */; };
-		E850A3B41D8446BB006C3C9F /* MyCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E850A3B31D8446BB006C3C9F /* MyCollectionViewFlowLayout.m */; };
 		E850A3BF1D845509006C3C9F /* CollectionViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E850A3BC1D845509006C3C9F /* CollectionViewHeaderView.m */; };
 		E850A3C01D845509006C3C9F /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E850A3BE1D845509006C3C9F /* Model.m */; };
 		E850A3C31D8455EC006C3C9F /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E850A3C21D8455EC006C3C9F /* CollectionViewCell.m */; };
-		E850A3C61D845B18006C3C9F /* LeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E850A3C51D845B18006C3C9F /* LeftTableViewCell.m */; };
+		E850A4171D8533D5006C3C9F /* LeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E850A4141D8533D5006C3C9F /* LeftTableViewCell.m */; };
+		E850A4181D8533D5006C3C9F /* MyCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E850A4161D8533D5006C3C9F /* MyCollectionViewFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,16 +80,16 @@
 		E850A39F1D844041006C3C9F /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		E850A3A01D844041006C3C9F /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		E850A3B01D844084006C3C9F /* liwushuo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = liwushuo.json; sourceTree = "<group>"; };
-		E850A3B21D8446BB006C3C9F /* MyCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCollectionViewFlowLayout.h; path = CollectionView/MyCollectionViewFlowLayout.h; sourceTree = "<group>"; };
-		E850A3B31D8446BB006C3C9F /* MyCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCollectionViewFlowLayout.m; path = CollectionView/MyCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		E850A3BB1D845509006C3C9F /* CollectionViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewHeaderView.h; path = CollectionView/CollectionViewHeaderView.h; sourceTree = "<group>"; };
 		E850A3BC1D845509006C3C9F /* CollectionViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewHeaderView.m; path = CollectionView/CollectionViewHeaderView.m; sourceTree = "<group>"; };
 		E850A3BD1D845509006C3C9F /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = CollectionView/Model.h; sourceTree = "<group>"; };
 		E850A3BE1D845509006C3C9F /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = CollectionView/Model.m; sourceTree = "<group>"; };
 		E850A3C11D8455EC006C3C9F /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewCell.h; path = CollectionView/CollectionViewCell.h; sourceTree = "<group>"; };
 		E850A3C21D8455EC006C3C9F /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewCell.m; path = CollectionView/CollectionViewCell.m; sourceTree = "<group>"; };
-		E850A3C41D845B18006C3C9F /* LeftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewCell.h; sourceTree = "<group>"; };
-		E850A3C51D845B18006C3C9F /* LeftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewCell.m; sourceTree = "<group>"; };
+		E850A4131D8533D5006C3C9F /* LeftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftTableViewCell.h; path = CollectionView/LeftTableViewCell.h; sourceTree = "<group>"; };
+		E850A4141D8533D5006C3C9F /* LeftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftTableViewCell.m; path = CollectionView/LeftTableViewCell.m; sourceTree = "<group>"; };
+		E850A4151D8533D5006C3C9F /* MyCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCollectionViewFlowLayout.h; path = CollectionView/MyCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		E850A4161D8533D5006C3C9F /* MyCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCollectionViewFlowLayout.m; path = CollectionView/MyCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,14 +196,14 @@
 		E850A3AF1D844054006C3C9F /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				E850A3C41D845B18006C3C9F /* LeftTableViewCell.h */,
-				E850A3C51D845B18006C3C9F /* LeftTableViewCell.m */,
+				E850A4131D8533D5006C3C9F /* LeftTableViewCell.h */,
+				E850A4141D8533D5006C3C9F /* LeftTableViewCell.m */,
+				E850A4151D8533D5006C3C9F /* MyCollectionViewFlowLayout.h */,
+				E850A4161D8533D5006C3C9F /* MyCollectionViewFlowLayout.m */,
 				E850A3BB1D845509006C3C9F /* CollectionViewHeaderView.h */,
 				E850A3BC1D845509006C3C9F /* CollectionViewHeaderView.m */,
 				E850A3BD1D845509006C3C9F /* Model.h */,
 				E850A3BE1D845509006C3C9F /* Model.m */,
-				E850A3B21D8446BB006C3C9F /* MyCollectionViewFlowLayout.h */,
-				E850A3B31D8446BB006C3C9F /* MyCollectionViewFlowLayout.m */,
 				E850A3C11D8455EC006C3C9F /* CollectionViewCell.h */,
 				E850A3C21D8455EC006C3C9F /* CollectionViewCell.m */,
 			);
@@ -281,19 +281,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E850A4181D8533D5006C3C9F /* MyCollectionViewFlowLayout.m in Sources */,
 				E850A3A11D844041006C3C9F /* NSData+ImageContentType.m in Sources */,
 				E850A3A71D844041006C3C9F /* SDWebImageManager.m in Sources */,
 				E850A3AC1D844041006C3C9F /* UIImageView+HighlightedWebCache.m in Sources */,
 				E850A3A51D844041006C3C9F /* SDWebImageDownloader.m in Sources */,
 				E850A3AD1D844041006C3C9F /* UIImageView+WebCache.m in Sources */,
 				E850A3A21D844041006C3C9F /* SDImageCache.m in Sources */,
+				E850A4171D8533D5006C3C9F /* LeftTableViewCell.m in Sources */,
 				E850A36F1D843C59006C3C9F /* ViewController.m in Sources */,
-				E850A3C61D845B18006C3C9F /* LeftTableViewCell.m in Sources */,
 				E850A36C1D843C59006C3C9F /* AppDelegate.m in Sources */,
 				E850A3BF1D845509006C3C9F /* CollectionViewHeaderView.m in Sources */,
 				E850A3A41D844041006C3C9F /* SDWebImageDecoder.m in Sources */,
 				E850A3AB1D844041006C3C9F /* UIImage+MultiFormat.m in Sources */,
-				E850A3B41D8446BB006C3C9F /* MyCollectionViewFlowLayout.m in Sources */,
 				E850A3A61D844041006C3C9F /* SDWebImageDownloaderOperation.m in Sources */,
 				E850A3821D843E87006C3C9F /* NSObject+Property.m in Sources */,
 				E850A3A91D844041006C3C9F /* UIButton+WebCache.m in Sources */,

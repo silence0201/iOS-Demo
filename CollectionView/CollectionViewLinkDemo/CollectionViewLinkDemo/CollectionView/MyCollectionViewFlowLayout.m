@@ -17,6 +17,7 @@
     return self ;
 }
 
+// 实现分组标题置顶效果
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect{
     // UICollectionViewLayoutAttributes:CollectionView中item(包括cell,header,footer)的结构信息
     // 截取父类的返回数组,并转化为可变数组

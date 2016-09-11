@@ -8,10 +8,10 @@
 
 #import "ViewController.h"
 #import "Model.h"
-#import "MyCollectionViewFlowLayout.h"
 #import "CollectionViewCell.h"
 #import "CollectionViewHeaderView.h"
 #import "LeftTableViewCell.h"
+#import "MyCollectionViewFlowLayout.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -27,6 +27,7 @@
     BOOL _isScrollDown ;
 }
 
+#pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -131,6 +132,7 @@
     return cell ;
 }
 
+#pragma mark - 点击标签的时候的主要逻辑
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     _selectIndex = indexPath.row ;
     [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:_selectIndex] atScrollPosition:UICollectionViewScrollPositionTop animated:YES] ;
@@ -153,6 +155,7 @@
     return cell ;
 }
 
+// ItemSize
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -160,6 +163,7 @@
                       (SCREEN_WIDTH - 80 - 4 - 4) / 3 + 30);
 }
 
+// Header
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
            viewForSupplementaryElementOfKind:(NSString *)kind
                                  atIndexPath:(NSIndexPath *)indexPath{
@@ -169,8 +173,8 @@
         reuseIdentifier = @"CollectionViewHeaderView";
     }
     CollectionViewHeaderView *view = [collectionView dequeueReusableSupplementaryViewOfKind:kind
-                                                                        withReuseIdentifier:reuseIdentifier
-                                                                               forIndexPath:indexPath];
+                           withReuseIdentifier:reuseIdentifier
+                                  forIndexPath:indexPath];
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]){
         CollectionCategoryModel *model = self.dataSource[indexPath.section];
         view.titleLabel.text = model.name;
@@ -182,17 +186,21 @@
     return CGSizeMake(SCREEN_WIDTH, 30);
 }
 
-// CollectionView分区标题即将展示
+#pragma mark - 拉动右边的主要逻辑
+
+// 向上滑动,CollectionView分区标题即将展示,需要选择这个section
 - (void)collectionView:(UICollectionView *)collectionView willDisplaySupplementaryView:(UICollectionReusableView *)view forElementKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath{
-    // 当前CollectionView滚动的方向向上，CollectionView是用户拖拽而产生滚动的（主要是判断CollectionView是用户拖拽而滚动的，还是点击TableView而滚动的）
+    // 当前CollectionView滚动的方向向上，
+    // CollectionView是用户拖拽而产生滚动的（主要是判断CollectionView是用户拖拽而滚动的，还是点击TableView而滚动的）
     if (!_isScrollDown && collectionView.dragging){
         [self selectRowAtIndexPath:indexPath.section];
     }
 }
 
-// CollectionView分区标题展示结束
+// 向下滑动,CollectionView分区标题展示结束,需要选择下一个section
 - (void)collectionView:(UICollectionView *)collectionView didEndDisplayingSupplementaryView:(nonnull UICollectionReusableView *)view forElementOfKind:(nonnull NSString *)elementKind atIndexPath:(nonnull NSIndexPath *)indexPath{
-    // 当前CollectionView滚动的方向向下，CollectionView是用户拖拽而产生滚动的（主要是判断CollectionView是用户拖拽而滚动的，还是点击TableView而滚动的）
+    // 当前CollectionView滚动的方向向下，
+    // CollectionView是用户拖拽而产生滚动的（主要是判断CollectionView是用户拖拽而滚动的，还是点击TableView而滚动的）
     if (_isScrollDown && collectionView.dragging){
         [self selectRowAtIndexPath:indexPath.section + 1];
     }
