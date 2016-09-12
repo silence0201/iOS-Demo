@@ -2,7 +2,7 @@
 自己模仿的常用Demo,主要内容如下
 
 #####`Button`:Button效果
-* [countButton](Button/countButton):简单倒计时的实现  
+* [countButton](./Button/countButton):简单倒计时的实现  
 
 #####`CollectionView`:CollectionView实现效果
 * [CollectionMirror](CollectionView/CollectionMirror):
