@@ -2,7 +2,7 @@
 自己模仿的常用Demo,主要内容如下
 
 #####`Button`:Button效果
-* [countButton](./Button/countButton):简单倒计时的实现  
+* [countButton](Button/countButton):简单倒计时的实现  
 
 #####`CollectionView`:CollectionView实现效果
 * [CollectionMirror](CollectionView/CollectionMirror):
@@ -44,6 +44,7 @@
 
 #####`search`:搜索框应用
 * [SearchDisplayControllerDemo](search/SearchDisplayControllerDemo):搜索框的简单实现
+* [PinYinSearchDemo](search/PinYinSearchDemo):拼音排序和搜索的简单实现
 
 #####`simpleFunction`:一些小功能
 * [HideTextDemo](simpleFunction/HideTextDemo):隐藏中文输入的文字
@@ -53,6 +54,14 @@
 
 #####`TabBar`:TabBar使用
 * [TabbarDemo](TabBar/TabbarDemo):简单自定义Tabbar
+
+#####`Animation`:动画
+* [BaseAnimationDemo](Animation/BaseAnimationDemo):CABasicAnimation简单使用
+
+
+
+
+
 
 
 
