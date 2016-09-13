@@ -69,6 +69,7 @@
 
 ####`Effect`:表现效果
 * [FrostedGlassDemo](Effect/FrostedGlassDemo):简单实现的毛玻璃效果
+* [ImageEffectDemo](Effect/ImageEffectDemo):高斯模糊
 
 
 
