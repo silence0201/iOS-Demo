@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aU6-R8-v7B">
+                                <rect key="frame" x="187" y="60" width="227" height="30"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.79607843140000001" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="UIDocumentInteractionController">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="documentInteractionControllerClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Zy-lV-ey0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chr-cl-o0e">
+                                <rect key="frame" x="217" y="130" width="167" height="30"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.79607843140000001" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="UIActivityViewController">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="activityViewControllerClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3dN-b8-ndx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWj-7v-0sk">
+                                <rect key="frame" x="60" y="200" width="178" height="30"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.79607843140000001" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="复制功能">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="copy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="it8-bX-Gp7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwT-mk-Svw">
+                                <rect key="frame" x="271" y="200" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.79607843140000001" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="发送推文">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="twSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQq-no-Z0N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCc-ey-A8k">
+                                <rect key="frame" x="363" y="200" width="177" height="30"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.79607843140000001" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="保存图片到相册">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LBo-9P-eUD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVc-8O-hjO">
+                                <rect key="frame" x="60" y="285" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.79607843140000001" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="添加书签">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addBookMark:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rs3-zh-7lh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6g-rR-a6z">
+                                <rect key="frame" x="478" y="285" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.79607843140000001" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="发送邮件">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendMail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L3m-um-uWb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTy-rt-FDg">
+                                <rect key="frame" x="270" y="285" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.79607843140000001" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="发送短信">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KvE-2G-rsI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MTy-rt-FDg" firstAttribute="baseline" secondItem="o6g-rR-a6z" secondAttribute="baseline" id="56b-w0-caY"/>
+                            <constraint firstItem="BwT-mk-Svw" firstAttribute="leading" secondItem="RWj-7v-0sk" secondAttribute="trailing" constant="20" id="6og-kj-7nY"/>
+                            <constraint firstItem="aU6-R8-v7B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="8bw-Zb-ONL"/>
+                            <constraint firstItem="BwT-mk-Svw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9uE-oi-cxF"/>
+                            <constraint firstItem="BwT-mk-Svw" firstAttribute="top" secondItem="Chr-cl-o0e" secondAttribute="bottom" constant="40" id="A0y-Tc-NaN"/>
+                            <constraint firstItem="Chr-cl-o0e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bxs-Qb-y6w"/>
+                            <constraint firstItem="MTy-rt-FDg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LHW-VR-aP2"/>
+                            <constraint firstItem="Chr-cl-o0e" firstAttribute="top" secondItem="aU6-R8-v7B" secondAttribute="bottom" constant="40" id="Md0-6S-Xzz"/>
+                            <constraint firstItem="MTy-rt-FDg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Spd-2v-Wov"/>
+                            <constraint firstItem="BwT-mk-Svw" firstAttribute="top" secondItem="RWj-7v-0sk" secondAttribute="top" id="VXK-No-tRV"/>
+                            <constraint firstItem="zCc-ey-A8k" firstAttribute="leading" secondItem="BwT-mk-Svw" secondAttribute="trailing" constant="20" id="Z8y-1m-dvC"/>
+                            <constraint firstItem="aU6-R8-v7B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dZH-8K-e4i"/>
+                            <constraint firstItem="MTy-rt-FDg" firstAttribute="baseline" secondItem="YVc-8O-hjO" secondAttribute="baseline" id="m1t-Ac-cTm"/>
+                            <constraint firstItem="YVc-8O-hjO" firstAttribute="leading" secondItem="RWj-7v-0sk" secondAttribute="leading" id="mnX-HD-T2x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zCc-ey-A8k" secondAttribute="trailing" constant="40" id="prd-9a-sNk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o6g-rR-a6z" secondAttribute="trailing" constant="42" id="s0A-4X-iOD"/>
+                            <constraint firstItem="RWj-7v-0sk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="wx3-qn-XVe"/>
+                            <constraint firstItem="zCc-ey-A8k" firstAttribute="top" secondItem="BwT-mk-Svw" secondAttribute="top" id="xwf-0L-7kv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="Chr-cl-o0e" id="wBq-jN-Dlg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="570" y="464"/>
+        </scene>
+    </scenes>
+</document>
