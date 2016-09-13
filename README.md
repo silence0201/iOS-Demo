@@ -57,10 +57,16 @@
 
 #####`Animation`:动画
 * [BaseAnimationDemo](Animation/BaseAnimationDemo):CABasicAnimation简单使用
+* [KeyFrameAnimationDemo](Animation/KeyFrameAnimationDemo):KeyFrameAnimation简单使用
+* [GroupAnimationDemo](Animation/GroupAnimationDemo):GroupAnimationDemo简单使用
 
 
 #####`System`:系统功能
 * [SystemShareDemo](System/SystemShareDemo):系统分享功能
+
+####`Advanced`:高级功能
+* [3DTouchDemo](Advanced/3DTouchDemo):3DTouch的简单使用
+
 
 
 
