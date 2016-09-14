@@ -11,6 +11,7 @@
 * [CollectionSimpleDemo](CollectionView/CollectionSimpleDemo):CollectionView简单使用
 * [LongDeleteCollectionView](CollectionView/LongDeleteCollectionView):利用CollectionView实现长按删除
 * [CollectionViewLinkDemo](CollectionView/CollectionViewLinkDemo):CollectionView实现联动菜单
+* [WaterFlowLayoutDemo](CollectionView/WaterFlowLayoutDemo):简单实现瀑布流布局
 
 #####`guide`:引导页面  
 * [guidePageDemo](guide/guidePageDemo):简单应用引导页面
@@ -25,6 +26,7 @@
 
 #####`popView`:弹出框
 * [SelectList](popView/SelectList):仿微信弹出框
+* [CustomAlterView](popView/CustomAlterView):自定义弹出框
 
 #####`tableView`:tableview使用
 * [MultipleSelectionDemo](tableView/MultipleSelectionDemo):利用系统功能实现多选
