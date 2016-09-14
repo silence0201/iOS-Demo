@@ -42,6 +42,7 @@
     titleLabel.textAlignment = NSTextAlignmentCenter ;
     titleLabel.font = [UIFont systemFontOfSize:20] ;
     [self.view addSubview:titleLabel] ;
+    self.label = titleLabel ;
     
     // 注册3DTouch
     [self registerForPreviewingWithDelegate:self sourceView:self.view] ;
