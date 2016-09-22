@@ -17,6 +17,7 @@
 * [guidePageDemo](guide/guidePageDemo):简单应用引导页面
 * [AdvertiseDemo](guide/AdvertiseDemo):广告启动页面
 * [GuidePageFold](guide/GuidePageFold):代动画效果的引导页面
+* [KEEP](guide/KEEP):KEEP动画引导页面
 
 #####`mask`:蒙版效果
 * [maskViewDemo](mask/maskViewDemo)
