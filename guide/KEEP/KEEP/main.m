@@ -2,9 +2,10 @@
 //  main.m
 //  KEEP
 //
-//  Created by ZhangXu on 16/3/29.
-//  Copyright © 2016年 zhangXu. All rights reserved.
+//  Created by 杨晴贺 on 22/09/2016.
+//  Copyright © 2016 silence. All rights reserved.
 //
+
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
