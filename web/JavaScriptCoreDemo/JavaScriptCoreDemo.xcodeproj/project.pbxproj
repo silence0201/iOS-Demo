@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8EE782F1D95199500F4DA02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EE782E1D95199500F4DA02 /* main.m */; };
+		E8EE78321D95199500F4DA02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EE78311D95199500F4DA02 /* AppDelegate.m */; };
+		E8EE78351D95199500F4DA02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EE78341D95199500F4DA02 /* ViewController.m */; };
+		E8EE78381D95199500F4DA02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8EE78361D95199500F4DA02 /* Main.storyboard */; };
+		E8EE783A1D95199500F4DA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8EE78391D95199500F4DA02 /* Assets.xcassets */; };
+		E8EE783D1D95199500F4DA02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8EE783B1D95199500F4DA02 /* LaunchScreen.storyboard */; };
+		E8EE784B1D951E4100F4DA02 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EE78491D951E4100F4DA02 /* SecondViewController.m */; };
+		E8EE784C1D951E4100F4DA02 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8EE784A1D951E4100F4DA02 /* SecondViewController.xib */; };
+		E8EE784E1D951E9300F4DA02 /* JSCallOC.html in Resources */ = {isa = PBXBuildFile; fileRef = E8EE784D1D951E9300F4DA02 /* JSCallOC.html */; };
+		E8EE78521D951EC200F4DA02 /* JSCallOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EE78501D951EC200F4DA02 /* JSCallOCViewController.m */; };
+		E8EE78531D951EC200F4DA02 /* JSCallOCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8EE78511D951EC200F4DA02 /* JSCallOCViewController.xib */; };
+		E8EE78551D95664700F4DA02 /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = E8EE78541D95664700F4DA02 /* test.js */; };
+		E8EE78591D9566BC00F4DA02 /* OCCallJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EE78571D9566BB00F4DA02 /* OCCallJSViewController.m */; };
+		E8EE785A1D9566BC00F4DA02 /* OCCallJSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8EE78581D9566BB00F4DA02 /* OCCallJSViewController.xib */; };
+		E8EE785E1D956C0E00F4DA02 /* highcharts.js in Resources */ = {isa = PBXBuildFile; fileRef = E8EE785B1D956C0E00F4DA02 /* highcharts.js */; };
+		E8EE785F1D956C0E00F4DA02 /* HighchartsView.html in Resources */ = {isa = PBXBuildFile; fileRef = E8EE785C1D956C0E00F4DA02 /* HighchartsView.html */; };
+		E8EE78601D956C0E00F4DA02 /* jquery-1.11.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = E8EE785D1D956C0E00F4DA02 /* jquery-1.11.0.min.js */; };
+		E8EE78641D956CB500F4DA02 /* HighcharsWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EE78621D956CB500F4DA02 /* HighcharsWebView.m */; };
+		E8EE78651D956CB500F4DA02 /* HighcharsWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8EE78631D956CB500F4DA02 /* HighcharsWebView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8EE782A1D95199500F4DA02 /* JavaScriptCoreDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JavaScriptCoreDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8EE782E1D95199500F4DA02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8EE78301D95199500F4DA02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8EE78311D95199500F4DA02 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8EE78331D95199500F4DA02 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E8EE78341D95199500F4DA02 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E8EE78371D95199500F4DA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8EE78391D95199500F4DA02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8EE783C1D95199500F4DA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8EE783E1D95199500F4DA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8EE78481D951E4100F4DA02 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = JSCallOC/SecondViewController.h; sourceTree = "<group>"; };
+		E8EE78491D951E4100F4DA02 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = JSCallOC/SecondViewController.m; sourceTree = "<group>"; };
+		E8EE784A1D951E4100F4DA02 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SecondViewController.xib; path = JSCallOC/SecondViewController.xib; sourceTree = "<group>"; };
+		E8EE784D1D951E9300F4DA02 /* JSCallOC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSCallOC.html; sourceTree = "<group>"; };
+		E8EE784F1D951EC200F4DA02 /* JSCallOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSCallOCViewController.h; path = JSCallOC/JSCallOCViewController.h; sourceTree = "<group>"; };
+		E8EE78501D951EC200F4DA02 /* JSCallOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSCallOCViewController.m; path = JSCallOC/JSCallOCViewController.m; sourceTree = "<group>"; };
+		E8EE78511D951EC200F4DA02 /* JSCallOCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JSCallOCViewController.xib; path = JSCallOC/JSCallOCViewController.xib; sourceTree = "<group>"; };
+		E8EE78541D95664700F4DA02 /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
+		E8EE78561D9566BB00F4DA02 /* OCCallJSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCCallJSViewController.h; path = OCCallJS/OCCallJSViewController.h; sourceTree = "<group>"; };
+		E8EE78571D9566BB00F4DA02 /* OCCallJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCCallJSViewController.m; path = OCCallJS/OCCallJSViewController.m; sourceTree = "<group>"; };
+		E8EE78581D9566BB00F4DA02 /* OCCallJSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OCCallJSViewController.xib; path = OCCallJS/OCCallJSViewController.xib; sourceTree = "<group>"; };
+		E8EE785B1D956C0E00F4DA02 /* highcharts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = highcharts.js; sourceTree = "<group>"; };
+		E8EE785C1D956C0E00F4DA02 /* HighchartsView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HighchartsView.html; sourceTree = "<group>"; };
+		E8EE785D1D956C0E00F4DA02 /* jquery-1.11.0.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.11.0.min.js"; sourceTree = "<group>"; };
+		E8EE78611D956CB500F4DA02 /* HighcharsWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HighcharsWebView.h; path = HighcharsWebView/HighcharsWebView.h; sourceTree = "<group>"; };
+		E8EE78621D956CB500F4DA02 /* HighcharsWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HighcharsWebView.m; path = HighcharsWebView/HighcharsWebView.m; sourceTree = "<group>"; };
+		E8EE78631D956CB500F4DA02 /* HighcharsWebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HighcharsWebView.xib; path = HighcharsWebView/HighcharsWebView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8EE78271D95199500F4DA02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8EE78211D95199500F4DA02 = {
+			isa = PBXGroup;
+			children = (
+				E8EE782C1D95199500F4DA02 /* JavaScriptCoreDemo */,
+				E8EE782B1D95199500F4DA02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8EE782B1D95199500F4DA02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE782A1D95199500F4DA02 /* JavaScriptCoreDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8EE782C1D95199500F4DA02 /* JavaScriptCoreDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE78471D951CDB00F4DA02 /* HighcharsWebView */,
+				E8EE78461D951CB200F4DA02 /* OCCallJS */,
+				E8EE78451D951CA900F4DA02 /* JSCallOC */,
+				E8EE78301D95199500F4DA02 /* AppDelegate.h */,
+				E8EE78311D95199500F4DA02 /* AppDelegate.m */,
+				E8EE78331D95199500F4DA02 /* ViewController.h */,
+				E8EE78341D95199500F4DA02 /* ViewController.m */,
+				E8EE78361D95199500F4DA02 /* Main.storyboard */,
+				E8EE78391D95199500F4DA02 /* Assets.xcassets */,
+				E8EE783B1D95199500F4DA02 /* LaunchScreen.storyboard */,
+				E8EE783E1D95199500F4DA02 /* Info.plist */,
+				E8EE782D1D95199500F4DA02 /* Supporting Files */,
+			);
+			path = JavaScriptCoreDemo;
+			sourceTree = "<group>";
+		};
+		E8EE782D1D95199500F4DA02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE782E1D95199500F4DA02 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8EE78451D951CA900F4DA02 /* JSCallOC */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE784D1D951E9300F4DA02 /* JSCallOC.html */,
+				E8EE78481D951E4100F4DA02 /* SecondViewController.h */,
+				E8EE78491D951E4100F4DA02 /* SecondViewController.m */,
+				E8EE784A1D951E4100F4DA02 /* SecondViewController.xib */,
+				E8EE784F1D951EC200F4DA02 /* JSCallOCViewController.h */,
+				E8EE78501D951EC200F4DA02 /* JSCallOCViewController.m */,
+				E8EE78511D951EC200F4DA02 /* JSCallOCViewController.xib */,
+			);
+			name = JSCallOC;
+			sourceTree = "<group>";
+		};
+		E8EE78461D951CB200F4DA02 /* OCCallJS */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE78541D95664700F4DA02 /* test.js */,
+				E8EE78561D9566BB00F4DA02 /* OCCallJSViewController.h */,
+				E8EE78571D9566BB00F4DA02 /* OCCallJSViewController.m */,
+				E8EE78581D9566BB00F4DA02 /* OCCallJSViewController.xib */,
+			);
+			name = OCCallJS;
+			sourceTree = "<group>";
+		};
+		E8EE78471D951CDB00F4DA02 /* HighcharsWebView */ = {
+			isa = PBXGroup;
+			children = (
+				E8EE785B1D956C0E00F4DA02 /* highcharts.js */,
+				E8EE785C1D956C0E00F4DA02 /* HighchartsView.html */,
+				E8EE785D1D956C0E00F4DA02 /* jquery-1.11.0.min.js */,
+				E8EE78611D956CB500F4DA02 /* HighcharsWebView.h */,
+				E8EE78621D956CB500F4DA02 /* HighcharsWebView.m */,
+				E8EE78631D956CB500F4DA02 /* HighcharsWebView.xib */,
+			);
+			name = HighcharsWebView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8EE78291D95199500F4DA02 /* JavaScriptCoreDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8EE78411D95199500F4DA02 /* Build configuration list for PBXNativeTarget "JavaScriptCoreDemo" */;
+			buildPhases = (
+				E8EE78261D95199500F4DA02 /* Sources */,
+				E8EE78271D95199500F4DA02 /* Frameworks */,
+				E8EE78281D95199500F4DA02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JavaScriptCoreDemo;
+			productName = JavaScriptCoreDemo;
+			productReference = E8EE782A1D95199500F4DA02 /* JavaScriptCoreDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8EE78221D95199500F4DA02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = silence;
+				TargetAttributes = {
+					E8EE78291D95199500F4DA02 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E8EE78251D95199500F4DA02 /* Build configuration list for PBXProject "JavaScriptCoreDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8EE78211D95199500F4DA02;
+			productRefGroup = E8EE782B1D95199500F4DA02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8EE78291D95199500F4DA02 /* JavaScriptCoreDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8EE78281D95199500F4DA02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8EE784C1D951E4100F4DA02 /* SecondViewController.xib in Resources */,
+				E8EE783D1D95199500F4DA02 /* LaunchScreen.storyboard in Resources */,
+				E8EE784E1D951E9300F4DA02 /* JSCallOC.html in Resources */,
+				E8EE78651D956CB500F4DA02 /* HighcharsWebView.xib in Resources */,
+				E8EE78531D951EC200F4DA02 /* JSCallOCViewController.xib in Resources */,
+				E8EE783A1D95199500F4DA02 /* Assets.xcassets in Resources */,
+				E8EE785A1D9566BC00F4DA02 /* OCCallJSViewController.xib in Resources */,
+				E8EE78551D95664700F4DA02 /* test.js in Resources */,
+				E8EE78381D95199500F4DA02 /* Main.storyboard in Resources */,
+				E8EE785F1D956C0E00F4DA02 /* HighchartsView.html in Resources */,
+				E8EE785E1D956C0E00F4DA02 /* highcharts.js in Resources */,
+				E8EE78601D956C0E00F4DA02 /* jquery-1.11.0.min.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8EE78261D95199500F4DA02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8EE784B1D951E4100F4DA02 /* SecondViewController.m in Sources */,
+				E8EE78641D956CB500F4DA02 /* HighcharsWebView.m in Sources */,
+				E8EE78351D95199500F4DA02 /* ViewController.m in Sources */,
+				E8EE78321D95199500F4DA02 /* AppDelegate.m in Sources */,
+				E8EE78591D9566BC00F4DA02 /* OCCallJSViewController.m in Sources */,
+				E8EE78521D951EC200F4DA02 /* JSCallOCViewController.m in Sources */,
+				E8EE782F1D95199500F4DA02 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8EE78361D95199500F4DA02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8EE78371D95199500F4DA02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8EE783B1D95199500F4DA02 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8EE783C1D95199500F4DA02 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8EE783F1D95199500F4DA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8EE78401D95199500F4DA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8EE78421D95199500F4DA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JavaScriptCoreDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.JavaScriptCoreDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8EE78431D95199500F4DA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JavaScriptCoreDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.JavaScriptCoreDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8EE78251D95199500F4DA02 /* Build configuration list for PBXProject "JavaScriptCoreDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8EE783F1D95199500F4DA02 /* Debug */,
+				E8EE78401D95199500F4DA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8EE78411D95199500F4DA02 /* Build configuration list for PBXNativeTarget "JavaScriptCoreDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8EE78421D95199500F4DA02 /* Debug */,
+				E8EE78431D95199500F4DA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8EE78221D95199500F4DA02 /* Project object */;
+}

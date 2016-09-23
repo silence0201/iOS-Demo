@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OCCallJSViewController">
+            <connections>
+                <outlet property="inputText" destination="mJd-Og-LOf" id="4Ok-5B-4NA"/>
+                <outlet property="resultLabel" destination="VG5-nG-qoU" id="JEn-Ps-apJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34J-Qw-Cmz">
+                    <rect key="frame" x="550" y="100" width="30" height="30"/>
+                    <state key="normal" title="计算"/>
+                    <connections>
+                        <action selector="clickAction:" destination="-1" eventType="touchUpInside" id="nhU-2o-mzV"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结果:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUM-gl-HFP">
+                    <rect key="frame" x="20" y="162" width="39" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VG5-nG-qoU">
+                    <rect key="frame" x="81" y="161" width="100" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="WfR-hQ-ckq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJd-Og-LOf">
+                    <rect key="frame" x="20" y="100" width="510" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="34J-Qw-Cmz" secondAttribute="trailing" constant="20" id="D9a-tV-nmW"/>
+                <constraint firstItem="VG5-nG-qoU" firstAttribute="bottom" secondItem="QUM-gl-HFP" secondAttribute="bottom" id="FF1-cf-lF0"/>
+                <constraint firstItem="34J-Qw-Cmz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="Hdv-aL-T00"/>
+                <constraint firstItem="mJd-Og-LOf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Mfg-8h-G5G"/>
+                <constraint firstItem="VG5-nG-qoU" firstAttribute="leading" secondItem="QUM-gl-HFP" secondAttribute="trailing" constant="22" id="g5H-kp-FMu"/>
+                <constraint firstItem="QUM-gl-HFP" firstAttribute="leading" secondItem="mJd-Og-LOf" secondAttribute="leading" id="gXc-8P-DRy"/>
+                <constraint firstItem="mJd-Og-LOf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="kpq-eS-Hif"/>
+                <constraint firstItem="34J-Qw-Cmz" firstAttribute="leading" secondItem="mJd-Og-LOf" secondAttribute="trailing" constant="20" id="r5H-Yk-1KJ"/>
+                <constraint firstItem="VG5-nG-qoU" firstAttribute="top" secondItem="mJd-Og-LOf" secondAttribute="bottom" constant="31" id="rVW-8l-y8t"/>
+                <constraint firstItem="QUM-gl-HFP" firstAttribute="top" secondItem="mJd-Og-LOf" secondAttribute="bottom" constant="32" id="t4a-kz-aF8"/>
+            </constraints>
+            <point key="canvasLocation" x="347" y="496"/>
+        </view>
+    </objects>
+</document>
