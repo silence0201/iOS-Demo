@@ -70,6 +70,7 @@
 
 ####`Advanced`:高级功能
 * [3DTouchDemo](Advanced/3DTouchDemo):3DTouch的简单使用
+* [TodayExtensionDemo](Advanced/TodayExtensionDemo):TodayWidgets的简单案例
 
 ####`Effect`:表现效果
 * [FrostedGlassDemo](Effect/FrostedGlassDemo):简单实现的毛玻璃效果
