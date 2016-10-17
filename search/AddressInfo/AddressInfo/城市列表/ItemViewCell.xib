@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemViewCell" id="WoK-TY-xgm" customClass="ItemViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="36"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="36"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杭州" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8g-CN-69U">
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="s8g-CN-69U" firstAttribute="leading" secondItem="WoK-TY-xgm" secondAttribute="leading" id="5yd-aV-wpa"/>
+                <constraint firstAttribute="bottom" secondItem="s8g-CN-69U" secondAttribute="bottom" id="Ane-tX-sCK"/>
+                <constraint firstAttribute="trailing" secondItem="s8g-CN-69U" secondAttribute="trailing" id="Enb-lG-DVF"/>
+                <constraint firstItem="s8g-CN-69U" firstAttribute="top" secondItem="WoK-TY-xgm" secondAttribute="top" id="ku3-OB-DS3"/>
+            </constraints>
+            <size key="customSize" width="90" height="36"/>
+            <connections>
+                <outlet property="cityNameLabel" destination="s8g-CN-69U" id="vEy-c8-p1j"/>
+            </connections>
+            <point key="canvasLocation" x="-398" y="-97"/>
+        </collectionViewCell>
+    </objects>
+</document>

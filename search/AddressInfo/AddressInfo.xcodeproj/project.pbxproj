@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8097EE41DB45752004AB8D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8097EE31DB45752004AB8D4 /* main.m */; };
+		E8097EE71DB45752004AB8D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8097EE61DB45752004AB8D4 /* AppDelegate.m */; };
+		E8097EEA1DB45752004AB8D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8097EE91DB45752004AB8D4 /* ViewController.m */; };
+		E8097EED1DB45752004AB8D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8097EEB1DB45752004AB8D4 /* Main.storyboard */; };
+		E8097EEF1DB45752004AB8D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8097EEE1DB45752004AB8D4 /* Assets.xcassets */; };
+		E8097EF21DB45752004AB8D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8097EF01DB45752004AB8D4 /* LaunchScreen.storyboard */; };
+		E8097F3F1DB4CC7E004AB8D4 /* NSMutableArray+FilterElement.m in Sources */ = {isa = PBXBuildFile; fileRef = E8097F2D1DB4CC7E004AB8D4 /* NSMutableArray+FilterElement.m */; };
+		E8097F401DB4CC7E004AB8D4 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = E8097F301DB4CC7E004AB8D4 /* ChineseInclude.m */; };
+		E8097F411DB4CC7E004AB8D4 /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = E8097F321DB4CC7E004AB8D4 /* ChineseToPinyinResource.m */; };
+		E8097F421DB4CC7E004AB8D4 /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = E8097F341DB4CC7E004AB8D4 /* HanyuPinyinOutputFormat.m */; };
+		E8097F431DB4CC7E004AB8D4 /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = E8097F361DB4CC7E004AB8D4 /* NSString+PinYin4Cocoa.m */; };
+		E8097F441DB4CC7E004AB8D4 /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E8097F391DB4CC7E004AB8D4 /* PinyinFormatter.m */; };
+		E8097F451DB4CC7E004AB8D4 /* PinYinForObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = E8097F3B1DB4CC7E004AB8D4 /* PinYinForObjc.m */; };
+		E8097F461DB4CC7E004AB8D4 /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E8097F3D1DB4CC7E004AB8D4 /* PinyinHelper.m */; };
+		E8097F471DB4CC7E004AB8D4 /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = E8097F3E1DB4CC7E004AB8D4 /* unicode_to_hanyu_pinyin.txt */; };
+		E82B96681DB5005300956D97 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = E82B96671DB5005300956D97 /* HeadView.m */; };
+		E82B966A1DB5006D00956D97 /* HeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82B96691DB5006D00956D97 /* HeadView.xib */; };
+		E82B966C1DB5023300956D97 /* ItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82B966B1DB5023300956D97 /* ItemViewCell.xib */; };
+		E82B966F1DB5024400956D97 /* ItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E82B966E1DB5024400956D97 /* ItemViewCell.m */; };
+		E82B96731DB504B300956D97 /* CityViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E82B96711DB504B300956D97 /* CityViewCell.m */; };
+		E82B96741DB504B300956D97 /* CityViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82B96721DB504B300956D97 /* CityViewCell.xib */; };
+		E82B96771DB50D9500956D97 /* CitySelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82B96761DB50D9500956D97 /* CitySelectViewController.m */; };
+		E82B967A1DB50E3D00956D97 /* SearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E82B96791DB50E3D00956D97 /* SearchResult.m */; };
+		E82B967D1DB50F7C00956D97 /* MySearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82B967C1DB50F7C00956D97 /* MySearchController.m */; };
+		E82B96801DB50FCB00956D97 /* MySearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82B967F1DB50FCB00956D97 /* MySearchTableViewController.m */; };
+		E82B96821DB518BB00956D97 /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = E82B96811DB518BB00956D97 /* citydict.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8097EDF1DB45752004AB8D4 /* AddressInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8097EE31DB45752004AB8D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8097EE51DB45752004AB8D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8097EE61DB45752004AB8D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8097EE81DB45752004AB8D4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E8097EE91DB45752004AB8D4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E8097EEC1DB45752004AB8D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8097EEE1DB45752004AB8D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8097EF11DB45752004AB8D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8097EF31DB45752004AB8D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8097F2C1DB4CC7E004AB8D4 /* NSMutableArray+FilterElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+FilterElement.h"; sourceTree = "<group>"; };
+		E8097F2D1DB4CC7E004AB8D4 /* NSMutableArray+FilterElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+FilterElement.m"; sourceTree = "<group>"; };
+		E8097F2F1DB4CC7E004AB8D4 /* ChineseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseInclude.h; sourceTree = "<group>"; };
+		E8097F301DB4CC7E004AB8D4 /* ChineseInclude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseInclude.m; sourceTree = "<group>"; };
+		E8097F311DB4CC7E004AB8D4 /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
+		E8097F321DB4CC7E004AB8D4 /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyinResource.m; sourceTree = "<group>"; };
+		E8097F331DB4CC7E004AB8D4 /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
+		E8097F341DB4CC7E004AB8D4 /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
+		E8097F351DB4CC7E004AB8D4 /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PinYin4Cocoa.h"; sourceTree = "<group>"; };
+		E8097F361DB4CC7E004AB8D4 /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PinYin4Cocoa.m"; sourceTree = "<group>"; };
+		E8097F371DB4CC7E004AB8D4 /* PinYin4Objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYin4Objc.h; sourceTree = "<group>"; };
+		E8097F381DB4CC7E004AB8D4 /* PinyinFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinFormatter.h; sourceTree = "<group>"; };
+		E8097F391DB4CC7E004AB8D4 /* PinyinFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinFormatter.m; sourceTree = "<group>"; };
+		E8097F3A1DB4CC7E004AB8D4 /* PinYinForObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYinForObjc.h; sourceTree = "<group>"; };
+		E8097F3B1DB4CC7E004AB8D4 /* PinYinForObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinYinForObjc.m; sourceTree = "<group>"; };
+		E8097F3C1DB4CC7E004AB8D4 /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
+		E8097F3D1DB4CC7E004AB8D4 /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
+		E8097F3E1DB4CC7E004AB8D4 /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		E82B96661DB5005300956D97 /* HeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadView.h; sourceTree = "<group>"; };
+		E82B96671DB5005300956D97 /* HeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadView.m; sourceTree = "<group>"; };
+		E82B96691DB5006D00956D97 /* HeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadView.xib; sourceTree = "<group>"; };
+		E82B966B1DB5023300956D97 /* ItemViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemViewCell.xib; sourceTree = "<group>"; };
+		E82B966D1DB5024400956D97 /* ItemViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewCell.h; sourceTree = "<group>"; };
+		E82B966E1DB5024400956D97 /* ItemViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewCell.m; sourceTree = "<group>"; };
+		E82B96701DB504B300956D97 /* CityViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewCell.h; sourceTree = "<group>"; };
+		E82B96711DB504B300956D97 /* CityViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewCell.m; sourceTree = "<group>"; };
+		E82B96721DB504B300956D97 /* CityViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityViewCell.xib; sourceTree = "<group>"; };
+		E82B96751DB50D9500956D97 /* CitySelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySelectViewController.h; sourceTree = "<group>"; };
+		E82B96761DB50D9500956D97 /* CitySelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySelectViewController.m; sourceTree = "<group>"; };
+		E82B96781DB50E3D00956D97 /* SearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResult.h; sourceTree = "<group>"; };
+		E82B96791DB50E3D00956D97 /* SearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResult.m; sourceTree = "<group>"; };
+		E82B967B1DB50F7C00956D97 /* MySearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySearchController.h; sourceTree = "<group>"; };
+		E82B967C1DB50F7C00956D97 /* MySearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySearchController.m; sourceTree = "<group>"; };
+		E82B967E1DB50FCB00956D97 /* MySearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySearchTableViewController.h; sourceTree = "<group>"; };
+		E82B967F1DB50FCB00956D97 /* MySearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySearchTableViewController.m; sourceTree = "<group>"; };
+		E82B96811DB518BB00956D97 /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8097EDC1DB45752004AB8D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8097ED61DB45752004AB8D4 = {
+			isa = PBXGroup;
+			children = (
+				E8097EE11DB45752004AB8D4 /* AddressInfo */,
+				E8097EE01DB45752004AB8D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8097EE01DB45752004AB8D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8097EDF1DB45752004AB8D4 /* AddressInfo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8097EE11DB45752004AB8D4 /* AddressInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E8097F491DB4CCB9004AB8D4 /* 城市列表 */,
+				E8097F481DB4CCB5004AB8D4 /* 搜索结果 */,
+				E8097F2A1DB4CC4B004AB8D4 /* Lib */,
+				E8097EE51DB45752004AB8D4 /* AppDelegate.h */,
+				E8097EE61DB45752004AB8D4 /* AppDelegate.m */,
+				E8097EE81DB45752004AB8D4 /* ViewController.h */,
+				E8097EE91DB45752004AB8D4 /* ViewController.m */,
+				E8097EE21DB45752004AB8D4 /* Supporting Files */,
+			);
+			path = AddressInfo;
+			sourceTree = "<group>";
+		};
+		E8097EE21DB45752004AB8D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E82B96811DB518BB00956D97 /* citydict.plist */,
+				E8097EEB1DB45752004AB8D4 /* Main.storyboard */,
+				E8097EEE1DB45752004AB8D4 /* Assets.xcassets */,
+				E8097EF01DB45752004AB8D4 /* LaunchScreen.storyboard */,
+				E8097EF31DB45752004AB8D4 /* Info.plist */,
+				E8097EE31DB45752004AB8D4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8097F2A1DB4CC4B004AB8D4 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				E8097F2B1DB4CC7E004AB8D4 /* Category */,
+				E8097F2E1DB4CC7E004AB8D4 /* PinYin */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		E8097F2B1DB4CC7E004AB8D4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E8097F2C1DB4CC7E004AB8D4 /* NSMutableArray+FilterElement.h */,
+				E8097F2D1DB4CC7E004AB8D4 /* NSMutableArray+FilterElement.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E8097F2E1DB4CC7E004AB8D4 /* PinYin */ = {
+			isa = PBXGroup;
+			children = (
+				E8097F2F1DB4CC7E004AB8D4 /* ChineseInclude.h */,
+				E8097F301DB4CC7E004AB8D4 /* ChineseInclude.m */,
+				E8097F311DB4CC7E004AB8D4 /* ChineseToPinyinResource.h */,
+				E8097F321DB4CC7E004AB8D4 /* ChineseToPinyinResource.m */,
+				E8097F331DB4CC7E004AB8D4 /* HanyuPinyinOutputFormat.h */,
+				E8097F341DB4CC7E004AB8D4 /* HanyuPinyinOutputFormat.m */,
+				E8097F351DB4CC7E004AB8D4 /* NSString+PinYin4Cocoa.h */,
+				E8097F361DB4CC7E004AB8D4 /* NSString+PinYin4Cocoa.m */,
+				E8097F371DB4CC7E004AB8D4 /* PinYin4Objc.h */,
+				E8097F381DB4CC7E004AB8D4 /* PinyinFormatter.h */,
+				E8097F391DB4CC7E004AB8D4 /* PinyinFormatter.m */,
+				E8097F3A1DB4CC7E004AB8D4 /* PinYinForObjc.h */,
+				E8097F3B1DB4CC7E004AB8D4 /* PinYinForObjc.m */,
+				E8097F3C1DB4CC7E004AB8D4 /* PinyinHelper.h */,
+				E8097F3D1DB4CC7E004AB8D4 /* PinyinHelper.m */,
+				E8097F3E1DB4CC7E004AB8D4 /* unicode_to_hanyu_pinyin.txt */,
+			);
+			path = PinYin;
+			sourceTree = "<group>";
+		};
+		E8097F481DB4CCB5004AB8D4 /* 搜索结果 */ = {
+			isa = PBXGroup;
+			children = (
+				E82B96781DB50E3D00956D97 /* SearchResult.h */,
+				E82B96791DB50E3D00956D97 /* SearchResult.m */,
+				E82B967B1DB50F7C00956D97 /* MySearchController.h */,
+				E82B967C1DB50F7C00956D97 /* MySearchController.m */,
+				E82B967E1DB50FCB00956D97 /* MySearchTableViewController.h */,
+				E82B967F1DB50FCB00956D97 /* MySearchTableViewController.m */,
+			);
+			path = "搜索结果";
+			sourceTree = "<group>";
+		};
+		E8097F491DB4CCB9004AB8D4 /* 城市列表 */ = {
+			isa = PBXGroup;
+			children = (
+				E82B96661DB5005300956D97 /* HeadView.h */,
+				E82B96671DB5005300956D97 /* HeadView.m */,
+				E82B96691DB5006D00956D97 /* HeadView.xib */,
+				E82B966B1DB5023300956D97 /* ItemViewCell.xib */,
+				E82B966D1DB5024400956D97 /* ItemViewCell.h */,
+				E82B966E1DB5024400956D97 /* ItemViewCell.m */,
+				E82B96701DB504B300956D97 /* CityViewCell.h */,
+				E82B96711DB504B300956D97 /* CityViewCell.m */,
+				E82B96721DB504B300956D97 /* CityViewCell.xib */,
+				E82B96751DB50D9500956D97 /* CitySelectViewController.h */,
+				E82B96761DB50D9500956D97 /* CitySelectViewController.m */,
+			);
+			path = "城市列表";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8097EDE1DB45752004AB8D4 /* AddressInfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8097EF61DB45752004AB8D4 /* Build configuration list for PBXNativeTarget "AddressInfo" */;
+			buildPhases = (
+				E8097EDB1DB45752004AB8D4 /* Sources */,
+				E8097EDC1DB45752004AB8D4 /* Frameworks */,
+				E8097EDD1DB45752004AB8D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AddressInfo;
+			productName = AddressInfo;
+			productReference = E8097EDF1DB45752004AB8D4 /* AddressInfo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8097ED71DB45752004AB8D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = silence;
+				TargetAttributes = {
+					E8097EDE1DB45752004AB8D4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UKBBWVJH59;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E8097EDA1DB45752004AB8D4 /* Build configuration list for PBXProject "AddressInfo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8097ED61DB45752004AB8D4;
+			productRefGroup = E8097EE01DB45752004AB8D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8097EDE1DB45752004AB8D4 /* AddressInfo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8097EDD1DB45752004AB8D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8097F471DB4CC7E004AB8D4 /* unicode_to_hanyu_pinyin.txt in Resources */,
+				E8097EF21DB45752004AB8D4 /* LaunchScreen.storyboard in Resources */,
+				E82B966A1DB5006D00956D97 /* HeadView.xib in Resources */,
+				E8097EEF1DB45752004AB8D4 /* Assets.xcassets in Resources */,
+				E8097EED1DB45752004AB8D4 /* Main.storyboard in Resources */,
+				E82B96821DB518BB00956D97 /* citydict.plist in Resources */,
+				E82B966C1DB5023300956D97 /* ItemViewCell.xib in Resources */,
+				E82B96741DB504B300956D97 /* CityViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8097EDB1DB45752004AB8D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8097F461DB4CC7E004AB8D4 /* PinyinHelper.m in Sources */,
+				E82B96801DB50FCB00956D97 /* MySearchTableViewController.m in Sources */,
+				E82B967D1DB50F7C00956D97 /* MySearchController.m in Sources */,
+				E82B96731DB504B300956D97 /* CityViewCell.m in Sources */,
+				E8097EEA1DB45752004AB8D4 /* ViewController.m in Sources */,
+				E82B96681DB5005300956D97 /* HeadView.m in Sources */,
+				E8097EE71DB45752004AB8D4 /* AppDelegate.m in Sources */,
+				E8097F3F1DB4CC7E004AB8D4 /* NSMutableArray+FilterElement.m in Sources */,
+				E82B966F1DB5024400956D97 /* ItemViewCell.m in Sources */,
+				E8097F401DB4CC7E004AB8D4 /* ChineseInclude.m in Sources */,
+				E82B96771DB50D9500956D97 /* CitySelectViewController.m in Sources */,
+				E8097EE41DB45752004AB8D4 /* main.m in Sources */,
+				E8097F431DB4CC7E004AB8D4 /* NSString+PinYin4Cocoa.m in Sources */,
+				E8097F451DB4CC7E004AB8D4 /* PinYinForObjc.m in Sources */,
+				E8097F411DB4CC7E004AB8D4 /* ChineseToPinyinResource.m in Sources */,
+				E8097F441DB4CC7E004AB8D4 /* PinyinFormatter.m in Sources */,
+				E82B967A1DB50E3D00956D97 /* SearchResult.m in Sources */,
+				E8097F421DB4CC7E004AB8D4 /* HanyuPinyinOutputFormat.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8097EEB1DB45752004AB8D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8097EEC1DB45752004AB8D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8097EF01DB45752004AB8D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8097EF11DB45752004AB8D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8097EF41DB45752004AB8D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8097EF51DB45752004AB8D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8097EF71DB45752004AB8D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = AddressInfo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.AddressInfo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8097EF81DB45752004AB8D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = AddressInfo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.AddressInfo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8097EDA1DB45752004AB8D4 /* Build configuration list for PBXProject "AddressInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8097EF41DB45752004AB8D4 /* Debug */,
+				E8097EF51DB45752004AB8D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8097EF61DB45752004AB8D4 /* Build configuration list for PBXNativeTarget "AddressInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8097EF71DB45752004AB8D4 /* Debug */,
+				E8097EF81DB45752004AB8D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8097ED71DB45752004AB8D4 /* Project object */;
+}
