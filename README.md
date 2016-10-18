@@ -48,6 +48,7 @@
 #####`search`:搜索框应用
 * [SearchDisplayControllerDemo](search/SearchDisplayControllerDemo):搜索框的简单实现
 * [PinYinSearchDemo](search/PinYinSearchDemo):拼音排序和搜索的简单实现
+* [AddressInfo](AddressInfo):UISearchController的简单使用
 
 #####`simpleFunction`:一些小功能
 * [HideTextDemo](simpleFunction/HideTextDemo):隐藏中文输入的文字
