@@ -8,6 +8,12 @@
 
 #import "HeadView.h"
 
+@interface HeadView ()
+
+@property (weak, nonatomic) IBOutlet UILabel *headLabel;
+
+@end
+
 @implementation HeadView
 
 - (instancetype)initWithFrame:(CGRect)frame{
@@ -15,6 +21,11 @@
         self = [[[NSBundle mainBundle]loadNibNamed:@"HeadView" owner:nil options:nil]lastObject] ;
     }
     return self ;
+}
+
+- (void)setHeadName:(NSString *)headName{
+    _headName = headName ;
+    _headLabel.text = headName ;
 }
 
 @end

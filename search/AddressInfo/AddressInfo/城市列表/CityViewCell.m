@@ -18,14 +18,17 @@
     UICollectionViewFlowLayout *_flowLayout ;
 }
 
+
+
 - (void)setCityArray:(NSArray *)cityArray{
-    
+    _cityArray = cityArray ;
+    [self initUI] ;
 }
 
 - (void)initUI{
     // 初始化布局
     _flowLayout = [[UICollectionViewFlowLayout alloc]init] ;
-    _flowLayout.minimumInteritemSpacing = 15 ;
+    _flowLayout.minimumInteritemSpacing = 10 ;
     _flowLayout.minimumLineSpacing = 10 ;
     _flowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10) ;   // cell离section的边距
     _flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical ;
@@ -63,7 +66,6 @@
     ItemViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ItemViewCell" forIndexPath:indexPath] ;
     
     cell.cityName = _cityArray[indexPath.item] ;
-    
     return cell  ;
 }
 

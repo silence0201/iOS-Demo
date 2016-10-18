@@ -18,10 +18,10 @@
 @implementation ItemViewCell
 
 - (void)awakeFromNib{
-    [super awakeFromNib] ;
+    self.layer.cornerRadius = 6 ;
+    self.layer.masksToBounds = YES ;
     
-    self.cityNameLabel.layer.cornerRadius = 6 ;
-    self.cityNameLabel.layer.masksToBounds = YES ;
+    [super awakeFromNib] ;
 }
 
 - (void)setCityName:(NSString *)cityName{

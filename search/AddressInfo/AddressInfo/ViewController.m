@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CitySelectViewController.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,12 @@
 }
 
 - (IBAction)selectAction:(id)sender {
+    CitySelectViewController *vc=[[CitySelectViewController alloc]init];
+    typeof(self) __weak weakSelf = self ;
+    [vc returnText:^(NSString *cityname) {
+        weakSelf.cityLabel.text=cityname;
+    }];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

@@ -10,5 +10,6 @@
 
 @interface HeadView : UIView
 
+@property (nonatomic,strong) NSString *headName ;
 
 @end
