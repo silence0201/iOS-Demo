@@ -1,10 +1,11 @@
 //
-//  SwipeTableCell.m
-//  SwipeTableView
+//  SwipeTableCellTableViewCell.h
+//  TableSwipeCustom
 //
-//  Created by zhao on 16/8/11.
-//  Copyright © 2016年 zhaoName. All rights reserved.
+//  Created by 杨晴贺 on 20/10/2016.
+//  Copyright © 2016 silence. All rights reserved.
 //
+
 
 #import "SwipeTableCell.h"
 
