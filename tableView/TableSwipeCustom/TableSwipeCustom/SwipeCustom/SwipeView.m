@@ -121,8 +121,9 @@ static inline CGFloat mgEaseInOutBounce(CGFloat t, CGFloat b, CGFloat c) {
     return _buttonArray;
 }
 
+
 #pragma mark - Animations
-//手势动画效果
+// 手势动画效果
 -(CGFloat)value:(CGFloat)elapsed duration:(CGFloat)duration from:(CGFloat)from to:(CGFloat)to
 {
     CGFloat t = MIN(elapsed/duration, 1.0f);
@@ -146,7 +147,7 @@ static inline CGFloat mgEaseInOutBounce(CGFloat t, CGFloat b, CGFloat c) {
     return (*easingFunction)(t, from, to - from);
 }
 
-//swipeView的弹出动画效果
+// swipeView的弹出动画效果
 - (void)swipeViewAnimationFromRight:(BOOL)fromRight effect:(CGFloat)t cellHeight:(CGFloat)cellHeight
 {
     switch (self.mode)
