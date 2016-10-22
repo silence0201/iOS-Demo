@@ -21,6 +21,7 @@
 
 @implementation ViewController
 
+#pragma mark -- Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -70,11 +71,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES] ;
     NSLog(@"row:%ld",indexPath.row) ;
 }
 
 #pragma mark -- SwipeTableViewDelegate
-
 // cell的滑动样式
 - (SwipeTableViewCellStyle)tableView:(UITableView *)tableView styleOfSwipeButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
     if(indexPath.row == 0){
@@ -89,7 +90,7 @@
 // 右滑buttons
 - (NSArray<SwipeButton *> *)tableView:(UITableView *)tableView rightSwipeButtonsAtIndexPath:(NSIndexPath *)indexPath{
     //删除操作
-    SwipeButton *checkBtn = [SwipeButton createSwipeButtonWithTitle:@"删除$$删除" font:16 textColor:[UIColor blackColor] backgroundColor:[UIColor redColor] image:[UIImage imageNamed:@"check"] touchBlock:^{
+    SwipeButton *checkBtn = [SwipeButton createSwipeButtonWithTitle:@"删除" font:16 textColor:[UIColor blackColor] backgroundColor:[UIColor redColor] image:[UIImage imageNamed:@"check"] touchBlock:^{
         [self.dataArray removeObjectAtIndex:indexPath.row];
         [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
         NSLog(@"点击了check按钮");
@@ -114,7 +115,7 @@
 
 //左滑buttons
 - (NSArray<SwipeButton *> *)tableView:(UITableView *)tableView leftSwipeButtonsAtIndexPath:(NSIndexPath *)indexPath{
-    SwipeButton *checkBtn = [SwipeButton createSwipeButtonWithTitle:@"删除峰删除" font:16 textColor:[UIColor blackColor] backgroundColor:[UIColor redColor] image:[UIImage imageNamed:@"check"] touchBlock:^{
+    SwipeButton *checkBtn = [SwipeButton createSwipeButtonWithTitle:@"删除--删除" font:16 textColor:[UIColor blackColor] backgroundColor:[UIColor redColor] image:[UIImage imageNamed:@"check"] touchBlock:^{
         NSLog(@"点击了check按钮:%ld",indexPath.row);
     }];
     SwipeButton *menuBtn = [SwipeButton createSwipeButtonWithImage:[UIImage imageNamed:@"menu"] backgroundColor:[UIColor blueColor] touchBlock:^{

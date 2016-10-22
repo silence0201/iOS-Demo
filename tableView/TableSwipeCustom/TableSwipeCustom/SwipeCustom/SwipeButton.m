@@ -18,6 +18,7 @@
     
     [button setTitle:title forState:UIControlStateNormal] ;
     button.titleLabel.font = [UIFont systemFontOfSize:font] ;
+    button.titleLabel.textAlignment = NSTextAlignmentCenter ;
     [button setTitleColor:textColor forState:UIControlStateNormal] ;
     button.backgroundColor = backgroundColor ;
     [button setImage:image forState:UIControlStateNormal] ;
@@ -74,6 +75,7 @@
         newFrame.origin.y = self.frame.size.height - newFrame.size.height - marginH ;
         newFrame.size.width = self.frame.size.width ;
         self.titleLabel.frame = newFrame ;
+        self.titleLabel.center = self.center ;
         self.titleLabel.textAlignment = NSTextAlignmentCenter ;
     }
 }

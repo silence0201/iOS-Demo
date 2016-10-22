@@ -10,12 +10,14 @@
 #import "SwipeButton.h"
 #import "SwipeView.h"
 
+#pragma mark -- 滑动类型
 typedef NS_ENUM(NSUInteger,SwipeTableViewCellStyle) {
     SwipeTableViewCellStyleRightToLeft = 0 ,  // 右滑
     SwipeTableViewCellStyleLeftToRight ,  //左滑
     SwipeTableViewCellStyleBoth // 都有
 };
 
+#pragma mark -- SwipeTableCellDelegate
 @protocol SwipeTableCellDelegate <NSObject>
 
 @required
@@ -53,6 +55,7 @@ typedef NS_ENUM(NSUInteger,SwipeTableViewCellStyle) {
 
 @end
 
+#pragma mark -- SwipeTableCell
 @interface SwipeTableCell : UITableViewCell
 
 @property (nonatomic,weak) id<SwipeTableCellDelegate> swipeDelegate ;  // 代理对象
