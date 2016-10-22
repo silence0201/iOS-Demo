@@ -37,6 +37,7 @@
 * [PopMultipleChoiceDemo](tableView/PopMultipleChoiceDemo):弹出多选表格
 * [TableViewImageZoom](tableView/TableViewImageZoom):简单实现Tableview头部图片缩放效果
 * [LinkSelectDemo](tableView/LinkSelectDemo):联动TableView
+* [TableSwipeCustom](tableView/TableSwipeCustom):自定义滑动功能按钮
 
 #####`viewController`:viewController的使用
 * [childViewControllerDemo](viewController/childViewControllerDemo):利用子控制器管理控制器
