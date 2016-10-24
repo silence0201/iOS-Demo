@@ -68,6 +68,7 @@
 
 #####`System`:系统功能
 * [SystemShareDemo](System/SystemShareDemo):系统分享功能
+* [AttributedStringDemo](System/AttributedStringDemo):富文本
 
 ####`Advanced`:高级功能
 * [3DTouchDemo](Advanced/3DTouchDemo):3DTouch的简单使用
