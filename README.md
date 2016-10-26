@@ -74,7 +74,8 @@
 * [3DTouchDemo](Advanced/3DTouchDemo):3DTouch的简单使用
 * [TodayExtensionDemo](Advanced/TodayExtensionDemo):TodayWidgets的简单案例
 * [TouchID](Advanced/TouchID):TouchID的简单使用
-* [QRCodeDemo](QRCodeDemo):二维码的生成与识别
+* [QRCodeDemo](Advanced/QRCodeDemo):二维码的生成与识别
+* [versionUpdate](Advanced/versionUpdate)
 
 ####`Effect`:表现效果
 * [FrostedGlassDemo](Effect/FrostedGlassDemo):简单实现的毛玻璃效果
