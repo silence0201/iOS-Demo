@@ -24,6 +24,7 @@
 
 #####`navigation`:导航控制器使用
 * [NavigationBarDemo](navigation/NavigationBarDemo):导航栏渐变透明效果
+* [OpequeNavigationDemo](navigation/OpequeNavigationDemo):导航栏透明
 
 #####`popView`:弹出框
 * [SelectList](popView/SelectList):仿微信弹出框
