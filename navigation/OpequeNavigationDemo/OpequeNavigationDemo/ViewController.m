@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UIScrollViewDelegate>{
+    UIImageView *_barImageView ;
+}
 
 @end
 
@@ -23,6 +25,7 @@
     scrollView.contentSize = CGSizeMake(self.view.frame.size.width*2, self.view.frame.size.height*2) ;
     scrollView.showsVerticalScrollIndicator = NO ;
     scrollView.showsHorizontalScrollIndicator = NO ;
+    scrollView.delegate = self ;
     
     UIImageView *imageView = [[UIImageView alloc]init] ;
     imageView.contentMode = UIViewContentModeScaleAspectFill ;
@@ -35,9 +38,19 @@
     
     // 设置导航栏透明
     [self.navigationController.navigationBar setShadowImage:[UIImage new]] ;
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault] ;
+    //[self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault] ;
+    
+    // 渐变透明
+    _barImageView = self.navigationController.navigationBar.subviews.firstObject ;
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat minAlphaOffset = - 64;
+    CGFloat maxAlphaOffset = 200;
+    CGFloat offset = scrollView.contentOffset.y;
+    CGFloat alpha = (offset - minAlphaOffset) / (maxAlphaOffset - minAlphaOffset);
+    _barImageView.alpha = alpha;
+}
 
 
 @end
