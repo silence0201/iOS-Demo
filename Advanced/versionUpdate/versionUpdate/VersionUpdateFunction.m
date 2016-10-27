@@ -10,6 +10,7 @@
 
 @implementation VersionUpdateFunction
 
+#pragma mark -- 核心方法:主要通过请求获取对应版本信息
 + (void)versionUpdate{
     // 获取当前发布的版本
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
