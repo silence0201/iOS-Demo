@@ -28,6 +28,7 @@
 // 取消高亮状态
 - (void)setHighlighted:(BOOL)highlighted{}
 
+#pragma mark -- 设置对应的位置
 - (CGRect)imageRectForContentRect:(CGRect)contentRect{
     CGFloat imageW = contentRect.size.width ;
     CGFloat imageH = contentRect.size.height * TabBarButtonImageRatio;
@@ -43,6 +44,7 @@
     return CGRectMake(0, titleY, titleW, titleH) ;
 }
 
+#pragma mark -- 设置属性
 - (void)setTabBarItem:(UITabBarItem *)tabBarItem{
     _tabBarItem = tabBarItem ;
     

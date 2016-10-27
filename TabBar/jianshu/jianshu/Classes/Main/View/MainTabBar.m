@@ -19,6 +19,7 @@
 
 @implementation MainTabBar
 
+#pragma mark -- init
 - (instancetype)init{
     if (self = [super init]) {
         self.backgroundColor = [UIColor whiteColor] ;
@@ -27,6 +28,7 @@
     return self ;
 }
 
+#pragma mark -- 布局
 - (void)setupWrite{
     UIButton *writeButton = [[UIButton alloc]init] ;
     writeButton.adjustsImageWhenHighlighted = NO ;
@@ -50,6 +52,7 @@
     }
 }
 
+// 当添加子控件时调用重新布局
 - (void)layoutSubviews{
     [super layoutSubviews] ;
     self.writeButton.center = self.center ;
@@ -69,6 +72,7 @@
     }
 }
 
+#pragma mark -- Lazy Load
 - (NSMutableArray *)tabBarButtonArray{
     if (!_tabBarButtonArray) {
         _tabBarButtonArray = [NSMutableArray array] ;
@@ -76,6 +80,7 @@
     return _tabBarButtonArray ;
 }
 
+#pragma mark -- 点击Action
 - (void)clickWriteButton{
     if ([self.delegate respondsToSelector:@selector(tabBar:didSelectButtonFrom:to:)]) {
         [self.delegate tabBarClickWriteButton:self] ;

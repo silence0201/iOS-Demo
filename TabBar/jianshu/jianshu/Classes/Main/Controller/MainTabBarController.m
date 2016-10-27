@@ -28,6 +28,7 @@
 
 @implementation MainTabBarController
 
+#pragma mark -- Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -45,6 +46,7 @@
     }
 }
 
+#pragma mark -- Layout
 - (void)setupMainTabBar{
     MainTabBar *mainTabBar = [[MainTabBar alloc] init];
     mainTabBar.frame = self.tabBar.bounds;
@@ -78,6 +80,7 @@
     }
 }
 
+#pragma mark -- Priave Method
 - (void)setupChildVc:(UIViewController *)childVc title:(NSString *)title image:(NSString *)imageName selectedImage:(NSString *)selectedImageName{
     MainNavigationController *nav = [[MainNavigationController alloc] initWithRootViewController:childVc];
     childVc.tabBarItem.image = [UIImage imageNamed:imageName];
