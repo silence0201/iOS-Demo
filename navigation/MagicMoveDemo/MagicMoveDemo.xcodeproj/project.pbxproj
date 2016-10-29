@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8E125721DC4CF99003B9ACF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E125711DC4CF99003B9ACF /* main.m */; };
+		E8E125751DC4CF99003B9ACF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E125741DC4CF99003B9ACF /* AppDelegate.m */; };
+		E8E1257D1DC4CF99003B9ACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E1257C1DC4CF99003B9ACF /* Assets.xcassets */; };
+		E8E125801DC4CF99003B9ACF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E1257E1DC4CF99003B9ACF /* LaunchScreen.storyboard */; };
+		E8E1258A1DC4D056003B9ACF /* MagicMoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E125881DC4D056003B9ACF /* MagicMoveCell.m */; };
+		E8E1258B1DC4D056003B9ACF /* MagicMoveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E125891DC4D056003B9ACF /* MagicMoveCell.xib */; };
+		E8E1258E1DC4D19F003B9ACF /* MagicMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E1258D1DC4D19F003B9ACF /* MagicMoveViewController.m */; };
+		E8E125911DC4D606003B9ACF /* MagicMovePushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E125901DC4D606003B9ACF /* MagicMovePushViewController.m */; };
+		E8E125941DC4D6D5003B9ACF /* NaviTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E125931DC4D6D5003B9ACF /* NaviTransition.m */; };
+		E8E125971DC4DD23003B9ACF /* InteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E125961DC4DD23003B9ACF /* InteractiveTransition.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8E1256D1DC4CF99003B9ACF /* MagicMoveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicMoveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E125711DC4CF99003B9ACF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8E125731DC4CF99003B9ACF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8E125741DC4CF99003B9ACF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8E1257C1DC4CF99003B9ACF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8E1257F1DC4CF99003B9ACF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8E125811DC4CF99003B9ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E125871DC4D056003B9ACF /* MagicMoveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicMoveCell.h; sourceTree = "<group>"; };
+		E8E125881DC4D056003B9ACF /* MagicMoveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMoveCell.m; sourceTree = "<group>"; };
+		E8E125891DC4D056003B9ACF /* MagicMoveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MagicMoveCell.xib; sourceTree = "<group>"; };
+		E8E1258C1DC4D19F003B9ACF /* MagicMoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicMoveViewController.h; sourceTree = "<group>"; };
+		E8E1258D1DC4D19F003B9ACF /* MagicMoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMoveViewController.m; sourceTree = "<group>"; };
+		E8E1258F1DC4D606003B9ACF /* MagicMovePushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicMovePushViewController.h; sourceTree = "<group>"; };
+		E8E125901DC4D606003B9ACF /* MagicMovePushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMovePushViewController.m; sourceTree = "<group>"; };
+		E8E125921DC4D6D5003B9ACF /* NaviTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviTransition.h; sourceTree = "<group>"; };
+		E8E125931DC4D6D5003B9ACF /* NaviTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviTransition.m; sourceTree = "<group>"; };
+		E8E125951DC4DD23003B9ACF /* InteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveTransition.h; sourceTree = "<group>"; };
+		E8E125961DC4DD23003B9ACF /* InteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveTransition.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8E1256A1DC4CF99003B9ACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8E125641DC4CF99003B9ACF = {
+			isa = PBXGroup;
+			children = (
+				E8E1256F1DC4CF99003B9ACF /* MagicMoveDemo */,
+				E8E1256E1DC4CF99003B9ACF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8E1256E1DC4CF99003B9ACF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8E1256D1DC4CF99003B9ACF /* MagicMoveDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8E1256F1DC4CF99003B9ACF /* MagicMoveDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E8E125731DC4CF99003B9ACF /* AppDelegate.h */,
+				E8E125741DC4CF99003B9ACF /* AppDelegate.m */,
+				E8E1257C1DC4CF99003B9ACF /* Assets.xcassets */,
+				E8E1257E1DC4CF99003B9ACF /* LaunchScreen.storyboard */,
+				E8E125811DC4CF99003B9ACF /* Info.plist */,
+				E8E125701DC4CF99003B9ACF /* Supporting Files */,
+				E8E125871DC4D056003B9ACF /* MagicMoveCell.h */,
+				E8E125881DC4D056003B9ACF /* MagicMoveCell.m */,
+				E8E125891DC4D056003B9ACF /* MagicMoveCell.xib */,
+				E8E1258C1DC4D19F003B9ACF /* MagicMoveViewController.h */,
+				E8E1258D1DC4D19F003B9ACF /* MagicMoveViewController.m */,
+				E8E1258F1DC4D606003B9ACF /* MagicMovePushViewController.h */,
+				E8E125901DC4D606003B9ACF /* MagicMovePushViewController.m */,
+				E8E125921DC4D6D5003B9ACF /* NaviTransition.h */,
+				E8E125931DC4D6D5003B9ACF /* NaviTransition.m */,
+				E8E125951DC4DD23003B9ACF /* InteractiveTransition.h */,
+				E8E125961DC4DD23003B9ACF /* InteractiveTransition.m */,
+			);
+			path = MagicMoveDemo;
+			sourceTree = "<group>";
+		};
+		E8E125701DC4CF99003B9ACF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8E125711DC4CF99003B9ACF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8E1256C1DC4CF99003B9ACF /* MagicMoveDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E125841DC4CF99003B9ACF /* Build configuration list for PBXNativeTarget "MagicMoveDemo" */;
+			buildPhases = (
+				E8E125691DC4CF99003B9ACF /* Sources */,
+				E8E1256A1DC4CF99003B9ACF /* Frameworks */,
+				E8E1256B1DC4CF99003B9ACF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicMoveDemo;
+			productName = MagicMoveDemo;
+			productReference = E8E1256D1DC4CF99003B9ACF /* MagicMoveDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8E125651DC4CF99003B9ACF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = silence;
+				TargetAttributes = {
+					E8E1256C1DC4CF99003B9ACF = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = UKBBWVJH59;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E8E125681DC4CF99003B9ACF /* Build configuration list for PBXProject "MagicMoveDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8E125641DC4CF99003B9ACF;
+			productRefGroup = E8E1256E1DC4CF99003B9ACF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8E1256C1DC4CF99003B9ACF /* MagicMoveDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8E1256B1DC4CF99003B9ACF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E125801DC4CF99003B9ACF /* LaunchScreen.storyboard in Resources */,
+				E8E1257D1DC4CF99003B9ACF /* Assets.xcassets in Resources */,
+				E8E1258B1DC4D056003B9ACF /* MagicMoveCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8E125691DC4CF99003B9ACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E125971DC4DD23003B9ACF /* InteractiveTransition.m in Sources */,
+				E8E125941DC4D6D5003B9ACF /* NaviTransition.m in Sources */,
+				E8E125911DC4D606003B9ACF /* MagicMovePushViewController.m in Sources */,
+				E8E125751DC4CF99003B9ACF /* AppDelegate.m in Sources */,
+				E8E1258A1DC4D056003B9ACF /* MagicMoveCell.m in Sources */,
+				E8E125721DC4CF99003B9ACF /* main.m in Sources */,
+				E8E1258E1DC4D19F003B9ACF /* MagicMoveViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8E1257E1DC4CF99003B9ACF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8E1257F1DC4CF99003B9ACF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8E125821DC4CF99003B9ACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8E125831DC4CF99003B9ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8E125851DC4CF99003B9ACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = MagicMoveDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.MagicMoveDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8E125861DC4CF99003B9ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = MagicMoveDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.MagicMoveDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8E125681DC4CF99003B9ACF /* Build configuration list for PBXProject "MagicMoveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E125821DC4CF99003B9ACF /* Debug */,
+				E8E125831DC4CF99003B9ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E125841DC4CF99003B9ACF /* Build configuration list for PBXNativeTarget "MagicMoveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E125851DC4CF99003B9ACF /* Debug */,
+				E8E125861DC4CF99003B9ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8E125651DC4CF99003B9ACF /* Project object */;
+}
