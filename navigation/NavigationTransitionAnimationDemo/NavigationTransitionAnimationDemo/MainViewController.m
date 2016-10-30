@@ -22,6 +22,7 @@
 
 @implementation MainViewController
 
+#pragma mark -- Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -41,7 +42,7 @@
     
     self.title = @"Main" ;
 }
-
+#pragma mark -- Lazy Load
 - (PushTransition *)pushTransition{
     if (!_pushTransition) {
         _pushTransition = [[PushTransition alloc]init] ;
@@ -63,19 +64,19 @@
     return _interactionTransitionAnimation ;
 }
 
+#pragma mark -- Action
 - (void)push{
     PushViewController *vc = [[PushViewController alloc]init] ;
     [self.interactionTransitionAnimation writeToViewController:vc] ;
     [self.navigationController pushViewController:vc animated:YES] ;
 }
 
-#pragma mark - **************** Navgation delegate
+#pragma mark -- Navgation Delegate
 /** 返回转场动画实例*/
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
                                   animationControllerForOperation:(UINavigationControllerOperation)operation
                                                fromViewController:(UIViewController *)fromVC
-                                                 toViewController:(UIViewController *)toVC
-{
+                                                 toViewController:(UIViewController *)toVC{
     if (operation == UINavigationControllerOperationPush) {
         return self.pushTransition;
     }else if (operation == UINavigationControllerOperationPop){
