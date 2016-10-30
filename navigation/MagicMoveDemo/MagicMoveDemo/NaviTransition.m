@@ -50,6 +50,7 @@
     }
 }
 
+#pragma mark -- Animation
 - (void)pushAnimation:(id<UIViewControllerContextTransitioning>)transitionContext{
     
     MagicMoveViewController *fromVc = (MagicMoveViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey] ;
@@ -84,6 +85,7 @@
     }];
     
 }
+
 
 - (void)popAnimation:(id<UIViewControllerContextTransitioning>)transitionContext{
     MagicMovePushViewController *fromVc = (MagicMovePushViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey] ;
@@ -122,6 +124,7 @@
     }];
 }
 
+#pragma mark -- 截取View
 - (UIImage *)imageFromView:(UIView *)snapView {
     UIGraphicsBeginImageContext(snapView.frame.size);
     CGContextRef context = UIGraphicsGetCurrentContext();

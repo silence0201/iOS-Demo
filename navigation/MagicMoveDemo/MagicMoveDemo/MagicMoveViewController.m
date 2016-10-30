@@ -18,6 +18,7 @@
 
 static NSString * const reuseIdentifier = @"Cell";
 
+#pragma mark -- Life Cycle
 - (instancetype)init{
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
     layout.itemSize = CGSizeMake(100,100);
@@ -37,6 +38,7 @@ static NSString * const reuseIdentifier = @"Cell";
     self.navigationItem.backBarButtonItem = back ;
 }
 
+#pragma mark -- Action
 - (void)backToRoot{
     self.navigationController.delegate = nil ;
     [self.navigationController popViewControllerAnimated:YES] ;

@@ -18,6 +18,8 @@
 
 @implementation MagicMovePushViewController
 
+
+#pragma mark -- Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"神奇移动效果" ;
@@ -38,6 +40,7 @@
     [_interactiveTransition addPanGestureForViewController:self];
 }
 
+#pragma mark -- UINavigationControllerDelegate
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
     // 分pop和push两种情况分别返回动画过渡代理相应不同的动画操作
     return [NaviTransition transitionWithType:operation == UINavigationControllerOperationPush ? NaviTransitionTypePush : NaviTransitionTypePop];
