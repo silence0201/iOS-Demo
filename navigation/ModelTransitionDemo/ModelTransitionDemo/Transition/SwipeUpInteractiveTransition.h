@@ -10,7 +10,10 @@
 
 @interface SwipeUpInteractiveTransition : UIPercentDrivenInteractiveTransition
 
+// 是否在过程中
 @property (nonatomic,assign) BOOL interacting ;
+
+// 设置对应的ViewController
 - (void)writeToViewController:(UIViewController *)Vc ;
 
 @end

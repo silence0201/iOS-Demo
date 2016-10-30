@@ -15,6 +15,7 @@
     return 0.8f ;
 }
 
+// 切换动画
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
     // 获取ViewController
     UIViewController *toVc = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey] ;

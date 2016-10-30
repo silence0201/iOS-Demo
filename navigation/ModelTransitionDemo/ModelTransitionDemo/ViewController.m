@@ -39,13 +39,17 @@
     button.center = self.view.center ;
     [self.view addSubview:button] ;
 }
+
+#pragma mark -- Action
 - (void)persentAction:(id)sender {
     OtherViewController *vc = [OtherViewController new] ;
     vc.transitioningDelegate = self ;
+    // 添加
     [self.interactiveTransition writeToViewController:vc] ;
     [self presentViewController:vc animated:YES completion:nil] ;
 }
 
+#pragma mark -- Lazy Load
 - (BouncePresentAnimation *)presentAnimation{
     if (!_presentAnimation) {
         _presentAnimation = [[BouncePresentAnimation alloc]init] ;
