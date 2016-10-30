@@ -28,7 +28,7 @@
 }
 
 - (CGFloat)completionSpeed{
-    return self.percentComplete ;
+    return 1 - self.percentComplete ;
 }
 
 - (void)handleGesture:(UIPanGestureRecognizer *)gestureRecognizer{
