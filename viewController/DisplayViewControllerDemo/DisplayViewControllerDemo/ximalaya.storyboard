@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zm6-nd-ihp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="UKP-nT-YPv">
+            <objects>
+                <viewController id="ATW-MP-4cS" customClass="XMLYViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UYn-2j-bX8"/>
+                        <viewControllerLayoutGuide type="bottom" id="QtJ-3h-x5o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z92-8h-pyW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VyJ-Jn-teT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cLz-Rx-dds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1873" y="2174"/>
+        </scene>
+        <!--喜马拉雅-->
+        <scene sceneID="6Vj-WB-d1u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zm6-nd-ihp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="喜马拉雅" image="icon_tabbar_subscription_active~iphone" id="qxa-If-JsO"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="96J-Gn-cSL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ATW-MP-4cS" kind="relationship" relationship="rootViewController" id="0AF-6q-Svy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ciB-DA-HQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2737" y="2174"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_tabbar_subscription_active~iphone" width="25" height="25"/>
+    </resources>
+</document>
