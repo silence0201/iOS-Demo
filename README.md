@@ -50,6 +50,7 @@
 * [SubViewControllerDemo](viewController/SubViewControllerDemo):利用ScrollerView管理多控制器
 * [PageViewControllerDemo](viewController/PageViewControllerDemo):PageViewController的简单使用
 * [SpreadDemo](viewController/SpreadDemo):侧拉弹出控制器
+* [DisplayViewControllerDemo](viewController/DisplayViewControllerDemo):头部切换控制器
 
 #####`search`:搜索框应用
 * [SearchDisplayControllerDemo](search/SearchDisplayControllerDemo):搜索框的简单实现
