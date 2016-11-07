@@ -28,6 +28,7 @@
 * [ModelTransitionDemo](navigation/ModelTransitionDemo):自定义Model转场动画
 * [NavigationTransitionAnimationDemo](navigation/NavigationTransitionAnimationDemo):自定义Navigation转场动画
 * [MagicMoveDemo](navigation/MagicMoveDemo):神奇的移动效果
+* [PresentOneControllerDemo](navigation/PresentOneControllerDemo):弹性persent
 
 #####`popView`:弹出框
 * [SelectList](popView/SelectList):仿微信弹出框
