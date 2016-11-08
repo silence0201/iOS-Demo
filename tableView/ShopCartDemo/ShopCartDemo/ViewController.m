@@ -56,7 +56,7 @@
     UIImageView *bgImage = [[UIImageView alloc]initWithFrame:self.tableView.bounds] ;
     bgImage.image = [UIImage imageNamed:@"bg"] ;
     bgImage.contentMode = UIViewContentModeScaleAspectFill ;
-    UIVisualEffectView *visualEfView = [[UIVisualEffectView alloc]initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]] ;
+    UIVisualEffectView *visualEfView = [[UIVisualEffectView alloc]initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight]] ;
     visualEfView.frame = bgImage.bounds ;
     visualEfView.alpha = 0.6 ;
     [bgImage addSubview:visualEfView] ;
