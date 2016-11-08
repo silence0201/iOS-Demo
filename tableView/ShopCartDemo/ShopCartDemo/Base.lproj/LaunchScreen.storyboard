@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ktw-xW-nww">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUb-6w-KPp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mpK-7I-CJQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购物车简单Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3w-QP-3ua">
+                                            <rect key="frame" x="102" y="320.5" width="170" height="26.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="B3w-QP-3ua" firstAttribute="centerY" secondItem="mpK-7I-CJQ" secondAttribute="centerY" id="YU2-Yn-jmT"/>
+                                        <constraint firstItem="B3w-QP-3ua" firstAttribute="centerX" secondItem="mpK-7I-CJQ" secondAttribute="centerX" id="jwx-yf-tBm"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AUb-6w-KPp" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="1Xw-sm-c9F"/>
+                            <constraint firstItem="AUb-6w-KPp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="9yr-9g-i5k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ktw-xW-nww" secondAttribute="trailing" constant="-16" id="JIM-Rc-pyK"/>
+                            <constraint firstAttribute="trailing" secondItem="AUb-6w-KPp" secondAttribute="trailing" id="KKf-F2-CS3"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Ktw-xW-nww" secondAttribute="bottom" id="SqG-DI-4em"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="AUb-6w-KPp" secondAttribute="bottom" id="bDT-zx-I30"/>
+                            <constraint firstItem="Ktw-xW-nww" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-16" id="efC-lc-170"/>
+                            <constraint firstItem="Ktw-xW-nww" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="qVr-ev-X3r"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165.59999999999999" y="171.36431784107947"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="480" height="720"/>
+    </resources>
+</document>
