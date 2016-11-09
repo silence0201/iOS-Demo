@@ -129,7 +129,7 @@
         model.selectState = button.tag;
     }
     
-    [self CalculationPrice];
+    [self calculationPrice];
     
     [self.tableView reloadData];
 }
@@ -139,7 +139,7 @@
 }
 
 //计算价格
--(void)CalculationPrice{
+-(void)calculationPrice{
     //遍历整个数据源，然后判断如果是选中的商品，就计算价格(单价 * 商品数量)
     for ( int i =0; i<self.dataArray.count;i++){
         ShopModel *model = self.dataArray[i];
@@ -182,7 +182,7 @@
     //刷新表格
     [self.tableView reloadData];
     //计算总价
-    [self CalculationPrice];
+    [self calculationPrice];
 }
 
 #pragma mark -- UITableViewDelegate/UITableViewDataSource
@@ -226,7 +226,7 @@
     
     //刷新当前行
     [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-    [self CalculationPrice];
+    [self calculationPrice];
 }
 
 
