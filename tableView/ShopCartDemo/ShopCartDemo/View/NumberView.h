@@ -18,7 +18,7 @@
 
 @interface NumberView : UIView
 
-@property (nonatomic,copy) NSString *numberStr ;
-@property (nonatomic,weak) id<NumberViewDelegate> delegate ;
+@property (nonatomic,copy) NSString *numberStr ;  // 数量
+@property (nonatomic,weak) id<NumberViewDelegate> delegate ;  // 增加删除代理
 
 @end

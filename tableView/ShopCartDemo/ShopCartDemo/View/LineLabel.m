@@ -16,12 +16,15 @@
 
 @implementation LineLabel
 
+// init
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         labelFrame = frame ;
     }
     return self ;
 }
+
+// 画一条删除线
 - (void)drawRect:(CGRect)rect{
     [super drawRect:rect] ;
     if (_color) {

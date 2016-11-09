@@ -31,6 +31,7 @@
 
 @implementation ViewController
 
+#pragma mark -- Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"购物车" ;
@@ -46,7 +47,7 @@
     
 }
 
-
+#pragma mark -- init
 - (void)setupSubViews{
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0,0 , kScreenWidth, kScreenHeight-50) style:UITableViewStylePlain];
     self.tableView.delegate = self;
@@ -114,6 +115,7 @@
     
 }
 
+#pragma mark -- Action
 - (void)selectAllAction:(UIButton *)button{
     button.tag = !button.tag;
     if (button.tag){
@@ -154,15 +156,8 @@
     self.allPrice = 0.0;
 }
 
-/**
- * 实现加减按钮点击代理事件
- *
- * @param cell 当前单元格
- * @param flag 按钮标识，11 为减按钮，12为加按钮
- */
-
-
-
+#pragma mark -- ShopCartCellDelegate
+/** 实现加减按钮点击代理事件 */
 -(void)btnClick:(UITableViewCell *)cell addFlag:(NSInteger)flag{
     NSIndexPath *index = [self.tableView indexPathForCell:cell];
     switch (flag) {
@@ -190,6 +185,7 @@
     [self CalculationPrice];
 }
 
+#pragma mark -- UITableViewDelegate/UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
@@ -215,8 +211,6 @@
     return 110;
 }
 
-
-
 //单元格选中事件
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -235,6 +229,8 @@
     [self CalculationPrice];
 }
 
+
+#pragma mark -- Lazy Load
 - (NSMutableArray *)dataArray{
     if (!_dataArray) {
         _dataArray = [NSMutableArray array] ;

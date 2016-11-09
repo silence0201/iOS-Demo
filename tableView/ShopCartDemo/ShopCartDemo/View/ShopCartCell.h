@@ -21,7 +21,7 @@
 
 @interface ShopCartCell : UITableViewCell
 
-@property (nonatomic,strong) ShopModel *shopModel ;
-@property (nonatomic,weak) id<ShopCartCellDelegate> delegate ;
+@property (nonatomic,strong) ShopModel *shopModel ;    // 购物车模型
+@property (nonatomic,weak) id<ShopCartCellDelegate> delegate ;  // 处理代理
 
 @end

@@ -10,6 +10,7 @@
 
 @interface LineLabel : UILabel
 
+/** 删除线的颜色 */
 @property (nonatomic,strong) UIColor *color ;
 
 @end

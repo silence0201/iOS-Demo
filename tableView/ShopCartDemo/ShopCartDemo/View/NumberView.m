@@ -19,6 +19,7 @@
 
 @implementation NumberView
 
+#pragma mark -- init
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         [self setupSubViews] ;
@@ -51,13 +52,11 @@
     self.addBtn.tag = 102 ;
     [self.addBtn setImage:[UIImage imageNamed:@"add_icon"] forState:UIControlStateNormal] ;
     [self.addBtn addTarget:self action:@selector(addAction:) forControlEvents:UIControlEventTouchUpInside] ;
+    [self addSubview:self.addBtn] ;
 }
 
-- (void)setNumberStr:(NSString *)numberStr{
-    _numberStr = numberStr ;
-    self.numberLabel.text = numberStr ;
-}
 
+#pragma mark -- Action
 - (void)reduceAction:(UIButton *)reduceBtn{
     if ([self.delegate respondsToSelector:@selector(numberView:reductAction:)]) {
         [self.delegate numberView:self reductAction:reduceBtn] ;
@@ -69,5 +68,12 @@
         [self.delegate numberView:self addAction:addBtn] ;
     }
 }
+
+#pragma mark -- set
+- (void)setNumberStr:(NSString *)numberStr{
+    _numberStr = numberStr ;
+    self.numberLabel.text = numberStr ;
+}
+
 
 @end

@@ -31,6 +31,7 @@
 
 @implementation ShopCartCell
 
+#pragma mark -- init
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self setupSubViews] ;
@@ -87,6 +88,7 @@
     [self addSubview:self.numberView];
 }
 
+#pragma mark -- set
 - (void)setShopModel:(ShopModel *)shopModel{
     _shopModel = shopModel ;
     
