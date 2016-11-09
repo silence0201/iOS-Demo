@@ -44,7 +44,7 @@
 * [LinkSelectDemo](tableView/LinkSelectDemo):联动TableView
 * [TableSwipeCustom](tableView/TableSwipeCustom):自定义滑动功能按钮
 * [AutoLayoutCellDemo](tableView/AutoLayoutCellDemo):利用UITableView+FDTemplateLayoutCell布局不等高Cell
-* * [ShopCartDemo](tableView/ShopCartDemo):简单购物车Demo 
+* [ShopCartDemo](tableView/ShopCartDemo):简单购物车Demo 
 
 #####`viewController`:viewController的使用
 * [childViewControllerDemo](viewController/childViewControllerDemo):利用子控制器管理控制器
