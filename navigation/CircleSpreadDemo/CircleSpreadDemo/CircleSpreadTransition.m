@@ -60,7 +60,6 @@
     
     //创建路径动画
     CABasicAnimation *maskLayerAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
-    maskLayerAnimation.delegate = self;
     maskLayerAnimation.fromValue = (__bridge id)(startCycle.CGPath);
     maskLayerAnimation.toValue = (__bridge id)((endCycle.CGPath));
     maskLayerAnimation.duration = [self transitionDuration:transitionContext];
@@ -89,7 +88,6 @@
     toVC.view.layer.mask = maskLayer;
     //创建路径动画
     CABasicAnimation *maskLayerAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
-    maskLayerAnimation.delegate = self;
     //动画是加到layer上的，所以必须为CGPath，再将CGPath桥接为OC对象
     maskLayerAnimation.fromValue = (__bridge id)(startCycle.CGPath);
     maskLayerAnimation.toValue = (__bridge id)((endCycle.CGPath));
