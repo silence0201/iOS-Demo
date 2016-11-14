@@ -12,6 +12,7 @@
 * [LongDeleteCollectionView](CollectionView/LongDeleteCollectionView):利用CollectionView实现长按删除
 * [CollectionViewLinkDemo](CollectionView/CollectionViewLinkDemo):CollectionView实现联动菜单
 * [WaterFlowLayoutDemo](CollectionView/WaterFlowLayoutDemo):简单实现瀑布流布局
+* [CalendarDemo](CollectionView/CalendarDemo):简单日历Demo
 
 #####`guide`:引导页面  
 * [guidePageDemo](guide/guidePageDemo):简单应用引导页面
