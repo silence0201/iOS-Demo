@@ -27,19 +27,20 @@
 
 @implementation CitySelectView
 
+#pragma mark --- init
 - (instancetype)initWithFrame:(CGRect)frame withSelectCityTitle:(NSString *)title{
     if (self = [super initWithFrame:frame]) {
         _provinceArray = [NSMutableArray array] ;
         _cityArray = [NSMutableArray array] ;
         _disArray = [NSMutableArray array] ;
-        self.backgroundColor = [UIColor blackColor] ;
+        self.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0] ;
         [UIView animateWithDuration:0.3 animations:^{
             self.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.3] ;
-            
         }] ;
         
         NSString *path = [[NSBundle mainBundle]pathForResource:@"Address" ofType:@"plist"] ;
         _dataArray = [NSArray arrayWithContentsOfFile:path] ;
+        NSLog(@"%@",_dataArray) ;
         for(NSDictionary *dic in _dataArray){
             [_provinceArray addObject:[[dic allKeys]firstObject]] ;
         }
@@ -52,7 +53,7 @@
         [self addSubview:_contentView] ;
         
         UIView *tool = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, 40)] ;
-        tool.backgroundColor = [UIColor colorWithRed:237/255.0 green:236/255.0 blue:234/255.0 alpha:1.0] ;
+        tool.backgroundColor = [UIColor colorWithRed:61/255.0 green:67/255.0 blue:79/255.0 alpha:1.0] ;
         
         // 按钮和中间显示的标题内容
         UIButton *cancel = [UIButton buttonWithType:UIButtonTypeRoundedRect] ;
@@ -73,7 +74,7 @@
         [confirmBtn setTitle:@"选择" forState:UIControlStateNormal] ;
         [confirmBtn addTarget:self action:@selector(confirmBtnClick) forControlEvents:UIControlEventTouchUpInside] ;
         [tool addSubview:confirmBtn] ;
-         [_contentView addSubview:tool] ;
+        [_contentView addSubview:tool] ;
         
         _pickView = [[UIPickerView alloc]initWithFrame:CGRectMake(0, 40, self.frame.size.width, _contentView.frame.size.height-40)] ;
         _pickView.delegate = self ;
@@ -97,6 +98,8 @@
     return self ;
 }
 
+
+#pragma mark --- delegate 
 // 自定义每个pickView的View
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
     UILabel *pickLabel = [[UILabel alloc]init] ;
@@ -177,6 +180,7 @@
     return nil ;
 }
 
+#pragma mark  --- Public Method
 - (void)showCityView:(ClickBlock)clickBlock{
     self.clickBlock = clickBlock;
     [[[UIApplication sharedApplication] keyWindow] addSubview:self];
@@ -192,6 +196,7 @@
     }];
 }
 
+#pragma mark --- Action
 - (void)cancelBtnClick{
     __weak typeof (UIView *)blockView = _contentView;
     __weak typeof(self)blockself = self;

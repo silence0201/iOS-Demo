@@ -20,8 +20,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:[UIScreen mainScreen].bounds] ;
+    imageView.image = [UIImage imageNamed:@"2"] ;
+    imageView.contentMode = UIViewContentModeScaleAspectFill ;
+    UIVisualEffectView *visualView = [[UIVisualEffectView alloc]initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]] ;
+    visualView.frame = imageView.frame ;
+    visualView.alpha = 0.6 ;
+    [imageView addSubview:visualView] ;
+    [self.view addSubview:imageView] ;
+    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.backgroundColor = [UIColor blueColor];
+    btn.backgroundColor = [UIColor grayColor];
     btn.layer.cornerRadius = 5;
     btn.layer.masksToBounds = YES;
     btn.frame = CGRectMake(50, 100, self.view.frame.size.width-100, 40);
@@ -38,7 +47,6 @@
 
 
 - (void)btnClick:(UIButton *)btn{
-    NSLog(@"点一下");
     CitySelectView *selectView = [[CitySelectView alloc]initWithFrame:self.view.bounds withSelectCityTitle:@"请选择地区"] ;
     
     [selectView showCityView:^(NSString *proviceStr, NSString *cityStr, NSString *disStr) {
