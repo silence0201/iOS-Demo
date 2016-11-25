@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E88638BD1DE722E1002A750D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88638BC1DE722E1002A750D /* main.m */; };
+		E88638C01DE722E1002A750D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88638BF1DE722E1002A750D /* AppDelegate.m */; };
+		E88638C61DE722E1002A750D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88638C41DE722E1002A750D /* Main.storyboard */; };
+		E88638C81DE722E1002A750D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E88638C71DE722E1002A750D /* Assets.xcassets */; };
+		E88638CB1DE722E1002A750D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88638C91DE722E1002A750D /* LaunchScreen.storyboard */; };
+		E88638DE1DE72372002A750D /* NSMutableString+TagReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = E88638D51DE72372002A750D /* NSMutableString+TagReplace.m */; };
+		E88638DF1DE72372002A750D /* NSString+WPAttributedMarkup.m in Sources */ = {isa = PBXBuildFile; fileRef = E88638D71DE72372002A750D /* NSString+WPAttributedMarkup.m */; };
+		E88638E01DE72372002A750D /* WPAttributedStyleAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E88638D91DE72372002A750D /* WPAttributedStyleAction.m */; };
+		E88638E11DE72372002A750D /* WPHotspotLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E88638DB1DE72372002A750D /* WPHotspotLabel.m */; };
+		E88638E21DE72372002A750D /* WPTappableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E88638DD1DE72372002A750D /* WPTappableLabel.m */; };
+		E88638E61DE723A7002A750D /* UITableViewController+KYSelfSizingPushFix.m in Sources */ = {isa = PBXBuildFile; fileRef = E88638E51DE723A7002A750D /* UITableViewController+KYSelfSizingPushFix.m */; };
+		E88638E91DE72432002A750D /* InstagramFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88638E81DE72432002A750D /* InstagramFeedTableViewController.m */; };
+		E88638EC1DE72460002A750D /* InstagramFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E88638EB1DE72460002A750D /* InstagramFeedTableViewCell.m */; };
+		E88638EF1DE7247D002A750D /* InstagramItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E88638EE1DE7247D002A750D /* InstagramItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E88638B81DE722E1002A750D /* SelfSizeCellDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfSizeCellDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E88638BC1DE722E1002A750D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E88638BE1DE722E1002A750D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E88638BF1DE722E1002A750D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E88638C51DE722E1002A750D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E88638C71DE722E1002A750D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E88638CA1DE722E1002A750D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E88638CC1DE722E1002A750D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E88638D41DE72372002A750D /* NSMutableString+TagReplace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+TagReplace.h"; sourceTree = "<group>"; };
+		E88638D51DE72372002A750D /* NSMutableString+TagReplace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+TagReplace.m"; sourceTree = "<group>"; };
+		E88638D61DE72372002A750D /* NSString+WPAttributedMarkup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WPAttributedMarkup.h"; sourceTree = "<group>"; };
+		E88638D71DE72372002A750D /* NSString+WPAttributedMarkup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WPAttributedMarkup.m"; sourceTree = "<group>"; };
+		E88638D81DE72372002A750D /* WPAttributedStyleAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPAttributedStyleAction.h; sourceTree = "<group>"; };
+		E88638D91DE72372002A750D /* WPAttributedStyleAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPAttributedStyleAction.m; sourceTree = "<group>"; };
+		E88638DA1DE72372002A750D /* WPHotspotLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPHotspotLabel.h; sourceTree = "<group>"; };
+		E88638DB1DE72372002A750D /* WPHotspotLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPHotspotLabel.m; sourceTree = "<group>"; };
+		E88638DC1DE72372002A750D /* WPTappableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPTappableLabel.h; sourceTree = "<group>"; };
+		E88638DD1DE72372002A750D /* WPTappableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPTappableLabel.m; sourceTree = "<group>"; };
+		E88638E41DE723A7002A750D /* UITableViewController+KYSelfSizingPushFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+KYSelfSizingPushFix.h"; sourceTree = "<group>"; };
+		E88638E51DE723A7002A750D /* UITableViewController+KYSelfSizingPushFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+KYSelfSizingPushFix.m"; sourceTree = "<group>"; };
+		E88638E71DE72432002A750D /* InstagramFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramFeedTableViewController.h; sourceTree = "<group>"; };
+		E88638E81DE72432002A750D /* InstagramFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramFeedTableViewController.m; sourceTree = "<group>"; };
+		E88638EA1DE72460002A750D /* InstagramFeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramFeedTableViewCell.h; sourceTree = "<group>"; };
+		E88638EB1DE72460002A750D /* InstagramFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramFeedTableViewCell.m; sourceTree = "<group>"; };
+		E88638ED1DE7247D002A750D /* InstagramItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramItem.h; sourceTree = "<group>"; };
+		E88638EE1DE7247D002A750D /* InstagramItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E88638B51DE722E1002A750D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E88638AF1DE722E0002A750D = {
+			isa = PBXGroup;
+			children = (
+				E88638BA1DE722E1002A750D /* SelfSizeCellDemo */,
+				E88638B91DE722E1002A750D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E88638B91DE722E1002A750D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E88638B81DE722E1002A750D /* SelfSizeCellDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E88638BA1DE722E1002A750D /* SelfSizeCellDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E88638D21DE72372002A750D /* Vender */,
+				E88638BE1DE722E1002A750D /* AppDelegate.h */,
+				E88638BF1DE722E1002A750D /* AppDelegate.m */,
+				E88638C41DE722E1002A750D /* Main.storyboard */,
+				E88638C71DE722E1002A750D /* Assets.xcassets */,
+				E88638C91DE722E1002A750D /* LaunchScreen.storyboard */,
+				E88638CC1DE722E1002A750D /* Info.plist */,
+				E88638BB1DE722E1002A750D /* Supporting Files */,
+				E88638E71DE72432002A750D /* InstagramFeedTableViewController.h */,
+				E88638E81DE72432002A750D /* InstagramFeedTableViewController.m */,
+				E88638EA1DE72460002A750D /* InstagramFeedTableViewCell.h */,
+				E88638EB1DE72460002A750D /* InstagramFeedTableViewCell.m */,
+				E88638ED1DE7247D002A750D /* InstagramItem.h */,
+				E88638EE1DE7247D002A750D /* InstagramItem.m */,
+			);
+			path = SelfSizeCellDemo;
+			sourceTree = "<group>";
+		};
+		E88638BB1DE722E1002A750D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E88638BC1DE722E1002A750D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E88638D21DE72372002A750D /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				E88638E31DE723A7002A750D /* KYSelfSizingPushFix */,
+				E88638D31DE72372002A750D /* WPAttributedMarkup */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		E88638D31DE72372002A750D /* WPAttributedMarkup */ = {
+			isa = PBXGroup;
+			children = (
+				E88638D41DE72372002A750D /* NSMutableString+TagReplace.h */,
+				E88638D51DE72372002A750D /* NSMutableString+TagReplace.m */,
+				E88638D61DE72372002A750D /* NSString+WPAttributedMarkup.h */,
+				E88638D71DE72372002A750D /* NSString+WPAttributedMarkup.m */,
+				E88638D81DE72372002A750D /* WPAttributedStyleAction.h */,
+				E88638D91DE72372002A750D /* WPAttributedStyleAction.m */,
+				E88638DA1DE72372002A750D /* WPHotspotLabel.h */,
+				E88638DB1DE72372002A750D /* WPHotspotLabel.m */,
+				E88638DC1DE72372002A750D /* WPTappableLabel.h */,
+				E88638DD1DE72372002A750D /* WPTappableLabel.m */,
+			);
+			path = WPAttributedMarkup;
+			sourceTree = "<group>";
+		};
+		E88638E31DE723A7002A750D /* KYSelfSizingPushFix */ = {
+			isa = PBXGroup;
+			children = (
+				E88638E41DE723A7002A750D /* UITableViewController+KYSelfSizingPushFix.h */,
+				E88638E51DE723A7002A750D /* UITableViewController+KYSelfSizingPushFix.m */,
+			);
+			path = KYSelfSizingPushFix;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E88638B71DE722E1002A750D /* SelfSizeCellDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E88638CF1DE722E1002A750D /* Build configuration list for PBXNativeTarget "SelfSizeCellDemo" */;
+			buildPhases = (
+				E88638B41DE722E1002A750D /* Sources */,
+				E88638B51DE722E1002A750D /* Frameworks */,
+				E88638B61DE722E1002A750D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SelfSizeCellDemo;
+			productName = SelfSizeCellDemo;
+			productReference = E88638B81DE722E1002A750D /* SelfSizeCellDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E88638B01DE722E0002A750D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = silence;
+				TargetAttributes = {
+					E88638B71DE722E1002A750D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = UKBBWVJH59;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E88638B31DE722E0002A750D /* Build configuration list for PBXProject "SelfSizeCellDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E88638AF1DE722E0002A750D;
+			productRefGroup = E88638B91DE722E1002A750D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E88638B71DE722E1002A750D /* SelfSizeCellDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E88638B61DE722E1002A750D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E88638CB1DE722E1002A750D /* LaunchScreen.storyboard in Resources */,
+				E88638C81DE722E1002A750D /* Assets.xcassets in Resources */,
+				E88638C61DE722E1002A750D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E88638B41DE722E1002A750D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E88638DE1DE72372002A750D /* NSMutableString+TagReplace.m in Sources */,
+				E88638EF1DE7247D002A750D /* InstagramItem.m in Sources */,
+				E88638E61DE723A7002A750D /* UITableViewController+KYSelfSizingPushFix.m in Sources */,
+				E88638E01DE72372002A750D /* WPAttributedStyleAction.m in Sources */,
+				E88638E11DE72372002A750D /* WPHotspotLabel.m in Sources */,
+				E88638E91DE72432002A750D /* InstagramFeedTableViewController.m in Sources */,
+				E88638E21DE72372002A750D /* WPTappableLabel.m in Sources */,
+				E88638C01DE722E1002A750D /* AppDelegate.m in Sources */,
+				E88638BD1DE722E1002A750D /* main.m in Sources */,
+				E88638EC1DE72460002A750D /* InstagramFeedTableViewCell.m in Sources */,
+				E88638DF1DE72372002A750D /* NSString+WPAttributedMarkup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E88638C41DE722E1002A750D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E88638C51DE722E1002A750D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E88638C91DE722E1002A750D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E88638CA1DE722E1002A750D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E88638CD1DE722E1002A750D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E88638CE1DE722E1002A750D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E88638D01DE722E1002A750D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = SelfSizeCellDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.SelfSizeCellDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E88638D11DE722E1002A750D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = SelfSizeCellDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.SelfSizeCellDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E88638B31DE722E0002A750D /* Build configuration list for PBXProject "SelfSizeCellDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E88638CD1DE722E1002A750D /* Debug */,
+				E88638CE1DE722E1002A750D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E88638CF1DE722E1002A750D /* Build configuration list for PBXNativeTarget "SelfSizeCellDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E88638D01DE722E1002A750D /* Debug */,
+				E88638D11DE722E1002A750D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E88638B01DE722E0002A750D /* Project object */;
+}
