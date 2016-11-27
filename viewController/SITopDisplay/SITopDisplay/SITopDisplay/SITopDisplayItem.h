@@ -49,7 +49,6 @@
 
 - (instancetype)initWithFrame:(CGRect)frame withTitle:(NSString *)title defaultBackgroundImage:(UIImage *)backgroundImage ;
 
-
 /** 切换到选中状态 */
 - (void)switchToSelected ;
 

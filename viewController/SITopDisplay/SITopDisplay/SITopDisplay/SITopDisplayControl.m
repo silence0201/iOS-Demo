@@ -23,6 +23,7 @@
         self.backScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)] ;
         self.backScrollView.showsHorizontalScrollIndicator = NO ;
         self.backScrollView.delegate = self ;
+        [self addSubview:self.backScrollView] ;
         
         // 设置分割线
         self.dividLineColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.2] ;
@@ -61,8 +62,8 @@
         [view removeFromSuperview] ;
     }
     
-    NSAssert([self.dataSource respondsToSelector:@selector(numberOfItemsInSection:)], @"DataSource must can response numberOfItemsInSection method") ;
-    if ([self.dataSource respondsToSelector:@selector(numberOfItemsInSection:)]) {
+    NSAssert([self.dataSource respondsToSelector:@selector(numberOfItemInTopDisplayControl:)], @"DataSource must can response numberOfItemsInSection method") ;
+    if ([self.dataSource respondsToSelector:@selector(numberOfItemInTopDisplayControl:)]) {
         self.itemsCount = [self.dataSource numberOfItemInTopDisplayControl:self] ;
     }
     
@@ -122,7 +123,7 @@
     if(self.moveImageView){
         [self.backScrollView scrollRectToVisible:self.backScrollView.frame animated:NO] ;
         [self.backScrollView addSubview:self.moveImageView] ;
-        [self selectedItemForIndex:willSelctedIndex animal:NO] ;
+        [self selectedItemForIndex:willSelctedIndex animated:NO] ;
     }else{
         UIView *firstView ;
         if (self.backScrollView.subviews.count > 0) {
@@ -135,7 +136,7 @@
         }
         self.moveImageView.backgroundColor = self.moveViewColor ;
         [self.backScrollView addSubview:self.moveImageView]; ;
-        [self selectedItemForIndex:willSelctedIndex animal:NO] ;
+        [self selectedItemForIndex:willSelctedIndex animated:NO] ;
     }
 }
 
@@ -156,7 +157,7 @@
     return nil ;
 }
 
-- (void)selectedItemForIndex:(NSInteger)index animal:(BOOL)animaled{
+- (void)selectedItemForIndex:(NSInteger)index animated:(BOOL)animaled{
     if (index != selectedIndex) {
         if (index < self.itemsCount) {
             UIView *subView = self.backScrollView.subviews[index] ;
@@ -224,9 +225,16 @@
     
     self.lastSelectedIndex = selectedIndex ;
     
+    [self selectedItemForIndex:item.index animated:YES];
+    
     if ([self.dataSource respondsToSelector:@selector(topDisplayControl:didSelectedAtIndex:)]) {
         [self.dataSource topDisplayControl:self didSelectedAtIndex:item.index] ;
     }
+    
+    if ([self.delegate respondsToSelector:@selector(selectedItemForIndex:animated:)]) {
+        [self.delegate selectedItemForIndex:item.index animated:YES] ;
+    }
+    
     selectedIndex = item.index ;
 }
 

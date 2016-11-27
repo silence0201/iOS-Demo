@@ -12,15 +12,20 @@
 @class SITopDisplayControl ;
 @protocol SITopDisplayControlDataSource <NSObject>
 
+/** 菜单里面有多少项 */
 - (NSInteger)numberOfItemInTopDisplayControl:(SITopDisplayControl *)topDisplayControl ;
 
-
+/** 对应索引项得标题是什么 */
 - (NSString *)topDisplayControl:(SITopDisplayControl *)topDisplayControl titleForItemAtIndex:(NSInteger)index ;
 
+/** 每一项的宽度是多少 */
 - (CGFloat)widthForItemInTopDisplayControl:(SITopDisplayControl *)topDisplayControl index:(NSInteger)index ;
 
+
+/** 菜单选中某项  */
 - (void)topDisplayControl:(SITopDisplayControl *)topDisplayControl didSelectedAtIndex:(NSInteger)index ;
 
+/** 菜单将选中某项 */
 - (void)topDisplayControl:(SITopDisplayControl *)topDisplayControl willSelectedAtIndex:(NSInteger)index ;
 
 @end
@@ -61,9 +66,10 @@
 
 @property (nonatomic,weak) id<SITopDisplayControlDataSource> dataSource;
 
+@property (nonatomic,weak) id delegate ;
 
 - (SITopDisplayItem *)itemForIndex:(NSInteger)index ;
 
-- (void)selectedItemForIndex:(NSInteger)index animal:(BOOL)animaled ; 
+- (void)selectedItemForIndex:(NSInteger)index animated:(BOOL)animaled ; 
 
 @end

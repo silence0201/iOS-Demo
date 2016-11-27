@@ -40,6 +40,8 @@
 
 @property (nonatomic,weak) id<SITopDisplayContentDataSource> dataSource ;
 
+@property (nonatomic,weak) id delegate ;
+
 
 - (void)selectedIndex:(NSInteger)selectedIndex animated:(BOOL)animated ;
 

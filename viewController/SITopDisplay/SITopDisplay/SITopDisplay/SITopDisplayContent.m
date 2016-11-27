@@ -94,6 +94,10 @@
         self.currentSubView = subView ;
         [self.dataSource selectedView:subView didSelectedAtIndex:index] ;
     }
+    
+    if ([self.delegate respondsToSelector:@selector(selectedItemForIndex:animated:)]) {
+        [self.delegate selectedItemForIndex:index animated:animal] ;
+    }
 }
 
 - (void)selectedItemForIndex:(NSInteger)index animated:(BOOL)animated{

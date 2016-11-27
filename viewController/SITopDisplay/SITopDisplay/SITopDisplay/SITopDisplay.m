@@ -50,6 +50,9 @@
     _topDisplayContent.backgroundColor = [UIColor clearColor] ;
     _topDisplayContent.dataSource = self ;
     [self addSubview:_topDisplayContent] ;
+    
+    _topDisplayContent.delegate = _topDisplayControl ;
+    _topDisplayControl.delegate = _topDisplayContent ;
 }
 
 - (void)setTitleFont:(UIFont *)titleFont{
