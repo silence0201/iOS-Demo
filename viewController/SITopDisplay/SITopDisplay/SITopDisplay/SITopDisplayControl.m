@@ -134,7 +134,8 @@
     
     // 设置content
     self.backScrollView.contentSize = CGSizeMake(scrollTotalWidth, self.frame.size.height) ;
-    
+    self.backScrollView.contentOffset = CGPointMake(0, 0) ;
+    self.backScrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0) ;
     // 设置默认选择第一个
     if(self.moveImageView){
         [self.backScrollView scrollRectToVisible:self.backScrollView.frame animated:NO] ;

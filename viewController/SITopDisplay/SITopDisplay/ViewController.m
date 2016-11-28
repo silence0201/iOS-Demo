@@ -30,7 +30,7 @@
 
 - (SITopDisplay *)topDisplay{
     if (!_topDisplay) {
-        _topDisplay = [[SITopDisplay alloc]initWithFrame:self.view.bounds] ;
+        _topDisplay = [[SITopDisplay alloc]initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)] ;
         _topDisplay.topDisplayControl.backgroundColor = [UIColor whiteColor] ;
         _topDisplay.delegate = self ;
         _topDisplay.dataSource = self ;
