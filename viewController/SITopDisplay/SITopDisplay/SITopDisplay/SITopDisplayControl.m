@@ -10,19 +10,35 @@
 
 #define DEFAULT_ITEM_WIDTH 60
 
+@interface SITopDisplayControl ()
+
+/** 滚动容器 */
+@property (nonatomic,strong) UIScrollView *backScrollView ;
+
+/** 记录最后选择 */
+@property (nonatomic,assign) NSInteger lastSelectedIndex ;
+
+/** 总的数量 */
+@property (nonatomic,assign) NSInteger itemsCount ;
+
+/** 底部的容器 */
+@property (nonatomic,strong) UIView *bottomView ;
+
+/** 底部移动的View */
+@property (nonatomic,strong) UIImageView *moveImageView ;
+
+@end
+
 @implementation SITopDisplayControl{
-    NSInteger willSelctedIndex ;
     NSInteger selectedIndex ;
 }
 
+#pragma mark -- init
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
-        willSelctedIndex = 0 ;
-        
         // 设置ScrollView
         self.backScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)] ;
         self.backScrollView.showsHorizontalScrollIndicator = NO ;
-        self.backScrollView.delegate = self ;
         [self addSubview:self.backScrollView] ;
         
         // 设置分割线
@@ -38,12 +54,12 @@
 - (void)setDividLineColor:(UIColor *)dividLineColor{
     _dividLineColor = dividLineColor ;
     if(_dividLineColor){
-        self.bottomView .backgroundColor = _dividLineColor ;
+        self.bottomView.backgroundColor = _dividLineColor ;
         [self setNeedsLayout] ;
     }
 }
 
-#pragma mark -- reload data
+#pragma mark -- load data
 - (void)reloadData{
     for(UIView *subView in self.backScrollView.subviews){
         if(subView == self.moveImageView){
@@ -109,7 +125,7 @@
         item.selectedColor = self.selectedColor ;
         item.backgroundColor = [UIColor clearColor] ;
         [self.backScrollView addSubview:item] ;
-        if(i == willSelctedIndex){
+        if(i == 0){
             [item switchToSelected] ;
         }else{
             [item switchToNormal] ;
@@ -123,7 +139,7 @@
     if(self.moveImageView){
         [self.backScrollView scrollRectToVisible:self.backScrollView.frame animated:NO] ;
         [self.backScrollView addSubview:self.moveImageView] ;
-        [self selectedItemForIndex:willSelctedIndex animated:NO] ;
+        [self selectedItemForIndex:0 animated:NO] ;
     }else{
         UIView *firstView ;
         if (self.backScrollView.subviews.count > 0) {
@@ -136,7 +152,7 @@
         }
         self.moveImageView.backgroundColor = self.moveViewColor ;
         [self.backScrollView addSubview:self.moveImageView]; ;
-        [self selectedItemForIndex:willSelctedIndex animated:NO] ;
+        [self selectedItemForIndex:0 animated:NO] ;
     }
 }
 
@@ -145,6 +161,7 @@
     [self initSubviews] ;
 }
 
+#pragma mark -- Public Method
 - (SITopDisplayItem *)itemForIndex:(NSInteger)index{
     for(UIView *view in self.backScrollView.subviews){
         if ([view isKindOfClass:[SITopDisplayItem class]]) {
@@ -202,18 +219,17 @@
             if (!animaled) {
                 [self hiddenGripAfterAnimation] ;
             }
-        }else{
-            willSelctedIndex = index ;
         }
     }
 }
 
+// 动画结束将当前选中的item切换到选中状态
 - (void)hiddenGripAfterAnimation{
-    // 动画结束将当前选中的item切换到选中状态
     SITopDisplayItem *selectedItem = [self itemForIndex:selectedIndex] ;
     [selectedItem switchToSelected] ;
 }
 
+#pragma mark --- SITopDisplayItemDelegate
 - (void)didSelectedOnItem:(SITopDisplayItem *)item{
     if([self.dataSource respondsToSelector:@selector(topDisplayControl:willSelectedAtIndex:)]){
         [self.dataSource topDisplayControl:self willSelectedAtIndex:item.index] ;
@@ -231,6 +247,7 @@
         [self.dataSource topDisplayControl:self didSelectedAtIndex:item.index] ;
     }
     
+    // 通知content进行切换
     if ([self.delegate respondsToSelector:@selector(selectedItemForIndex:animated:)]) {
         [self.delegate selectedItemForIndex:item.index animated:YES] ;
     }

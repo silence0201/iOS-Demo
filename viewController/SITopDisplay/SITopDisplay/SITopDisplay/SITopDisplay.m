@@ -8,8 +8,10 @@
 
 #import "SITopDisplay.h"
 
-@implementation SITopDisplay
+#define DEFAULT_TOP_CONTROL_HEIGHT 45
 
+@implementation SITopDisplay
+#pragma mark -- init
 - (instancetype)initWithFrame:(CGRect)frame{
     return [self initWithFrame:frame withControl:YES] ;
 }
@@ -24,10 +26,10 @@
 - (instancetype)initWithFrame:(CGRect)frame withControl:(BOOL)haveControl{
     if (self = [super initWithFrame:frame]) {
         if (haveControl) {
-            [self setupTopDisplayControl:CGRectMake(0,0,frame.size.width, 45)];
+            [self setupTopDisplayControl:CGRectMake(0,0,frame.size.width, DEFAULT_TOP_CONTROL_HEIGHT)];
         }else{
             //内容视图
-            _topDisplayContent = [[SITopDisplayContent alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, self.frame.size.height)] ;
+            _topDisplayContent = [[SITopDisplayContent alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)] ;
             _topDisplayContent.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth ;
             _topDisplayContent.backgroundColor = [UIColor clearColor] ;
             _topDisplayContent.dataSource = self ;
@@ -40,7 +42,6 @@
 - (void)setupTopDisplayControl:(CGRect)frame{
     _topDisplayControl = [[SITopDisplayControl alloc]initWithFrame:frame] ;
     _topDisplayControl.dataSource = self ;
-    
     _topDisplayControl.titleFont = [UIFont systemFontOfSize:16.0f] ;
     _topDisplayControl.selectedColor = [UIColor blackColor] ;
     [self addSubview:_topDisplayControl] ;
@@ -51,10 +52,12 @@
     _topDisplayContent.dataSource = self ;
     [self addSubview:_topDisplayContent] ;
     
+    // 设置代理
     _topDisplayContent.delegate = _topDisplayControl ;
     _topDisplayControl.delegate = _topDisplayContent ;
 }
 
+#pragma mark -- get/set
 - (void)setTitleFont:(UIFont *)titleFont{
     _titleFont = titleFont ;
     _topDisplayControl.titleFont = titleFont ;
@@ -95,19 +98,18 @@
     _topDisplayControl.dividLineColor = dividLineColor ;
 }
 
-#pragma mark -----菜单delegate
+#pragma mark ----- SITopDisplayControlDataSource
 - (NSInteger)numberOfItemInTopDisplayControl:(SITopDisplayControl *)topDisplayControl{
     return [self.dataSource numberOfItemInTopDisplay:self] ;
 }
 
 - (CGFloat)widthForItemInTopDisplayControl:(SITopDisplayControl *)topDisplayControl index:(NSInteger)index{
-    return [self.dataSource widthForItemInTopDisplay:self index:index] ;
+    return [self.dataSource widthForItemInTopDisplay:topDisplayControl index:index] ;
 }
 
 - (NSString *)topDisplayControl:(SITopDisplayControl *)topDisplayControl titleForItemAtIndex:(NSInteger)index{
     return  [self.dataSource topDisplayControl:topDisplayControl titleForItemAtIndex:index] ;
 }
-
 
 - (void)topDisplayControl:(SITopDisplayControl *)topDisplayControl didSelectedAtIndex:(NSInteger)index{
     if([self.delegate respondsToSelector:@selector(topDisplayControl:didSelectedAtIndex:)]){
@@ -115,7 +117,7 @@
     }
 }
 
-#pragma mark 内容视图delegate
+#pragma mark ---- SITopDisplayContentDataSource
 - (NSInteger)numberOfItemInTopDisplayContent:(SITopDisplayContent *)topDisplayContent{
     return [self.dataSource numberOfItemInTopDisplay:self] ;
 }
@@ -125,8 +127,8 @@
 }
 
 - (void)topDisplayContent:(SITopDisplayContent *)topDisplayContent didSelectAtIndex:(NSInteger)index{
-    if ([self.delegate respondsToSelector:@selector(topDisplayContent:didSelectAtIndex:)]) {
-        [self.delegate topDisplayContent:topDisplayContent didSelectAtIndex:index] ;
+    if ([self.delegate respondsToSelector:@selector(topDisplayContent:didSelectedAtIndex:)]) {
+        [self.delegate topDisplayContent:topDisplayContent didSelectedAtIndex:index] ;
     }
 }
 

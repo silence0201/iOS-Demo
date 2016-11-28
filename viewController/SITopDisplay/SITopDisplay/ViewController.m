@@ -21,7 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArray = @[@"1",@"2",@"3",@"4"] ;
+    self.title = @"SITopDisplayDemo" ;
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.0 green:0.6 blue:1.0 alpha:0.8]] ;
+    self.dataArray = @[@"图片1",@"图片2",@"图片3",@"图片4"] ;
     [self.view addSubview:self.topDisplay] ;
 }
 
@@ -46,7 +48,7 @@
 }
 
 // 导航的宽
-- (CGFloat)widthForItemInTopDisplay:(SITopDisplay *)topDisplay index:(NSInteger)index{
+- (CGFloat)widthForItemInTopDisplay:(SITopDisplayControl *)topDisplay index:(NSInteger)index{
     return [UIScreen mainScreen].bounds.size.width / _dataArray.count ;
 }
 // 导航的内容
@@ -55,14 +57,10 @@
 }
 
 - (UIView *)topDisplayContent:(SITopDisplayContent *)topDisplayContent viewForItemAtIndex:(NSInteger)index{
-    UIView *view = [[UIView alloc]init] ;
-    if(index%2 == 0){
-        view.backgroundColor = [UIColor blackColor] ;
-    }else{
-        view.backgroundColor = [UIColor redColor] ;
-    }
-    
-    return view ;
+    UIImageView *imageView = [[UIImageView alloc]init] ;
+    NSString *imageName = [NSString stringWithFormat:@"%ld",index+1] ;
+    imageView.image = [UIImage imageNamed:imageName] ;
+    return imageView ;
 }
 
 @end

@@ -14,13 +14,16 @@
 @protocol SITopDisplayDataSource <NSObject>
 
 @required
-
+/** 有多少项 */
 - (NSInteger)numberOfItemInTopDisplay:(SITopDisplay *)topDisplay ;
 
-- (CGFloat)widthForItemInTopDisplay:(SITopDisplay *)topDisplay index:(NSInteger)index ;
+/** 每一项的宽度 */
+- (CGFloat)widthForItemInTopDisplay:(SITopDisplayControl *)topDisplayControl index:(NSInteger)index ;
 
+/** 对应项的标题 */
 - (NSString *)topDisplayControl:(SITopDisplayControl *)topDisplayControl titleForItemAtIndex:(NSInteger)index ;
 
+/** 对应项对应的View */
 - (UIView *)topDisplayContent:(SITopDisplayContent *)topDisplayContent viewForItemAtIndex:(NSInteger)index ;
 
 @end
@@ -28,13 +31,14 @@
 @protocol SITopDisplayDelegate <NSObject>
 
 @optional
-
+/** 当选中对应项时 */
 - (void)selectedView:(UIView *)subview didSelectedAtIndex:(NSInteger)index ;
 
+/** 选择对应标题 */
 - (void)topDisplayControl:(SITopDisplayControl *)topDisplayControl didSelectedAtIndex:(NSInteger)index ;
 
-- (void)topDisplayContent:(SITopDisplayContent *)topDisplayContent didSelectAtIndex:(NSInteger)index ;
-
+/** 滚动选中对应项时 */
+- (void)topDisplayContent:(SITopDisplayContent *)topDisplayContent didSelectedAtIndex:(NSInteger)index ;
 
 @end
 

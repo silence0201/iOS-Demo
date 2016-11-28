@@ -8,8 +8,8 @@
 
 #import "SITopDisplayContent.h"
 
+#pragma mark -- SITopDisplayScrollView
 @interface SITopDisplayScrollView : UIScrollView
-
 @end
 
 @implementation SITopDisplayScrollView
@@ -27,15 +27,20 @@
 
 @end
 
+#pragma mark -- SITopDisplayContent
 @interface SITopDisplayContent ()
 
-@property (nonatomic,weak) id scrolldelegate ;
-@property (nonatomic,assign) SEL scrollAction ;
+/** 容器ScrollView */
+@property (nonatomic,strong) UIScrollView *contentScrollView ;
+
+/** 一共有多少项 */
+@property (nonatomic,assign) NSInteger itemCount ;
 
 @end
 
 @implementation SITopDisplayContent
 
+#pragma mark -- init
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         self.contentScrollView = [[SITopDisplayScrollView alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)] ;
@@ -48,24 +53,12 @@
     return self ;
 }
 
-- (void)showMenu{
-    self.contentScrollView.userInteractionEnabled = NO ;
-}
-
-- (void)showCenter{
-    self.contentScrollView.userInteractionEnabled = YES ;
-}
-
-- (void)addTarget:(id)delegate didStopScrollAction:(SEL)action{
-    self.scrolldelegate = delegate ;
-    self.scrollAction = action ;
-}
-
 - (void)drawRect:(CGRect)rect{
     [super drawRect:rect] ;
     [self reloadData] ;
 }
 
+#pragma mark -- Selected Private Method
 - (void)selectedIndex:(NSInteger)selectedIndex animated:(BOOL)animated{
     if (selectedIndex != _selectedIndex) {
         _selectedIndex = selectedIndex ;
@@ -100,6 +93,7 @@
     }
 }
 
+#pragma mark -- Public Method 
 - (void)selectedItemForIndex:(NSInteger)index animated:(BOOL)animated{
     if(index < self.itemCount){
         if (animated) {
@@ -118,12 +112,12 @@
     }
 }
 
-- (void)setSelectedIndex:(NSInteger)selectedIndex{
-    [self selectedIndex:selectedIndex animated:YES] ;
-}
-
+#pragma mark -- load data 
 - (void)reloadData{
+    NSAssert(self.dataSource, @"DataSource can't be nil") ;
     self.itemCount = 0 ;
+    
+    NSAssert([self.dataSource respondsToSelector:@selector(numberOfItemInTopDisplayContent:)], @"DataSource must can response numberOfItemInTopDisplayContent method") ;
     if([self.dataSource respondsToSelector:@selector(numberOfItemInTopDisplayContent:)]){
         self.itemCount = [self.dataSource numberOfItemInTopDisplayContent:self] ;
     }
@@ -135,6 +129,7 @@
     
     // 加载子视图
     CGRect frame = self.contentScrollView.frame ;
+    NSAssert([self.dataSource respondsToSelector:@selector(topDisplayContent:viewForItemAtIndex:)], @"DataSource must can response topDisplayContent:viewForItemAtIndex: method") ;
     if ([self.dataSource respondsToSelector:@selector(topDisplayContent:viewForItemAtIndex:)]) {
         for (NSInteger i =0 ; i < self.itemCount; i++) {
             UIView *subview = [self.dataSource topDisplayContent:self viewForItemAtIndex:i];
@@ -144,21 +139,28 @@
             [self.contentScrollView addSubview:subview];
         }
     }
+    
     [self selectedItem:NO] ;
     [self.contentScrollView setContentSize:CGSizeMake(frame.size.width*self.itemCount, frame.size.height)] ;
 }
 
+#pragma mark -- set/get
 - (NSArray *)contentSubViews{
     return self.contentScrollView.subviews ;
 }
 
-#pragma mark 视图将要开始滑动
+- (void)setSelectedIndex:(NSInteger)selectedIndex{
+    [self selectedIndex:selectedIndex animated:YES] ;
+}
+
+#pragma mark -- UIScrollViewDelegate
+// 视图将要开始滑动
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
-    if(self.dataSource && [self.dataSource respondsToSelector:@selector(topDisplayContent:willScrollView:)]){
+    if([self.dataSource respondsToSelector:@selector(topDisplayContent:willScrollView:)]){
         [self.dataSource topDisplayContent:self willScrollView:self.currentSubView] ;
     }
 }
-#pragma mark 选择某个子视图
+// 选择某个子视图
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     CGPoint point= scrollView.contentOffset;
     NSInteger i=point.x/scrollView.frame.size.width;

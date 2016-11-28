@@ -13,6 +13,7 @@
     UIFont *amplifyFont ;
 }
 
+#pragma mark -- init 
 - (instancetype)initWithFrame:(CGRect)frame withTitle:(NSString *)title defaultBackgroundImage:(UIImage *)backgroundImage{
     if(self = [super initWithFrame:frame]){
         // 设置背景图片
@@ -39,12 +40,12 @@
 }
 
 - (void)tapAction{
-    NSLog(@"%s",__func__) ;
     if([self.delegate respondsToSelector:@selector(didSelectedOnItem:)]){
         [self.delegate didSelectedOnItem:self] ;
     }
 }
 
+#pragma mark -- Action
 - (void)switchToNormal{
     self.titleLabel.font = self.titleFont ;
     if (self.normalColor) {
@@ -85,6 +86,7 @@
     }
 }
 
+#pragma mark --- get/set
 - (void)setNormalColor:(UIColor *)normalColor{
     _normalColor = normalColor ;
     if (normalColor) {
