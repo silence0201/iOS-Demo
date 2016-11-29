@@ -44,23 +44,41 @@
 
 @interface SITopDisplay : UIView<SITopDisplayContentDataSource,SITopDisplayControlDataSource>
 
+
+/** 顶部切换控制View */
 @property (nonatomic,strong,readonly) SITopDisplayControl *topDisplayControl ;
+
+/** 主要内容View */
 @property (nonatomic,strong,readonly) SITopDisplayContent *topDisplayContent ;
 
+/** 数据员 */
 @property (nonatomic,weak) id<SITopDisplayDataSource> dataSource ;
+
+/** 代理 */
 @property (nonatomic,weak) id<SITopDisplayDelegate> delegate ;
 
+/** 当前选中 */
 @property (nonatomic,assign) NSInteger selectedIndex ;
 
+/** 标题的字体 */
 @property (nonatomic,strong) UIFont *titleFont ;
 
+/** 选中的颜色 */
 @property (nonatomic,strong) UIColor *selectedColor ;
+
+/** 普通状态颜色 */
 @property (nonatomic,strong) UIColor *normalColor ;
 
+/** 选中背景 */
 @property (nonatomic,strong) UIImage *selectedBackgroundImage ;
+
+/** 未选中背景 */
 @property (nonatomic,strong) UIImage *unSelectedBackgroundImage ;
 
+/** 移动线的颜色 */
 @property (nonatomic,strong) UIColor *moveViewColor ;
+
+/** 分割线的颜色 */
 @property (nonatomic,strong) UIColor *dividLineColor ;
 
 - (instancetype)initWithFrame:(CGRect)frame withControl:(BOOL)haveControl ;
