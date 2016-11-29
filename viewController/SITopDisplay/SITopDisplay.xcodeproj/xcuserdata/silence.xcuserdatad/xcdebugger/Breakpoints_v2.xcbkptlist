@@ -32,22 +32,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SITopDisplay/SITopDisplay/SITopDisplay.m"
-            timestampString = "502035232.998341"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "-initWithFrame:withControl:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SITopDisplay/SITopDisplay/SITopDisplay.m"
             timestampString = "502035238.004977"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
