@@ -21,7 +21,7 @@
 * [KEEP](guide/KEEP):KEEP动画引导页面
 
 #####`mask`:蒙版效果
-* [maskViewDemo](mask/maskViewDemo)
+* [maskViewDemo](mask/maskViewDemo):简单蒙版效果
 
 #####`navigation`:导航控制器使用
 * [NavigationBarDemo](navigation/NavigationBarDemo):导航栏渐变透明效果
@@ -73,6 +73,7 @@
 #####`TabBar`:TabBar使用
 * [TabbarDemo](TabBar/TabbarDemo):简单自定义Tabbar
 * [jianshu](TabBar/jianshu):模仿简述自定义Tabbar
+* [DynamicTabBarDemo](TabBar/DynamicTabBarDemo):Tabbar隐藏
 
 #####`Animation`:动画
 * [BaseAnimationDemo](Animation/BaseAnimationDemo):CABasicAnimation简单使用
