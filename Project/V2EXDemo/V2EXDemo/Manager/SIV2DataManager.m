@@ -7,7 +7,6 @@
 //
 
 #import "SIV2DataManager.h"
-
 #import "NSString+TimeTamp.h"
 
 #import "TFHpple.h"
@@ -112,6 +111,61 @@
     }] ;
 }
 
+- (void)getArticleContentWithPID:(NSString *)pid
+                         Success:(void (^)(NSArray *))success
+                         failure:(void (^)(NSError *))failure{
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/api/topics/show.json?id=%@",_baseUrl,pid]] ;
+    
+    [ASIHTTPRequest setDefaultCache:[ASIDownloadCache sharedCache]] ;
+    ASIHTTPRequest *request =[ASIHTTPRequest requestWithURL:url] ;
+    request.timeOutSeconds=10 ;
+    request.numberOfTimesToRetryOnTimeout=1 ;
+    
+    [request startAsynchronous] ;
+    [request setCachePolicy:ASIFallbackToCacheIfLoadFailsCachePolicy] ;
+    [[ASIDownloadCache sharedCache ] setShouldRespectCacheControlHeaders:NO];
+    [request setSecondsToCache:60*60*24*30];
+    
+    __block ASIHTTPRequest *blockReques = request ;
+    __block SIV2DataManager *manager = self ;
+    
+    [request setCompletionBlock:^{
+        success([manager contentDataArr:blockReques.responseData]) ;
+    }] ;
+    
+    [request setCompletionBlock:^{
+        failure(blockReques.error) ;
+    }] ;
+}
+
+- (void)getArticleReplayListWithPID:(NSString *)pid
+                            Success:(void (^)(NSArray *))success
+                            failure:(void (^)(NSError *))failure{
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/api/replies/show.json?topic_id=%@",_baseUrl,pid]] ;
+    
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url] ;
+    [request setDownloadCache:[ASIDownloadCache sharedCache]] ;
+    request.timeOutSeconds = 20 ;
+    request.numberOfTimesToRetryOnTimeout = 1 ;
+    [request setCachePolicy:ASIFallbackToCacheIfLoadFailsCachePolicy] ;
+    [[ASIDownloadCache sharedCache ] setShouldRespectCacheControlHeaders:NO];
+    
+    [request startAsynchronous] ;
+    
+    __block ASIHTTPRequest *blockRequest = request;
+    __block SIV2DataManager  *manager = self;
+    
+    [request setCompletionBlock:^{
+        success([manager replayDataToObject:blockRequest.responseData]) ;
+    }] ;
+    
+    [request setFailedBlock:^{
+        failure(blockRequest.error) ;
+    }] ;
+}
+
+#pragma mark ---- 格式化数据
 - (NSArray *)htmlDataToObject:(NSData *)data{
     TFHpple *htmParser = [[TFHpple alloc]initWithHTMLData:data] ;
     
@@ -129,7 +183,7 @@
         NSString *avatar = [avatars.firstObject objectForKey:@"src"] ;
         
         // title
-        NSArray *titles = [element searchWithXPathQuery:@"//span[@class='item_title']/a]"] ;
+        NSArray *titles = [element searchWithXPathQuery:@"//span[@class='item_title']/a"] ;
         NSString *titleURL = [titles.firstObject objectForKey:@"href"] ;
         NSString *titleContent = [titles.firstObject content] ;
         
@@ -213,36 +267,6 @@
     return articleDataArray ;
 }
 
-- (void)getArticleContentWithPID:(NSString *)pid
-                         Success:(void (^)(NSArray *))success
-                         failure:(void (^)(NSError *))failure{
-    
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/api/topics/show.json?id=%@",_baseUrl,pid]] ;
-    
-    [ASIHTTPRequest setDefaultCache:[ASIDownloadCache sharedCache]] ;
-    ASIHTTPRequest *request =[ASIHTTPRequest requestWithURL:url] ;
-    request.timeOutSeconds=10 ;
-    request.numberOfTimesToRetryOnTimeout=1 ;
-    
-    [request startAsynchronous] ;
-    [request setCachePolicy:ASIFallbackToCacheIfLoadFailsCachePolicy] ;
-    [[ASIDownloadCache sharedCache ] setShouldRespectCacheControlHeaders:NO];
-    [request setSecondsToCache:60*60*24*30];
-    
-    __block ASIHTTPRequest *blockReques = request ;
-    __block SIV2DataManager *manager = self ;
-    
-    [request setCompletionBlock:^{
-        success([manager contentDataArr:blockReques.responseData]) ;
-    }] ;
-    
-    [request setCompletionBlock:^{
-        failure(blockReques.error) ;
-    }] ;
-    
-    
-}
-
 - (NSArray *)contentDataArr:(NSData *)data{
     NSArray *arr = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil] ;
     
@@ -251,33 +275,6 @@
     NSString *timeStr = [NSString stringWithFormat:@"%li",[dic[@"created"] longValue]] ;
     NSString *createdTime = [timeStr toTimeTamp] ;
     return @[content,createdTime] ;
-}
-
-- (void)getArticleReplayListWithPID:(NSString *)pid
-                            Success:(void (^)(NSArray *))success
-                            failure:(void (^)(NSError *))failure{
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/api/replies/show.json?topic_id=%@",_baseUrl,pid]] ;
-    
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url] ;
-    [request setDownloadCache:[ASIDownloadCache sharedCache]] ;
-    request.timeOutSeconds = 20 ;
-    request.numberOfTimesToRetryOnTimeout = 1 ;
-    [request setCachePolicy:ASIFallbackToCacheIfLoadFailsCachePolicy] ;
-    [[ASIDownloadCache sharedCache ] setShouldRespectCacheControlHeaders:NO];
-    
-    [request startAsynchronous] ;
-    
-    __block ASIHTTPRequest *blockRequest = request;
-    __block SIV2DataManager  *manager = self;
-    
-    [request setCompletionBlock:^{
-        success([manager replayDataToObject:blockRequest.responseData]) ;
-    }] ;
-    
-    [request setFailedBlock:^{
-        failure(blockRequest.error) ;
-    }] ;
-    
 }
 
 - (NSArray *)replayDataToObject:(NSData *)data{

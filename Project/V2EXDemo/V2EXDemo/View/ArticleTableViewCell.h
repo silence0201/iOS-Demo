@@ -11,12 +11,9 @@
 @interface ArticleTableViewCell : UITableViewCell
 
 @property (nonatomic , weak) IBOutlet UIImageView *userAvatar;
-
 @property (nonatomic , weak) IBOutlet UILabel *articleTitltLable;
-
 @property (nonatomic , strong) IBOutlet UILabel *createdLable;
-
 @property (nonatomic , strong) IBOutlet UILabel *userName;
-
 @property (nonatomic , strong) IBOutlet UILabel *nodeName;
+
 @end

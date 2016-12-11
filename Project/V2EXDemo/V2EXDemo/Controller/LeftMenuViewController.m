@@ -15,19 +15,20 @@ NSArray *__nodeArr ;
 @interface LeftMenuViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *nodeTableView ;
-
 @property (nonatomic,strong) UIView *headerView ;
 
 @end
 
 @implementation LeftMenuViewController
 
+#pragma mark --- Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initData] ;
     [self.view addSubview:self.nodeTableView] ;
 }
 
+#pragma mark --- Lazy Load
 - (UITableView *)nodeTableView{
     if (!_nodeTableView) {
         _nodeTableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain] ;
@@ -52,7 +53,7 @@ NSArray *__nodeArr ;
     return _headerView ;
 }
 
-
+#pragma mark --- 初始化数据模型
 - (void)initData{
     Node *nodeJs = [[Node alloc]initWithNodeName:@"技术" NodeCode:@"tect"] ;
     ChildNode *cn1 = [[ChildNode alloc] initWithChildNodeName:@"程序员" CNode:@"programmer"];
@@ -143,7 +144,6 @@ NSArray *__nodeArr ;
 }
 
 #pragma mark --- TableViewDelegate
-
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 64.0f ;
 }
@@ -174,9 +174,7 @@ NSArray *__nodeArr ;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"%s",__func__) ;
     Node *node = __nodeArr[indexPath.row] ;
-    
     if([self.delegate respondsToSelector:@selector(nodeSelectedCode:Name:Index:)]){
         [self.delegate nodeSelectedCode:node.nodeCode Name:node.nodeName Index:indexPath.row] ;
     }
