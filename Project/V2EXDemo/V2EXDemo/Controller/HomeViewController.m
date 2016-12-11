@@ -13,6 +13,8 @@
 
 #import "Reachability.h"
 
+#import "FLEXManager.h"
+
 #import "SIV2DataManager.h"
 
 #import "ArticleTableViewCell.h"
@@ -86,8 +88,14 @@ extern NSArray *__nodeArr;
     self.navigationItem.titleView = self.childNodeButton ;
     [self.view addSubview:self.mainTable] ;
     [self setReloadHeader] ;
+    // 开始刷新
+    [header beginRefreshing] ;
     // 添加节点菜单
     [self.view addSubview:self.nodeBackgroundView] ;
+    
+#if DEBUG
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"DEBUG" style:UIBarButtonItemStylePlain target:self action:@selector(flexButtonTapped:)];
+#endif
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -160,9 +168,6 @@ extern NSArray *__nodeArr;
     [header placeSubviews] ;
     self.mainTable.header = header ;
     
-    // 开始刷新
-    [header beginRefreshing] ;
-    
     self.mainTable.footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
         if(![self hasNetWorking]){
             [[MSGStatusToast shareMSGToast]showError:@"网络连接异常" autoHide:YES] ;
@@ -201,6 +206,13 @@ extern NSArray *__nodeArr;
 
 - (void)leftDrawerButtonPress{
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil] ;
+}
+
+- (void)flexButtonTapped:(id)sender {
+#if DEBUG
+    [[FLEXManager sharedManager]setNetworkDebuggingEnabled:YES] ;
+    [[FLEXManager sharedManager] showExplorer];
+#endif
 }
 
 #pragma mark --- Load Data
