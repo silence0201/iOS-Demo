@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8752CCB1DFED6BF0020BFCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752CCA1DFED6BF0020BFCA /* main.m */; };
+		E8752CCE1DFED6BF0020BFCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752CCD1DFED6BF0020BFCA /* AppDelegate.m */; };
+		E8752CD11DFED6BF0020BFCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752CD01DFED6BF0020BFCA /* ViewController.m */; };
+		E8752CD41DFED6BF0020BFCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8752CD21DFED6BF0020BFCA /* Main.storyboard */; };
+		E8752CD61DFED6BF0020BFCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8752CD51DFED6BF0020BFCA /* Assets.xcassets */; };
+		E8752CD91DFED6BF0020BFCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8752CD71DFED6BF0020BFCA /* LaunchScreen.storyboard */; };
+		E8752D2A1DFED6E30020BFCA /* DKColorTable.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752CE31DFED6E30020BFCA /* DKColorTable.m */; };
+		E8752D2B1DFED6E30020BFCA /* DKColorTable.txt in Resources */ = {isa = PBXBuildFile; fileRef = E8752CE41DFED6E30020BFCA /* DKColorTable.txt */; };
+		E8752D2C1DFED6E30020BFCA /* DKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752CE71DFED6E30020BFCA /* DKColor.m */; };
+		E8752D2D1DFED6E30020BFCA /* DKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752CE91DFED6E30020BFCA /* DKImage.m */; };
+		E8752D2E1DFED6E30020BFCA /* DKNightVersionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752CEB1DFED6E30020BFCA /* DKNightVersionManager.m */; };
+		E8752D2F1DFED6E30020BFCA /* NSObject+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752CED1DFED6E30020BFCA /* NSObject+Night.m */; };
+		E8752D301DFED6E30020BFCA /* CALayer+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752CF01DFED6E30020BFCA /* CALayer+Night.m */; };
+		E8752D311DFED6E30020BFCA /* CAShapeLayer+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752CF21DFED6E30020BFCA /* CAShapeLayer+Night.m */; };
+		E8752D321DFED6E30020BFCA /* DKDeallocBlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752CF61DFED6E30020BFCA /* DKDeallocBlockExecutor.m */; };
+		E8752D331DFED6E30020BFCA /* NSObject+DeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752CF81DFED6E30020BFCA /* NSObject+DeallocBlock.m */; };
+		E8752D341DFED6E30020BFCA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8752CFD1DFED6E30020BFCA /* Info.plist */; };
+		E8752D351DFED6E30020BFCA /* UIButton+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D001DFED6E30020BFCA /* UIButton+Night.m */; };
+		E8752D361DFED6E30020BFCA /* UIImageView+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D021DFED6E30020BFCA /* UIImageView+Night.m */; };
+		E8752D371DFED6E30020BFCA /* UINavigationBar+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D041DFED6E30020BFCA /* UINavigationBar+Animation.m */; };
+		E8752D381DFED6E30020BFCA /* UISearchBar+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D061DFED6E30020BFCA /* UISearchBar+Keyboard.m */; };
+		E8752D391DFED6E30020BFCA /* UITextField+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D081DFED6E30020BFCA /* UITextField+Keyboard.m */; };
+		E8752D3A1DFED6E30020BFCA /* UITextView+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D0A1DFED6E30020BFCA /* UITextView+Keyboard.m */; };
+		E8752D3B1DFED6E30020BFCA /* UIBarButtonItem+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D0D1DFED6E30020BFCA /* UIBarButtonItem+Night.m */; };
+		E8752D3C1DFED6E30020BFCA /* UIControl+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D0F1DFED6E30020BFCA /* UIControl+Night.m */; };
+		E8752D3D1DFED6E30020BFCA /* UILabel+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D111DFED6E30020BFCA /* UILabel+Night.m */; };
+		E8752D3E1DFED6E30020BFCA /* UINavigationBar+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D131DFED6E30020BFCA /* UINavigationBar+Night.m */; };
+		E8752D3F1DFED6E30020BFCA /* UIPageControl+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D151DFED6E30020BFCA /* UIPageControl+Night.m */; };
+		E8752D401DFED6E30020BFCA /* UIProgressView+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D171DFED6E30020BFCA /* UIProgressView+Night.m */; };
+		E8752D411DFED6E30020BFCA /* UISearchBar+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D191DFED6E30020BFCA /* UISearchBar+Night.m */; };
+		E8752D421DFED6E30020BFCA /* UISlider+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D1B1DFED6E30020BFCA /* UISlider+Night.m */; };
+		E8752D431DFED6E30020BFCA /* UISwitch+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D1D1DFED6E30020BFCA /* UISwitch+Night.m */; };
+		E8752D441DFED6E30020BFCA /* UITabBar+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D1F1DFED6E30020BFCA /* UITabBar+Night.m */; };
+		E8752D451DFED6E30020BFCA /* UITableView+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D211DFED6E30020BFCA /* UITableView+Night.m */; };
+		E8752D461DFED6E30020BFCA /* UITextField+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D231DFED6E30020BFCA /* UITextField+Night.m */; };
+		E8752D471DFED6E30020BFCA /* UITextView+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D251DFED6E30020BFCA /* UITextView+Night.m */; };
+		E8752D481DFED6E30020BFCA /* UIToolbar+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D271DFED6E30020BFCA /* UIToolbar+Night.m */; };
+		E8752D491DFED6E30020BFCA /* UIView+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D291DFED6E30020BFCA /* UIView+Night.m */; };
+		E8752D4F1DFEE1510020BFCA /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D4E1DFEE1510020BFCA /* TableViewCell.m */; };
+		E8752D521DFEE2790020BFCA /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8752D511DFEE2790020BFCA /* PresentViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8752CC61DFED6BF0020BFCA /* NightDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8752CCA1DFED6BF0020BFCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8752CCC1DFED6BF0020BFCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8752CCD1DFED6BF0020BFCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8752CCF1DFED6BF0020BFCA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E8752CD01DFED6BF0020BFCA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E8752CD31DFED6BF0020BFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8752CD51DFED6BF0020BFCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8752CD81DFED6BF0020BFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8752CDA1DFED6BF0020BFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8752CE21DFED6E30020BFCA /* DKColorTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKColorTable.h; sourceTree = "<group>"; };
+		E8752CE31DFED6E30020BFCA /* DKColorTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKColorTable.m; sourceTree = "<group>"; };
+		E8752CE41DFED6E30020BFCA /* DKColorTable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DKColorTable.txt; sourceTree = "<group>"; };
+		E8752CE61DFED6E30020BFCA /* DKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKColor.h; sourceTree = "<group>"; };
+		E8752CE71DFED6E30020BFCA /* DKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKColor.m; sourceTree = "<group>"; };
+		E8752CE81DFED6E30020BFCA /* DKImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKImage.h; sourceTree = "<group>"; };
+		E8752CE91DFED6E30020BFCA /* DKImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKImage.m; sourceTree = "<group>"; };
+		E8752CEA1DFED6E30020BFCA /* DKNightVersionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKNightVersionManager.h; sourceTree = "<group>"; };
+		E8752CEB1DFED6E30020BFCA /* DKNightVersionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKNightVersionManager.m; sourceTree = "<group>"; };
+		E8752CEC1DFED6E30020BFCA /* NSObject+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Night.h"; sourceTree = "<group>"; };
+		E8752CED1DFED6E30020BFCA /* NSObject+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Night.m"; sourceTree = "<group>"; };
+		E8752CEF1DFED6E30020BFCA /* CALayer+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Night.h"; sourceTree = "<group>"; };
+		E8752CF01DFED6E30020BFCA /* CALayer+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Night.m"; sourceTree = "<group>"; };
+		E8752CF11DFED6E30020BFCA /* CAShapeLayer+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+Night.h"; sourceTree = "<group>"; };
+		E8752CF21DFED6E30020BFCA /* CAShapeLayer+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+Night.m"; sourceTree = "<group>"; };
+		E8752CF31DFED6E30020BFCA /* CoreAnimation+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreAnimation+Night.h"; sourceTree = "<group>"; };
+		E8752CF51DFED6E30020BFCA /* DKDeallocBlockExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKDeallocBlockExecutor.h; sourceTree = "<group>"; };
+		E8752CF61DFED6E30020BFCA /* DKDeallocBlockExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKDeallocBlockExecutor.m; sourceTree = "<group>"; };
+		E8752CF71DFED6E30020BFCA /* NSObject+DeallocBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DeallocBlock.h"; sourceTree = "<group>"; };
+		E8752CF81DFED6E30020BFCA /* NSObject+DeallocBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DeallocBlock.m"; sourceTree = "<group>"; };
+		E8752CF91DFED6E30020BFCA /* DKNightVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKNightVersion.h; sourceTree = "<group>"; };
+		E8752CFB1DFED6E30020BFCA /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
+		E8752CFC1DFED6E30020BFCA /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		E8752CFD1DFED6E30020BFCA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8752CFF1DFED6E30020BFCA /* UIButton+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Night.h"; sourceTree = "<group>"; };
+		E8752D001DFED6E30020BFCA /* UIButton+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Night.m"; sourceTree = "<group>"; };
+		E8752D011DFED6E30020BFCA /* UIImageView+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Night.h"; sourceTree = "<group>"; };
+		E8752D021DFED6E30020BFCA /* UIImageView+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Night.m"; sourceTree = "<group>"; };
+		E8752D031DFED6E30020BFCA /* UINavigationBar+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Animation.h"; sourceTree = "<group>"; };
+		E8752D041DFED6E30020BFCA /* UINavigationBar+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Animation.m"; sourceTree = "<group>"; };
+		E8752D051DFED6E30020BFCA /* UISearchBar+Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+Keyboard.h"; sourceTree = "<group>"; };
+		E8752D061DFED6E30020BFCA /* UISearchBar+Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+Keyboard.m"; sourceTree = "<group>"; };
+		E8752D071DFED6E30020BFCA /* UITextField+Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Keyboard.h"; sourceTree = "<group>"; };
+		E8752D081DFED6E30020BFCA /* UITextField+Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Keyboard.m"; sourceTree = "<group>"; };
+		E8752D091DFED6E30020BFCA /* UITextView+Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Keyboard.h"; sourceTree = "<group>"; };
+		E8752D0A1DFED6E30020BFCA /* UITextView+Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Keyboard.m"; sourceTree = "<group>"; };
+		E8752D0C1DFED6E30020BFCA /* UIBarButtonItem+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Night.h"; sourceTree = "<group>"; };
+		E8752D0D1DFED6E30020BFCA /* UIBarButtonItem+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Night.m"; sourceTree = "<group>"; };
+		E8752D0E1DFED6E30020BFCA /* UIControl+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Night.h"; sourceTree = "<group>"; };
+		E8752D0F1DFED6E30020BFCA /* UIControl+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Night.m"; sourceTree = "<group>"; };
+		E8752D101DFED6E30020BFCA /* UILabel+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Night.h"; sourceTree = "<group>"; };
+		E8752D111DFED6E30020BFCA /* UILabel+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Night.m"; sourceTree = "<group>"; };
+		E8752D121DFED6E30020BFCA /* UINavigationBar+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Night.h"; sourceTree = "<group>"; };
+		E8752D131DFED6E30020BFCA /* UINavigationBar+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Night.m"; sourceTree = "<group>"; };
+		E8752D141DFED6E30020BFCA /* UIPageControl+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageControl+Night.h"; sourceTree = "<group>"; };
+		E8752D151DFED6E30020BFCA /* UIPageControl+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageControl+Night.m"; sourceTree = "<group>"; };
+		E8752D161DFED6E30020BFCA /* UIProgressView+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+Night.h"; sourceTree = "<group>"; };
+		E8752D171DFED6E30020BFCA /* UIProgressView+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+Night.m"; sourceTree = "<group>"; };
+		E8752D181DFED6E30020BFCA /* UISearchBar+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+Night.h"; sourceTree = "<group>"; };
+		E8752D191DFED6E30020BFCA /* UISearchBar+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+Night.m"; sourceTree = "<group>"; };
+		E8752D1A1DFED6E30020BFCA /* UISlider+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+Night.h"; sourceTree = "<group>"; };
+		E8752D1B1DFED6E30020BFCA /* UISlider+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+Night.m"; sourceTree = "<group>"; };
+		E8752D1C1DFED6E30020BFCA /* UISwitch+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch+Night.h"; sourceTree = "<group>"; };
+		E8752D1D1DFED6E30020BFCA /* UISwitch+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+Night.m"; sourceTree = "<group>"; };
+		E8752D1E1DFED6E30020BFCA /* UITabBar+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Night.h"; sourceTree = "<group>"; };
+		E8752D1F1DFED6E30020BFCA /* UITabBar+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Night.m"; sourceTree = "<group>"; };
+		E8752D201DFED6E30020BFCA /* UITableView+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Night.h"; sourceTree = "<group>"; };
+		E8752D211DFED6E30020BFCA /* UITableView+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Night.m"; sourceTree = "<group>"; };
+		E8752D221DFED6E30020BFCA /* UITextField+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Night.h"; sourceTree = "<group>"; };
+		E8752D231DFED6E30020BFCA /* UITextField+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Night.m"; sourceTree = "<group>"; };
+		E8752D241DFED6E30020BFCA /* UITextView+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Night.h"; sourceTree = "<group>"; };
+		E8752D251DFED6E30020BFCA /* UITextView+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Night.m"; sourceTree = "<group>"; };
+		E8752D261DFED6E30020BFCA /* UIToolbar+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+Night.h"; sourceTree = "<group>"; };
+		E8752D271DFED6E30020BFCA /* UIToolbar+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+Night.m"; sourceTree = "<group>"; };
+		E8752D281DFED6E30020BFCA /* UIView+Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Night.h"; sourceTree = "<group>"; };
+		E8752D291DFED6E30020BFCA /* UIView+Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Night.m"; sourceTree = "<group>"; };
+		E8752D4D1DFEE1510020BFCA /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		E8752D4E1DFEE1510020BFCA /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		E8752D501DFEE2790020BFCA /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
+		E8752D511DFEE2790020BFCA /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8752CC31DFED6BF0020BFCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8752CBD1DFED6BF0020BFCA = {
+			isa = PBXGroup;
+			children = (
+				E8752CC81DFED6BF0020BFCA /* NightDemo */,
+				E8752CC71DFED6BF0020BFCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8752CC71DFED6BF0020BFCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8752CC61DFED6BF0020BFCA /* NightDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8752CC81DFED6BF0020BFCA /* NightDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E8752CE01DFED6E30020BFCA /* DKNightVersion */,
+				E8752CCC1DFED6BF0020BFCA /* AppDelegate.h */,
+				E8752CCD1DFED6BF0020BFCA /* AppDelegate.m */,
+				E8752CCF1DFED6BF0020BFCA /* ViewController.h */,
+				E8752CD01DFED6BF0020BFCA /* ViewController.m */,
+				E8752D4D1DFEE1510020BFCA /* TableViewCell.h */,
+				E8752D4E1DFEE1510020BFCA /* TableViewCell.m */,
+				E8752CD21DFED6BF0020BFCA /* Main.storyboard */,
+				E8752CD51DFED6BF0020BFCA /* Assets.xcassets */,
+				E8752CD71DFED6BF0020BFCA /* LaunchScreen.storyboard */,
+				E8752CDA1DFED6BF0020BFCA /* Info.plist */,
+				E8752CC91DFED6BF0020BFCA /* Supporting Files */,
+				E8752D501DFEE2790020BFCA /* PresentViewController.h */,
+				E8752D511DFEE2790020BFCA /* PresentViewController.m */,
+			);
+			path = NightDemo;
+			sourceTree = "<group>";
+		};
+		E8752CC91DFED6BF0020BFCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8752CCA1DFED6BF0020BFCA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8752CE01DFED6E30020BFCA /* DKNightVersion */ = {
+			isa = PBXGroup;
+			children = (
+				E8752CE11DFED6E30020BFCA /* ColorTable */,
+				E8752CE51DFED6E30020BFCA /* Core */,
+				E8752CEE1DFED6E30020BFCA /* CoreAnimation */,
+				E8752CF41DFED6E30020BFCA /* DeallocBlockExecutor */,
+				E8752CF91DFED6E30020BFCA /* DKNightVersion.h */,
+				E8752CFA1DFED6E30020BFCA /* extobjc */,
+				E8752CFD1DFED6E30020BFCA /* Info.plist */,
+				E8752CFE1DFED6E30020BFCA /* Manual */,
+				E8752D0B1DFED6E30020BFCA /* UIKit */,
+			);
+			path = DKNightVersion;
+			sourceTree = "<group>";
+		};
+		E8752CE11DFED6E30020BFCA /* ColorTable */ = {
+			isa = PBXGroup;
+			children = (
+				E8752CE21DFED6E30020BFCA /* DKColorTable.h */,
+				E8752CE31DFED6E30020BFCA /* DKColorTable.m */,
+				E8752CE41DFED6E30020BFCA /* DKColorTable.txt */,
+			);
+			path = ColorTable;
+			sourceTree = "<group>";
+		};
+		E8752CE51DFED6E30020BFCA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E8752CE61DFED6E30020BFCA /* DKColor.h */,
+				E8752CE71DFED6E30020BFCA /* DKColor.m */,
+				E8752CE81DFED6E30020BFCA /* DKImage.h */,
+				E8752CE91DFED6E30020BFCA /* DKImage.m */,
+				E8752CEA1DFED6E30020BFCA /* DKNightVersionManager.h */,
+				E8752CEB1DFED6E30020BFCA /* DKNightVersionManager.m */,
+				E8752CEC1DFED6E30020BFCA /* NSObject+Night.h */,
+				E8752CED1DFED6E30020BFCA /* NSObject+Night.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E8752CEE1DFED6E30020BFCA /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E8752CEF1DFED6E30020BFCA /* CALayer+Night.h */,
+				E8752CF01DFED6E30020BFCA /* CALayer+Night.m */,
+				E8752CF11DFED6E30020BFCA /* CAShapeLayer+Night.h */,
+				E8752CF21DFED6E30020BFCA /* CAShapeLayer+Night.m */,
+				E8752CF31DFED6E30020BFCA /* CoreAnimation+Night.h */,
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		E8752CF41DFED6E30020BFCA /* DeallocBlockExecutor */ = {
+			isa = PBXGroup;
+			children = (
+				E8752CF51DFED6E30020BFCA /* DKDeallocBlockExecutor.h */,
+				E8752CF61DFED6E30020BFCA /* DKDeallocBlockExecutor.m */,
+				E8752CF71DFED6E30020BFCA /* NSObject+DeallocBlock.h */,
+				E8752CF81DFED6E30020BFCA /* NSObject+DeallocBlock.m */,
+			);
+			path = DeallocBlockExecutor;
+			sourceTree = "<group>";
+		};
+		E8752CFA1DFED6E30020BFCA /* extobjc */ = {
+			isa = PBXGroup;
+			children = (
+				E8752CFB1DFED6E30020BFCA /* EXTKeyPathCoding.h */,
+				E8752CFC1DFED6E30020BFCA /* metamacros.h */,
+			);
+			path = extobjc;
+			sourceTree = "<group>";
+		};
+		E8752CFE1DFED6E30020BFCA /* Manual */ = {
+			isa = PBXGroup;
+			children = (
+				E8752CFF1DFED6E30020BFCA /* UIButton+Night.h */,
+				E8752D001DFED6E30020BFCA /* UIButton+Night.m */,
+				E8752D011DFED6E30020BFCA /* UIImageView+Night.h */,
+				E8752D021DFED6E30020BFCA /* UIImageView+Night.m */,
+				E8752D031DFED6E30020BFCA /* UINavigationBar+Animation.h */,
+				E8752D041DFED6E30020BFCA /* UINavigationBar+Animation.m */,
+				E8752D051DFED6E30020BFCA /* UISearchBar+Keyboard.h */,
+				E8752D061DFED6E30020BFCA /* UISearchBar+Keyboard.m */,
+				E8752D071DFED6E30020BFCA /* UITextField+Keyboard.h */,
+				E8752D081DFED6E30020BFCA /* UITextField+Keyboard.m */,
+				E8752D091DFED6E30020BFCA /* UITextView+Keyboard.h */,
+				E8752D0A1DFED6E30020BFCA /* UITextView+Keyboard.m */,
+			);
+			path = Manual;
+			sourceTree = "<group>";
+		};
+		E8752D0B1DFED6E30020BFCA /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E8752D0C1DFED6E30020BFCA /* UIBarButtonItem+Night.h */,
+				E8752D0D1DFED6E30020BFCA /* UIBarButtonItem+Night.m */,
+				E8752D0E1DFED6E30020BFCA /* UIControl+Night.h */,
+				E8752D0F1DFED6E30020BFCA /* UIControl+Night.m */,
+				E8752D101DFED6E30020BFCA /* UILabel+Night.h */,
+				E8752D111DFED6E30020BFCA /* UILabel+Night.m */,
+				E8752D121DFED6E30020BFCA /* UINavigationBar+Night.h */,
+				E8752D131DFED6E30020BFCA /* UINavigationBar+Night.m */,
+				E8752D141DFED6E30020BFCA /* UIPageControl+Night.h */,
+				E8752D151DFED6E30020BFCA /* UIPageControl+Night.m */,
+				E8752D161DFED6E30020BFCA /* UIProgressView+Night.h */,
+				E8752D171DFED6E30020BFCA /* UIProgressView+Night.m */,
+				E8752D181DFED6E30020BFCA /* UISearchBar+Night.h */,
+				E8752D191DFED6E30020BFCA /* UISearchBar+Night.m */,
+				E8752D1A1DFED6E30020BFCA /* UISlider+Night.h */,
+				E8752D1B1DFED6E30020BFCA /* UISlider+Night.m */,
+				E8752D1C1DFED6E30020BFCA /* UISwitch+Night.h */,
+				E8752D1D1DFED6E30020BFCA /* UISwitch+Night.m */,
+				E8752D1E1DFED6E30020BFCA /* UITabBar+Night.h */,
+				E8752D1F1DFED6E30020BFCA /* UITabBar+Night.m */,
+				E8752D201DFED6E30020BFCA /* UITableView+Night.h */,
+				E8752D211DFED6E30020BFCA /* UITableView+Night.m */,
+				E8752D221DFED6E30020BFCA /* UITextField+Night.h */,
+				E8752D231DFED6E30020BFCA /* UITextField+Night.m */,
+				E8752D241DFED6E30020BFCA /* UITextView+Night.h */,
+				E8752D251DFED6E30020BFCA /* UITextView+Night.m */,
+				E8752D261DFED6E30020BFCA /* UIToolbar+Night.h */,
+				E8752D271DFED6E30020BFCA /* UIToolbar+Night.m */,
+				E8752D281DFED6E30020BFCA /* UIView+Night.h */,
+				E8752D291DFED6E30020BFCA /* UIView+Night.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8752CC51DFED6BF0020BFCA /* NightDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8752CDD1DFED6BF0020BFCA /* Build configuration list for PBXNativeTarget "NightDemo" */;
+			buildPhases = (
+				E8752CC21DFED6BF0020BFCA /* Sources */,
+				E8752CC31DFED6BF0020BFCA /* Frameworks */,
+				E8752CC41DFED6BF0020BFCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NightDemo;
+			productName = NightDemo;
+			productReference = E8752CC61DFED6BF0020BFCA /* NightDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8752CBE1DFED6BF0020BFCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = silence;
+				TargetAttributes = {
+					E8752CC51DFED6BF0020BFCA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = UKBBWVJH59;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E8752CC11DFED6BF0020BFCA /* Build configuration list for PBXProject "NightDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8752CBD1DFED6BF0020BFCA;
+			productRefGroup = E8752CC71DFED6BF0020BFCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8752CC51DFED6BF0020BFCA /* NightDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8752CC41DFED6BF0020BFCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8752D2B1DFED6E30020BFCA /* DKColorTable.txt in Resources */,
+				E8752CD91DFED6BF0020BFCA /* LaunchScreen.storyboard in Resources */,
+				E8752CD61DFED6BF0020BFCA /* Assets.xcassets in Resources */,
+				E8752D341DFED6E30020BFCA /* Info.plist in Resources */,
+				E8752CD41DFED6BF0020BFCA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8752CC21DFED6BF0020BFCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8752D331DFED6E30020BFCA /* NSObject+DeallocBlock.m in Sources */,
+				E8752D3B1DFED6E30020BFCA /* UIBarButtonItem+Night.m in Sources */,
+				E8752D481DFED6E30020BFCA /* UIToolbar+Night.m in Sources */,
+				E8752D2F1DFED6E30020BFCA /* NSObject+Night.m in Sources */,
+				E8752D491DFED6E30020BFCA /* UIView+Night.m in Sources */,
+				E8752D3A1DFED6E30020BFCA /* UITextView+Keyboard.m in Sources */,
+				E8752D2D1DFED6E30020BFCA /* DKImage.m in Sources */,
+				E8752D311DFED6E30020BFCA /* CAShapeLayer+Night.m in Sources */,
+				E8752D391DFED6E30020BFCA /* UITextField+Keyboard.m in Sources */,
+				E8752D4F1DFEE1510020BFCA /* TableViewCell.m in Sources */,
+				E8752D421DFED6E30020BFCA /* UISlider+Night.m in Sources */,
+				E8752D3F1DFED6E30020BFCA /* UIPageControl+Night.m in Sources */,
+				E8752CD11DFED6BF0020BFCA /* ViewController.m in Sources */,
+				E8752D361DFED6E30020BFCA /* UIImageView+Night.m in Sources */,
+				E8752D381DFED6E30020BFCA /* UISearchBar+Keyboard.m in Sources */,
+				E8752D351DFED6E30020BFCA /* UIButton+Night.m in Sources */,
+				E8752D401DFED6E30020BFCA /* UIProgressView+Night.m in Sources */,
+				E8752D411DFED6E30020BFCA /* UISearchBar+Night.m in Sources */,
+				E8752D2E1DFED6E30020BFCA /* DKNightVersionManager.m in Sources */,
+				E8752D461DFED6E30020BFCA /* UITextField+Night.m in Sources */,
+				E8752D3C1DFED6E30020BFCA /* UIControl+Night.m in Sources */,
+				E8752CCE1DFED6BF0020BFCA /* AppDelegate.m in Sources */,
+				E8752D321DFED6E30020BFCA /* DKDeallocBlockExecutor.m in Sources */,
+				E8752D371DFED6E30020BFCA /* UINavigationBar+Animation.m in Sources */,
+				E8752D3E1DFED6E30020BFCA /* UINavigationBar+Night.m in Sources */,
+				E8752D521DFEE2790020BFCA /* PresentViewController.m in Sources */,
+				E8752D301DFED6E30020BFCA /* CALayer+Night.m in Sources */,
+				E8752D441DFED6E30020BFCA /* UITabBar+Night.m in Sources */,
+				E8752D2C1DFED6E30020BFCA /* DKColor.m in Sources */,
+				E8752D471DFED6E30020BFCA /* UITextView+Night.m in Sources */,
+				E8752D431DFED6E30020BFCA /* UISwitch+Night.m in Sources */,
+				E8752CCB1DFED6BF0020BFCA /* main.m in Sources */,
+				E8752D451DFED6E30020BFCA /* UITableView+Night.m in Sources */,
+				E8752D3D1DFED6E30020BFCA /* UILabel+Night.m in Sources */,
+				E8752D2A1DFED6E30020BFCA /* DKColorTable.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8752CD21DFED6BF0020BFCA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8752CD31DFED6BF0020BFCA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8752CD71DFED6BF0020BFCA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8752CD81DFED6BF0020BFCA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8752CDB1DFED6BF0020BFCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8752CDC1DFED6BF0020BFCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8752CDE1DFED6BF0020BFCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = NightDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.NightDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8752CDF1DFED6BF0020BFCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = NightDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.NightDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8752CC11DFED6BF0020BFCA /* Build configuration list for PBXProject "NightDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8752CDB1DFED6BF0020BFCA /* Debug */,
+				E8752CDC1DFED6BF0020BFCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8752CDD1DFED6BF0020BFCA /* Build configuration list for PBXNativeTarget "NightDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8752CDE1DFED6BF0020BFCA /* Debug */,
+				E8752CDF1DFED6BF0020BFCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8752CBE1DFED6BF0020BFCA /* Project object */;
+}
