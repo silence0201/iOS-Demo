@@ -26,6 +26,7 @@ NSArray *__nodeArr ;
     [super viewDidLoad];
     [self initData] ;
     [self.view addSubview:self.nodeTableView] ;
+    
 }
 
 #pragma mark --- Lazy Load
@@ -179,6 +180,8 @@ NSArray *__nodeArr ;
         [self.delegate nodeSelectedCode:node.nodeCode Name:node.nodeName Index:indexPath.row] ;
     }
 }
+
+
 
 
 @end

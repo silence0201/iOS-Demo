@@ -31,7 +31,7 @@
 
 extern NSArray *__nodeArr;
 
-@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,NodeSelectedDelegate>{
+@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,NodeSelectedDelegate,UIViewControllerPreviewingDelegate>{
     // cell标题的宽度
     CGFloat cellTitleWidth ;
     // 刷新头
@@ -96,6 +96,8 @@ extern NSArray *__nodeArr;
 #if DEBUG
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"DEBUG" style:UIBarButtonItemStylePlain target:self action:@selector(flexButtonTapped:)];
 #endif
+    
+    [self registerForPreviewingWithDelegate:self sourceView:self.view] ;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -379,6 +381,26 @@ extern NSArray *__nodeArr;
     self.childNodeButton.tag = 101 ;
     [self childButtonAction:self.childNodeButton] ;
 }
+
+#pragma mark --- UIViewControllerPreviewingDelegate
+- (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location{
+    CGPoint point = [previewingContext.sourceView convertPoint:location toView:self.mainTable] ;
+    NSIndexPath *indexPath = [self.mainTable indexPathForRowAtPoint:point] ;
+    if([self.presentedViewController isKindOfClass:[DetailViewController class]]){
+        return nil ;
+    }else{
+        DetailViewController *detailVc = [[DetailViewController alloc]init] ;
+        detailVc.info = self.articleDataArray[indexPath.row] ;
+        detailVc.baseViewController = self ;
+        return detailVc ;
+    }
+}
+
+- (void)previewingContext:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit{
+    DetailViewController *detailVc = (DetailViewController *)viewControllerToCommit ;
+    [self.navigationController pushViewController:detailVc animated:YES] ;
+}
+
 
 
 @end

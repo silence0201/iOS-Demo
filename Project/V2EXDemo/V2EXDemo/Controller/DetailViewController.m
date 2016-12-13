@@ -251,6 +251,15 @@
     }
 }
 
+#pragma mark --- 3DTouch菜单
+- (NSArray<id<UIPreviewActionItem>> *)previewActionItems{
+    UIPreviewAction *itemA = [UIPreviewAction actionWithTitle:@"查看详情" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+        DetailViewController *detailVc = (DetailViewController *)previewViewController ;
+        [detailVc.baseViewController.navigationController pushViewController:detailVc animated:YES] ;
+    }] ;
+    return @[itemA] ;
+}
+
 
 
 

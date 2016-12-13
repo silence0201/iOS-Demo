@@ -13,4 +13,6 @@
 
 @property (nonatomic,strong) List *info ;
 
+@property (nonatomic,weak) UIViewController *baseViewController ;
+
 @end
