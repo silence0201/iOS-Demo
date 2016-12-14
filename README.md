@@ -96,6 +96,7 @@
 ####`Effect`:表现效果
 * [FrostedGlassDemo](Effect/FrostedGlassDemo):简单实现的毛玻璃效果
 * [ImageEffectDemo](Effect/ImageEffectDemo):高斯模糊
+* [NightDemo](Effect/NightDemo):简单的黑夜模式
 
 ####`web`:web的相关内容
 * [JavaScriptCoreDemo](web/JavaScriptCoreDemo):JavaScriptCore实现交互操作
