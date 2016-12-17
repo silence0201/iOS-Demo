@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8475BF81E04E7CC00AD0983 /* FPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475BF71E04E7CC00AD0983 /* FPSLabel.m */; };
+		E8475BFB1E04E7DC00AD0983 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475BFA1E04E7DC00AD0983 /* YYWeakProxy.m */; };
 		E8A1DFD51E02DF6200974899 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A1DFD41E02DF6200974899 /* main.m */; };
 		E8A1DFD81E02DF6200974899 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A1DFD71E02DF6200974899 /* AppDelegate.m */; };
 		E8A1DFDB1E02DF6200974899 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A1DFDA1E02DF6200974899 /* ViewController.m */; };
 		E8A1DFDE1E02DF6200974899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A1DFDC1E02DF6200974899 /* Main.storyboard */; };
 		E8A1DFE01E02DF6200974899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A1DFDF1E02DF6200974899 /* Assets.xcassets */; };
 		E8A1DFE31E02DF6200974899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A1DFE11E02DF6200974899 /* LaunchScreen.storyboard */; };
-		E8A1DFEC1E02DF9500974899 /* FPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A1DFEB1E02DF9500974899 /* FPSLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E8475BF61E04E7CC00AD0983 /* FPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabel.h; sourceTree = "<group>"; };
+		E8475BF71E04E7CC00AD0983 /* FPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabel.m; sourceTree = "<group>"; };
+		E8475BF91E04E7DC00AD0983 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YYWeakProxy.h; path = "../../../../../../Downloads/YYFPSLabel-master/YYFPSLabel/YYFPSLabel/YYWeakProxy.h"; sourceTree = "<group>"; };
+		E8475BFA1E04E7DC00AD0983 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YYWeakProxy.m; path = "../../../../../../Downloads/YYFPSLabel-master/YYFPSLabel/YYFPSLabel/YYWeakProxy.m"; sourceTree = "<group>"; };
 		E8A1DFD01E02DF6200974899 /* FPSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FPSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A1DFD41E02DF6200974899 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8A1DFD61E02DF6200974899 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,8 +32,6 @@
 		E8A1DFDF1E02DF6200974899 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8A1DFE21E02DF6200974899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8A1DFE41E02DF6200974899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8A1DFEA1E02DF9500974899 /* FPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabel.h; sourceTree = "<group>"; };
-		E8A1DFEB1E02DF9500974899 /* FPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E8475BF51E04E7CC00AD0983 /* FPSLable */ = {
+			isa = PBXGroup;
+			children = (
+				E8475BF91E04E7DC00AD0983 /* YYWeakProxy.h */,
+				E8475BFA1E04E7DC00AD0983 /* YYWeakProxy.m */,
+				E8475BF61E04E7CC00AD0983 /* FPSLabel.h */,
+				E8475BF71E04E7CC00AD0983 /* FPSLabel.m */,
+			);
+			path = FPSLable;
+			sourceTree = "<group>";
+		};
 		E8A1DFC71E02DF6200974899 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +75,7 @@
 		E8A1DFD21E02DF6200974899 /* FPSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E8475BF51E04E7CC00AD0983 /* FPSLable */,
 				E8A1DFD61E02DF6200974899 /* AppDelegate.h */,
 				E8A1DFD71E02DF6200974899 /* AppDelegate.m */,
 				E8A1DFD91E02DF6200974899 /* ViewController.h */,
@@ -70,8 +85,6 @@
 				E8A1DFE11E02DF6200974899 /* LaunchScreen.storyboard */,
 				E8A1DFE41E02DF6200974899 /* Info.plist */,
 				E8A1DFD31E02DF6200974899 /* Supporting Files */,
-				E8A1DFEA1E02DF9500974899 /* FPSLabel.h */,
-				E8A1DFEB1E02DF9500974899 /* FPSLabel.m */,
 			);
 			path = FPSDemo;
 			sourceTree = "<group>";
@@ -158,8 +171,9 @@
 			files = (
 				E8A1DFDB1E02DF6200974899 /* ViewController.m in Sources */,
 				E8A1DFD81E02DF6200974899 /* AppDelegate.m in Sources */,
-				E8A1DFEC1E02DF9500974899 /* FPSLabel.m in Sources */,
+				E8475BF81E04E7CC00AD0983 /* FPSLabel.m in Sources */,
 				E8A1DFD51E02DF6200974899 /* main.m in Sources */,
+				E8475BFB1E04E7DC00AD0983 /* YYWeakProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +332,7 @@
 				E8A1DFE91E02DF6200974899 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

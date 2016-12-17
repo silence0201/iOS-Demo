@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +20,38 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="iNs-vd-CKz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AFi-1u-zCw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ppk-iT-X7Q">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AFi-1u-zCw" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="3jM-O2-AYI"/>
+                            <constraint firstAttribute="trailing" secondItem="iNs-vd-CKz" secondAttribute="trailing" id="Kdx-Mi-q7R"/>
+                            <constraint firstItem="AFi-1u-zCw" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Pg7-K6-4Cg"/>
+                            <constraint firstItem="iNs-vd-CKz" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Va9-db-VbK"/>
+                            <constraint firstItem="iNs-vd-CKz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="bkT-ZT-t9g"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="iNs-vd-CKz" secondAttribute="bottom" id="d55-ZI-J1Z"/>
+                            <constraint firstAttribute="trailing" secondItem="AFi-1u-zCw" secondAttribute="trailing" id="egH-49-sus"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="AFi-1u-zCw" secondAttribute="bottom" id="ouz-HC-76S"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="640" height="905"/>
+    </resources>
 </document>
