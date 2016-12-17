@@ -12,8 +12,10 @@
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
-        [self setTitle:@"简单" forState:UIControlStateNormal];
-        [self setImage:[UIImage imageNamed:@"Easy"] forState:UIControlStateNormal];
+        [self setTitle:@"Silence" forState:UIControlStateNormal];
+        [self setImage:[UIImage imageNamed:@"tx"] forState:UIControlStateNormal];
+        self.layer.cornerRadius = 6 ;
+        self.layer.masksToBounds = YES ;
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
     }
     return self ;
@@ -51,4 +53,6 @@
         return CGRectMake(x, y, width, height);
     }
 }
+
+- (void)setHighlighted:(BOOL)highlighted{}
 @end

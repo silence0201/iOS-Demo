@@ -31,7 +31,6 @@
 - (BottomMenu *)bottomMenu{
     if (!_bottomMenu) {
         _bottomMenu = [[BottomMenu alloc]init] ;
-//        _bottomMenu.backgroundColor = [UIColor grayColor] ;
         _bottomMenu.autoresizingMask = UIViewAutoresizingFlexibleTopMargin ;
         _bottomMenu.delegate = self ;
     }
