@@ -7,7 +7,7 @@
 //
 
 #import "Dock.h"
-#import "IconButton.h"
+
 
 @interface Dock ()<BottomMenuDelegate,TabbarDelegate>
 
@@ -15,12 +15,15 @@
 @property (nonatomic,strong) Tabbar *tabbar ;
 @property (nonatomic,strong) IconButton *iconButton ;
 
+@property (nonatomic,strong) UIVisualEffectView *effectView ;
+
 @end
 
 @implementation Dock
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if(self = [super initWithFrame:frame]){
+        [self addSubview:self.effectView] ;
         [self addSubview:self.bottomMenu] ;
         [self addSubview:self.tabbar] ;
         [self addSubview:self.iconButton] ;
@@ -49,12 +52,26 @@
 - (IconButton *)iconButton{
     if(!_iconButton){
         _iconButton = [[IconButton alloc]init] ;
+        [_iconButton addTarget:self action:@selector(iconButtonClick:) forControlEvents:UIControlEventTouchUpInside] ;
     }
     return _iconButton ;
 }
 
+- (UIVisualEffectView *)effectView{
+    if (!_effectView) {
+        _effectView = [[UIVisualEffectView alloc]initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]] ;
+        _effectView.autoresizingMask = UIViewAutoresizingFlexibleHeight ;
+    }
+    return _effectView ;
+}
+
 
 - (void)rolateToLandscape:(BOOL)isLandscape{
+    // 设置宽度
+    self.width = isLandscape ? kDockLandspaceWidth : kDockPortraitWidth;
+    
+    self.effectView.width = self.width ;
+    
     // 设置BottomMenu的frame
     [self.bottomMenu rolateToLandscape:isLandscape] ;
     // 设置tabbar的Frame
@@ -63,6 +80,11 @@
     
     // 设置iconlButton的Frame
     [self.iconButton rolateToLandscape:isLandscape] ;
+    
+}
+
+- (void)unSelected{
+    [self.tabbar unSelected] ;
 }
 
 - (void)bottomMenu:(BottomMenu *)bottomMenu withType:(BottomMenuType)type{
@@ -77,6 +99,11 @@
     }
 }
 
+-(void)iconButtonClick:(IconButton *)button{
+    if ([self.delegate respondsToSelector:@selector(clickIconButton:)]) {
+        [self.delegate clickIconButton:button] ;
+    }
+}
 
 
 @end

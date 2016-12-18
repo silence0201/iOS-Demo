@@ -7,6 +7,7 @@
 //
 
 extern const CGFloat kLandspaceWidth ;
+extern const CGFloat kLandscapeHeight ;
 
 extern const CGFloat kDockLandspaceWidth ;
 extern const CGFloat kDockPortraitWidth ;

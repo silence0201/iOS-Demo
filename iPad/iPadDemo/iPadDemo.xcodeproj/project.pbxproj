@@ -99,6 +99,16 @@
 		E8475E841E056F0000AD0983 /* BottomMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475E831E056F0000AD0983 /* BottomMenu.m */; };
 		E8475E871E05745300AD0983 /* Tabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475E861E05745300AD0983 /* Tabbar.m */; };
 		E8475E8A1E05747F00AD0983 /* IconButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475E891E05747F00AD0983 /* IconButton.m */; };
+		E8475E8D1E0659AE00AD0983 /* AllStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475E8C1E0659AE00AD0983 /* AllStatusViewController.m */; };
+		E8475E901E0659DC00AD0983 /* RelatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475E8F1E0659DC00AD0983 /* RelatedViewController.m */; };
+		E8475E931E065A0F00AD0983 /* PhotoWallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475E921E065A0F00AD0983 /* PhotoWallViewController.m */; };
+		E8475E961E065A4C00AD0983 /* ElectronicPhotoFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475E951E065A4C00AD0983 /* ElectronicPhotoFrameViewController.m */; };
+		E8475E991E065A8100AD0983 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475E981E065A8100AD0983 /* FriendsViewController.m */; };
+		E8475E9C1E065AB100AD0983 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475E9B1E065AB100AD0983 /* MoreViewController.m */; };
+		E8475E9F1E065ACE00AD0983 /* ModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475E9E1E065ACE00AD0983 /* ModelViewController.m */; };
+		E8475EA21E0661D700AD0983 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475EA11E0661D700AD0983 /* AboutViewController.m */; };
+		E8475EA51E0665AE00AD0983 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475EA41E0665AE00AD0983 /* PhotoViewController.m */; };
+		E8475EA81E0665C400AD0983 /* BlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475EA71E0665C400AD0983 /* BlogViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -285,6 +295,26 @@
 		E8475E861E05745300AD0983 /* Tabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tabbar.m; sourceTree = "<group>"; };
 		E8475E881E05747F00AD0983 /* IconButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconButton.h; sourceTree = "<group>"; };
 		E8475E891E05747F00AD0983 /* IconButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconButton.m; sourceTree = "<group>"; };
+		E8475E8B1E0659AE00AD0983 /* AllStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllStatusViewController.h; sourceTree = "<group>"; };
+		E8475E8C1E0659AE00AD0983 /* AllStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllStatusViewController.m; sourceTree = "<group>"; };
+		E8475E8E1E0659DC00AD0983 /* RelatedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelatedViewController.h; sourceTree = "<group>"; };
+		E8475E8F1E0659DC00AD0983 /* RelatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelatedViewController.m; sourceTree = "<group>"; };
+		E8475E911E065A0F00AD0983 /* PhotoWallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoWallViewController.h; sourceTree = "<group>"; };
+		E8475E921E065A0F00AD0983 /* PhotoWallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoWallViewController.m; sourceTree = "<group>"; };
+		E8475E941E065A4C00AD0983 /* ElectronicPhotoFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectronicPhotoFrameViewController.h; sourceTree = "<group>"; };
+		E8475E951E065A4C00AD0983 /* ElectronicPhotoFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectronicPhotoFrameViewController.m; sourceTree = "<group>"; };
+		E8475E971E065A8100AD0983 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		E8475E981E065A8100AD0983 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		E8475E9A1E065AB100AD0983 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		E8475E9B1E065AB100AD0983 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		E8475E9D1E065ACE00AD0983 /* ModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelViewController.h; sourceTree = "<group>"; };
+		E8475E9E1E065ACE00AD0983 /* ModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelViewController.m; sourceTree = "<group>"; };
+		E8475EA01E0661D700AD0983 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		E8475EA11E0661D700AD0983 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		E8475EA31E0665AE00AD0983 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		E8475EA41E0665AE00AD0983 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		E8475EA61E0665C400AD0983 /* BlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogViewController.h; sourceTree = "<group>"; };
+		E8475EA71E0665C400AD0983 /* BlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +381,9 @@
 		E8475D1D1E0525F500AD0983 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E8475EAB1E066A6B00AD0983 /* IconButtonVirwController */,
+				E8475EAA1E066A4A00AD0983 /* BottomMenuViewController */,
+				E8475EA91E066A2900AD0983 /* TabbarViewController */,
 				E8475C0E1E05135300AD0983 /* ViewController.h */,
 				E8475C0F1E05135300AD0983 /* ViewController.m */,
 				E8475E4E1E05300000AD0983 /* MainViewController.h */,
@@ -666,6 +699,47 @@
 			path = ViewHierarchy;
 			sourceTree = "<group>";
 		};
+		E8475EA91E066A2900AD0983 /* TabbarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E8475E8C1E0659AE00AD0983 /* AllStatusViewController.m */,
+				E8475E8E1E0659DC00AD0983 /* RelatedViewController.h */,
+				E8475E8F1E0659DC00AD0983 /* RelatedViewController.m */,
+				E8475E911E065A0F00AD0983 /* PhotoWallViewController.h */,
+				E8475E921E065A0F00AD0983 /* PhotoWallViewController.m */,
+				E8475E941E065A4C00AD0983 /* ElectronicPhotoFrameViewController.h */,
+				E8475E951E065A4C00AD0983 /* ElectronicPhotoFrameViewController.m */,
+				E8475E971E065A8100AD0983 /* FriendsViewController.h */,
+				E8475E981E065A8100AD0983 /* FriendsViewController.m */,
+				E8475E9A1E065AB100AD0983 /* MoreViewController.h */,
+				E8475E9B1E065AB100AD0983 /* MoreViewController.m */,
+				E8475E8B1E0659AE00AD0983 /* AllStatusViewController.h */,
+			);
+			name = TabbarViewController;
+			sourceTree = "<group>";
+		};
+		E8475EAA1E066A4A00AD0983 /* BottomMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E8475E9D1E065ACE00AD0983 /* ModelViewController.h */,
+				E8475E9E1E065ACE00AD0983 /* ModelViewController.m */,
+				E8475EA31E0665AE00AD0983 /* PhotoViewController.h */,
+				E8475EA41E0665AE00AD0983 /* PhotoViewController.m */,
+				E8475EA61E0665C400AD0983 /* BlogViewController.h */,
+				E8475EA71E0665C400AD0983 /* BlogViewController.m */,
+			);
+			name = BottomMenuViewController;
+			sourceTree = "<group>";
+		};
+		E8475EAB1E066A6B00AD0983 /* IconButtonVirwController */ = {
+			isa = PBXGroup;
+			children = (
+				E8475EA01E0661D700AD0983 /* AboutViewController.h */,
+				E8475EA11E0661D700AD0983 /* AboutViewController.m */,
+			);
+			name = IconButtonVirwController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -770,10 +844,14 @@
 				E8475E871E05745300AD0983 /* Tabbar.m in Sources */,
 				E8475E091E0528C100AD0983 /* FLEXArgumentInputSwitchView.m in Sources */,
 				E8475C0D1E05135300AD0983 /* AppDelegate.m in Sources */,
+				E8475E991E065A8100AD0983 /* FriendsViewController.m in Sources */,
 				E8475C0A1E05135300AD0983 /* main.m in Sources */,
+				E8475E961E065A4C00AD0983 /* ElectronicPhotoFrameViewController.m in Sources */,
+				E8475E9C1E065AB100AD0983 /* MoreViewController.m in Sources */,
 				E8475E401E0528C100AD0983 /* FLEXViewControllerExplorerViewController.m in Sources */,
 				E8475E3A1E0528C100AD0983 /* FLEXGlobalsTableViewControllerEntry.m in Sources */,
 				E8475E4D1E0528C100AD0983 /* FLEXImagePreviewViewController.m in Sources */,
+				E8475EA81E0665C400AD0983 /* BlogViewController.m in Sources */,
 				E8475E331E0528C100AD0983 /* FLEXNetworkTransactionTableViewCell.m in Sources */,
 				E8475E461E0528C100AD0983 /* FLEXKeyboardShortcutManager.m in Sources */,
 				E8475E1C1E0528C100AD0983 /* FLEXTableListViewController.m in Sources */,
@@ -794,6 +872,9 @@
 				E8475E101E0528C100AD0983 /* FLEXIvarEditorViewController.m in Sources */,
 				E8475E531E05314A00AD0983 /* Dock.m in Sources */,
 				E8475E191E0528C100AD0983 /* FLEXTableContentCell.m in Sources */,
+				E8475EA51E0665AE00AD0983 /* PhotoViewController.m in Sources */,
+				E8475EA21E0661D700AD0983 /* AboutViewController.m in Sources */,
+				E8475E901E0659DC00AD0983 /* RelatedViewController.m in Sources */,
 				E8475E441E0528C100AD0983 /* FLEXHeapEnumerator.m in Sources */,
 				E8475E0C1E0528C100AD0983 /* FLEXArgumentInputViewFactory.m in Sources */,
 				E8475E3E1E0528C100AD0983 /* FLEXObjectExplorerViewController.m in Sources */,
@@ -812,9 +893,12 @@
 				E8475E311E0528C100AD0983 /* FLEXNetworkTransaction.m in Sources */,
 				E8475E841E056F0000AD0983 /* BottomMenu.m in Sources */,
 				E8475E561E05326B00AD0983 /* UIView+YYAdd.m in Sources */,
+				E8475E8D1E0659AE00AD0983 /* AllStatusViewController.m in Sources */,
 				E8475E481E0528C100AD0983 /* FLEXResources.m in Sources */,
 				E8475E071E0528C100AD0983 /* FLEXArgumentInputStringView.m in Sources */,
 				E8475E381E0528C100AD0983 /* FLEXDefaultsExplorerViewController.m in Sources */,
+				E8475E9F1E065ACE00AD0983 /* ModelViewController.m in Sources */,
+				E8475E931E065A0F00AD0983 /* PhotoWallViewController.m in Sources */,
 				E8475E2C1E0528C100AD0983 /* FLEXManager.m in Sources */,
 				E8475E2A1E0528C100AD0983 /* FLEXSystemLogTableViewController.m in Sources */,
 				E8475E3D1E0528C100AD0983 /* FLEXObjectExplorerFactory.m in Sources */,

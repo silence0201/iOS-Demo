@@ -9,6 +9,7 @@
 #import "Const.h"
 
 const CGFloat kLandspaceWidth = 1024 ;
+const CGFloat kLandscapeHeight = 768 ;
 
 const CGFloat kDockLandspaceWidth = 270 ;
 const CGFloat kDockPortraitWidth = 70 ;

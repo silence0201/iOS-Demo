@@ -17,6 +17,7 @@
         self.layer.cornerRadius = 6 ;
         self.layer.masksToBounds = YES ;
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
+        [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal] ;
     }
     return self ;
 }
