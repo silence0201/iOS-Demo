@@ -30,6 +30,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationDidChange:) name:UIDeviceOrientationDidChangeNotification object:nil] ;
 }
 
+
 - (void)orientationDidChange:(NSNotification *)noti{
     // 748  1004
     BOOL isLandspace = self.view.height == kLandscapeHeight - 20  ;

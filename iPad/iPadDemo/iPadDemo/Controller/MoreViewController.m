@@ -25,6 +25,11 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationDidChange:) name:UIDeviceOrientationDidChangeNotification object:nil] ;
 }
 
+- (void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews] ;
+    self.imageView.size = self.view.size ;
+}
+
 - (void)orientationDidChange:(NSNotification *)noti{
     self.imageView.size = self.view.size ;
 }

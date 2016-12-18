@@ -37,6 +37,11 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationDidChange:) name:UIDeviceOrientationDidChangeNotification object:nil] ;
 }
 
+- (void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews] ;
+    self.imageView.size = self.view.size ;
+}
+
 - (void)scClick:(UISegmentedControl *)sc{
     NSLog(@"%ld", sc.selectedSegmentIndex);
     self.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld",sc.selectedSegmentIndex]] ;
