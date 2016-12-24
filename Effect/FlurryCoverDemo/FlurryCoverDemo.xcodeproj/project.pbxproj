@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8EF32EB1E0EA73500C14191 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF32EA1E0EA73500C14191 /* main.m */; };
+		E8EF32EE1E0EA73500C14191 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF32ED1E0EA73500C14191 /* AppDelegate.m */; };
+		E8EF32F11E0EA73500C14191 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF32F01E0EA73500C14191 /* ViewController.m */; };
+		E8EF32F61E0EA73500C14191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8EF32F51E0EA73500C14191 /* Assets.xcassets */; };
+		E8EF32F91E0EA73500C14191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8EF32F71E0EA73500C14191 /* LaunchScreen.storyboard */; };
+		E8EF33031E0EA7B400C14191 /* SIFlurryCover.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF33021E0EA7B400C14191 /* SIFlurryCover.m */; };
+		E8EF33061E0EAAE700C14191 /* UIScrollView+SIFlurryCover.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF33051E0EAAE700C14191 /* UIScrollView+SIFlurryCover.m */; };
+		E8EF33091E0EB01100C14191 /* DemoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF33081E0EB01100C14191 /* DemoTableView.m */; };
+		E8EF330C1E0EB02200C14191 /* DemoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF330B1E0EB02200C14191 /* DemoScrollView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8EF32E61E0EA73500C14191 /* FlurryCoverDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlurryCoverDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8EF32EA1E0EA73500C14191 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8EF32EC1E0EA73500C14191 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8EF32ED1E0EA73500C14191 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8EF32EF1E0EA73500C14191 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E8EF32F01E0EA73500C14191 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E8EF32F51E0EA73500C14191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8EF32F81E0EA73500C14191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8EF32FA1E0EA73500C14191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8EF33011E0EA7B400C14191 /* SIFlurryCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIFlurryCover.h; sourceTree = "<group>"; };
+		E8EF33021E0EA7B400C14191 /* SIFlurryCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIFlurryCover.m; sourceTree = "<group>"; };
+		E8EF33041E0EAAE700C14191 /* UIScrollView+SIFlurryCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SIFlurryCover.h"; sourceTree = "<group>"; };
+		E8EF33051E0EAAE700C14191 /* UIScrollView+SIFlurryCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SIFlurryCover.m"; sourceTree = "<group>"; };
+		E8EF33071E0EB01100C14191 /* DemoTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableView.h; sourceTree = "<group>"; };
+		E8EF33081E0EB01100C14191 /* DemoTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableView.m; sourceTree = "<group>"; };
+		E8EF330A1E0EB02200C14191 /* DemoScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoScrollView.h; sourceTree = "<group>"; };
+		E8EF330B1E0EB02200C14191 /* DemoScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoScrollView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8EF32E31E0EA73500C14191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8EF32DD1E0EA73500C14191 = {
+			isa = PBXGroup;
+			children = (
+				E8EF32E81E0EA73500C14191 /* FlurryCoverDemo */,
+				E8EF32E71E0EA73500C14191 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8EF32E71E0EA73500C14191 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8EF32E61E0EA73500C14191 /* FlurryCoverDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8EF32E81E0EA73500C14191 /* FlurryCoverDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E8EF33001E0EA75A00C14191 /* FlurryCover */,
+				E8EF32EC1E0EA73500C14191 /* AppDelegate.h */,
+				E8EF32ED1E0EA73500C14191 /* AppDelegate.m */,
+				E8EF32EF1E0EA73500C14191 /* ViewController.h */,
+				E8EF32F01E0EA73500C14191 /* ViewController.m */,
+				E8EF32F51E0EA73500C14191 /* Assets.xcassets */,
+				E8EF32F71E0EA73500C14191 /* LaunchScreen.storyboard */,
+				E8EF32FA1E0EA73500C14191 /* Info.plist */,
+				E8EF32E91E0EA73500C14191 /* Supporting Files */,
+				E8EF33071E0EB01100C14191 /* DemoTableView.h */,
+				E8EF33081E0EB01100C14191 /* DemoTableView.m */,
+				E8EF330A1E0EB02200C14191 /* DemoScrollView.h */,
+				E8EF330B1E0EB02200C14191 /* DemoScrollView.m */,
+			);
+			path = FlurryCoverDemo;
+			sourceTree = "<group>";
+		};
+		E8EF32E91E0EA73500C14191 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8EF32EA1E0EA73500C14191 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8EF33001E0EA75A00C14191 /* FlurryCover */ = {
+			isa = PBXGroup;
+			children = (
+				E8EF33011E0EA7B400C14191 /* SIFlurryCover.h */,
+				E8EF33021E0EA7B400C14191 /* SIFlurryCover.m */,
+				E8EF33041E0EAAE700C14191 /* UIScrollView+SIFlurryCover.h */,
+				E8EF33051E0EAAE700C14191 /* UIScrollView+SIFlurryCover.m */,
+			);
+			path = FlurryCover;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8EF32E51E0EA73500C14191 /* FlurryCoverDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8EF32FD1E0EA73500C14191 /* Build configuration list for PBXNativeTarget "FlurryCoverDemo" */;
+			buildPhases = (
+				E8EF32E21E0EA73500C14191 /* Sources */,
+				E8EF32E31E0EA73500C14191 /* Frameworks */,
+				E8EF32E41E0EA73500C14191 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlurryCoverDemo;
+			productName = FlurryCoverDemo;
+			productReference = E8EF32E61E0EA73500C14191 /* FlurryCoverDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8EF32DE1E0EA73500C14191 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = silence;
+				TargetAttributes = {
+					E8EF32E51E0EA73500C14191 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = UKBBWVJH59;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E8EF32E11E0EA73500C14191 /* Build configuration list for PBXProject "FlurryCoverDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8EF32DD1E0EA73500C14191;
+			productRefGroup = E8EF32E71E0EA73500C14191 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8EF32E51E0EA73500C14191 /* FlurryCoverDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8EF32E41E0EA73500C14191 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8EF32F91E0EA73500C14191 /* LaunchScreen.storyboard in Resources */,
+				E8EF32F61E0EA73500C14191 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8EF32E21E0EA73500C14191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8EF330C1E0EB02200C14191 /* DemoScrollView.m in Sources */,
+				E8EF32F11E0EA73500C14191 /* ViewController.m in Sources */,
+				E8EF33031E0EA7B400C14191 /* SIFlurryCover.m in Sources */,
+				E8EF32EE1E0EA73500C14191 /* AppDelegate.m in Sources */,
+				E8EF32EB1E0EA73500C14191 /* main.m in Sources */,
+				E8EF33091E0EB01100C14191 /* DemoTableView.m in Sources */,
+				E8EF33061E0EAAE700C14191 /* UIScrollView+SIFlurryCover.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8EF32F71E0EA73500C14191 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8EF32F81E0EA73500C14191 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8EF32FB1E0EA73500C14191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8EF32FC1E0EA73500C14191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8EF32FE1E0EA73500C14191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = FlurryCoverDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.FlurryCoverDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8EF32FF1E0EA73500C14191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = FlurryCoverDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.FlurryCoverDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8EF32E11E0EA73500C14191 /* Build configuration list for PBXProject "FlurryCoverDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8EF32FB1E0EA73500C14191 /* Debug */,
+				E8EF32FC1E0EA73500C14191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8EF32FD1E0EA73500C14191 /* Build configuration list for PBXNativeTarget "FlurryCoverDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8EF32FE1E0EA73500C14191 /* Debug */,
+				E8EF32FF1E0EA73500C14191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8EF32DE1E0EA73500C14191 /* Project object */;
+}
