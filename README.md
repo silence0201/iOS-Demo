@@ -22,6 +22,7 @@
 
 #####`mask`:蒙版效果
 * [maskViewDemo](mask/maskViewDemo):简单蒙版效果
+* [ScratchViewDemo](mask/ScratchViewDemo):简单刮奖效果
 
 #####`navigation`:导航控制器使用
 * [NavigationBarDemo](navigation/NavigationBarDemo):导航栏渐变透明效果
