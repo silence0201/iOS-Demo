@@ -13,6 +13,7 @@
 * [CollectionViewLinkDemo](CollectionView/CollectionViewLinkDemo):CollectionView实现联动菜单
 * [WaterFlowLayoutDemo](CollectionView/WaterFlowLayoutDemo):简单实现瀑布流布局
 * [CalendarDemo](CollectionView/CalendarDemo):简单日历Demo
+* [CollectViewAlignDemo](CollectionView/CollectViewAlignDemo):CollectionView居中显示效果
 
 #####`guide`:引导页面  
 * [guidePageDemo](guide/guidePageDemo):简单应用引导页面
