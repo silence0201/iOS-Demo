@@ -14,6 +14,7 @@
 * [WaterFlowLayoutDemo](CollectionView/WaterFlowLayoutDemo):简单实现瀑布流布局
 * [CalendarDemo](CollectionView/CalendarDemo):简单日历Demo
 * [CollectViewAlignDemo](CollectionView/CollectViewAlignDemo):CollectionView居中显示效果
+* [DecorationView](CollectionView/DecorationView):CollectionView的DecorationView简单使用
 
 #####`guide`:引导页面  
 * [guidePageDemo](guide/guidePageDemo):简单应用引导页面
