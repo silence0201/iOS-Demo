@@ -16,6 +16,7 @@
 * [CollectViewAlignDemo](CollectionView/CollectViewAlignDemo):CollectionView居中显示效果
 * [DecorationView](CollectionView/DecorationView):CollectionView的DecorationView简单使用
 * [CustomFlowLayoutDemo](CollectionView/CustomFlowLayoutDemo):自定义流式布局
+* [FixedHeaderFlowLayout](CollectionView//FixedHeaderFlowLayout):自定义布局实现头部固定
 
 #####`guide`:引导页面  
 * [guidePageDemo](guide/guidePageDemo):简单应用引导页面
