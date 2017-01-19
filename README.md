@@ -23,6 +23,7 @@
 * [AdvertiseDemo](guide/AdvertiseDemo):广告启动页面
 * [GuidePageFold](guide/GuidePageFold):代动画效果的引导页面
 * [KEEP](guide/KEEP):KEEP动画引导页面
+* [MovieGuideDemo](guide/MovieGuideDemo):视频引导页
 
 #####`mask`:蒙版效果
 * [maskViewDemo](mask/maskViewDemo):简单蒙版效果
