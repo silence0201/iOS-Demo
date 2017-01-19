@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     BOOL isFirstLogin = [[[NSUserDefaults standardUserDefaults] objectForKey:@"isFirstLogin"] boolValue];
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds] ;
-    if (isFirstLogin) {
+    if (!isFirstLogin) {
         SIMovieGuide *guide = [[SIMovieGuide alloc]init] ;
         NSString *path = [[NSBundle mainBundle]pathForResource:@"qidong"ofType:@"mp4"] ;
         if (path) {
