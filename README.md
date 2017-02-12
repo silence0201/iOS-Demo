@@ -99,6 +99,7 @@
 * [QRCodeDemo](Advanced/QRCodeDemo):二维码的生成与识别
 * [versionUpdate](Advanced/versionUpdate):版本更新的简单实现思路
 * [MenuControllerDemo](Advanced/MenuControllerDemo):MenuControllerDemo的简单使用
+* [FilesBrowser](Advanced/FilesBrowser):利用NSFileManager实现简单的文件浏览器  
 
 #### `Effect`:表现效果
 * [FrostedGlassDemo](Effect/FrostedGlassDemo):简单实现的毛玻璃效果
