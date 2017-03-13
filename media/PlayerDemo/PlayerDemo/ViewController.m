@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "MPlayer.h"
+#import "AVPlayer.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -23,6 +25,13 @@ static NSString *url = @"http://baobab.wdjcdn.com/1455782903700jy.mp4" ;
 - (IBAction)MPlayerAction:(id)sender {
     MPlayer *player = [[MPlayer alloc]initWithFrame:[UIScreen mainScreen].bounds URL:url] ;
     [self.view addSubview:player] ;
+}
+
+- (IBAction)AVplayerAction:(id)sender {
+    APlayer *player = [[APlayer alloc]initWithURL:url] ;
+    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate ;
+    app.isRotation = YES ;
+    [self presentViewController:player animated:YES completion:nil];
 }
 
 

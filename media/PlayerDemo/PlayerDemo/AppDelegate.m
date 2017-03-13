@@ -19,5 +19,15 @@
     return YES;
 }
 
+//  每次试图切换的时候都会走的方法,用于控制设备的旋转方向.
+-(UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    if (_isRotation) {
+        return UIInterfaceOrientationMaskLandscape;
+    }else {
+        return UIInterfaceOrientationMaskPortrait;
+    }
+    
+}
+
 
 @end

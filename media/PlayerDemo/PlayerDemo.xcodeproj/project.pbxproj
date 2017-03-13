@@ -15,6 +15,7 @@
 		E80166A21E75647400071048 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80166A11E75647400071048 /* Main.storyboard */; };
 		E80166A61E7568DE00071048 /* Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E80166A51E7568DE00071048 /* Extension.m */; };
 		E80166AB1E75693000071048 /* MPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E80166AA1E75693000071048 /* MPlayer.m */; };
+		E81C1EF61E76BBDA00F688BA /* AVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E81C1EF51E76BBDA00F688BA /* AVPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		E80166A51E7568DE00071048 /* Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Extension.m; sourceTree = "<group>"; };
 		E80166A91E75693000071048 /* MPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPlayer.h; sourceTree = "<group>"; };
 		E80166AA1E75693000071048 /* MPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPlayer.m; sourceTree = "<group>"; };
+		E81C1EF41E76BBDA00F688BA /* AVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayer.h; sourceTree = "<group>"; };
+		E81C1EF51E76BBDA00F688BA /* AVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 		E80166A81E75690A00071048 /* AVPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				E81C1EF41E76BBDA00F688BA /* AVPlayer.h */,
+				E81C1EF51E76BBDA00F688BA /* AVPlayer.m */,
 			);
 			path = AVPlayer;
 			sourceTree = SOURCE_ROOT;
@@ -187,6 +192,7 @@
 				E801668F1E7562BF00071048 /* ViewController.m in Sources */,
 				E801668C1E7562BF00071048 /* AppDelegate.m in Sources */,
 				E80166AB1E75693000071048 /* MPlayer.m in Sources */,
+				E81C1EF61E76BBDA00F688BA /* AVPlayer.m in Sources */,
 				E80166891E7562BF00071048 /* main.m in Sources */,
 				E80166A61E7568DE00071048 /* Extension.m in Sources */,
 			);
@@ -339,6 +345,7 @@
 				E801669D1E7562BF00071048 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
