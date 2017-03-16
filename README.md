@@ -76,6 +76,7 @@
 
 ##### `media`:媒体播放
 * [MusicPlayerDemo](media/MusicPlayerDemo):简单实现音乐播放器
+* [PlayerDemo](media/PlayerDemo):简单的视频播放器
 
 ##### `TabBar`:TabBar使用
 * [TabbarDemo](TabBar/TabbarDemo):简单自定义Tabbar
