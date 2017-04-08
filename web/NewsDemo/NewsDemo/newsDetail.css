@@ -1,0 +1,26 @@
+img{
+    width:100%;
+}
+
+#mainTitle{
+    text-align:center;
+    font-size:20px;
+    margin-top:25px;
+    margin-bottom:8px;
+}
+
+#subTitle{
+    color:gray;
+    text-align:center;
+}
+
+.time{
+    margin-right:10px;
+    margin-bottom:8px;
+}
+
+.all-img{
+    text-align:center;
+    color:gray;
+    margin:8px 0;
+}
