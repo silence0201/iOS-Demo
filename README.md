@@ -42,6 +42,9 @@
 * [SelectList](popView/SelectList):仿微信弹出框
 * [CustomAlterView](popView/CustomAlterView):自定义弹出框
 
+#### `PickView`:PickView
+* [SelectCityDemo](PickView/SelectCityDemo):城市选择器
+
 ##### `tableView`:tableview使用
 * [MultipleSelectionDemo](tableView/MultipleSelectionDemo):利用系统功能实现多选
 * [CustomMultipleSelectionDemo](tableView/CustomMultipleSelectionDemo):自定义实现多选
@@ -95,6 +98,7 @@
 
 #### `Advanced`:高级功能
 * [3DTouchDemo](Advanced/3DTouchDemo):3DTouch的简单使用
+* [FPSDemo](Advanced/FPSDemo):显示帧数
 * [TodayExtensionDemo](Advanced/TodayExtensionDemo):TodayWidgets的简单案例
 * [TouchID](Advanced/TouchID):TouchID的简单使用
 * [QRCodeDemo](Advanced/QRCodeDemo):二维码的生成与识别
