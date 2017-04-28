@@ -1,0 +1,29 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+// Standard iOS Imports
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+// Pods
+#import <ReactiveViewModel/ReactiveViewModel.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <500px-iOS-api/PXAPI.h>
+#import <libextobjc/EXTScope.h>
+
+// App Delegate
+#import "FRPAppDelegate.h"
+#define AppDelegate ((FRPAppDelegate *)[[UIApplication sharedApplication] delegate])
+
+#endif

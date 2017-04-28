@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17A5BBDB18BB2F6D000E2D24 /* FRPLoginViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5BBDA18BB2F6D000E2D24 /* FRPLoginViewModelTests.m */; };
+		17E5A10E18BB43C600AFC028 /* FRPPhotoImporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E5A10D18BB43C600AFC028 /* FRPPhotoImporterTests.m */; };
+		5E595111180E065F002F44FA /* FRPFullSizePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E595110180E065F002F44FA /* FRPFullSizePhotoViewController.m */; };
+		5E595117180E0C33002F44FA /* FRPPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E595116180E0C33002F44FA /* FRPPhotoViewController.m */; };
+		5E59511A180E21E0002F44FA /* FRPPhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E595119180E21E0002F44FA /* FRPPhotoDetailViewController.m */; };
+		5E59511D181219AC002F44FA /* FRPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E59511C181219AC002F44FA /* FRPLoginViewController.m */; };
+		5E59511F18121D09002F44FA /* FRPLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E59511E18121D09002F44FA /* FRPLoginViewController.xib */; };
+		5E730B0E1815F3E4003FCB43 /* FRPGalleryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E730B0D1815F3E4003FCB43 /* FRPGalleryViewModel.m */; };
+		5E730B101815F78B003FCB43 /* FRPGalleryViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E730B0F1815F78B003FCB43 /* FRPGalleryViewModelTests.m */; };
+		5E730B141815FE97003FCB43 /* FRPFullSizePhotoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E730B131815FE97003FCB43 /* FRPFullSizePhotoViewModel.m */; };
+		5E93AD9A186C781000795C9E /* FRPFullSizePhotoViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E93AD99186C781000795C9E /* FRPFullSizePhotoViewModelTests.m */; };
+		5E93AD9C186C80DE00795C9E /* FRPPhotoViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E93AD9B186C80DE00795C9E /* FRPPhotoViewModelTests.m */; };
+		5EAD1F5818173A3200C67860 /* FRPPhotoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD1F5718173A3200C67860 /* FRPPhotoViewModel.m */; };
+		5EAD1F5C18173F1500C67860 /* FRPLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD1F5B18173F1500C67860 /* FRPLoginViewModel.m */; };
+		5EAD1F601817418800C67860 /* FRPPhotoDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD1F5F1817418800C67860 /* FRPPhotoDetailViewModel.m */; };
+		5EBC599E180B247500B683A7 /* FRPCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBC599D180B247500B683A7 /* FRPCell.m */; };
+		5EBC59A6180B2AA200B683A7 /* FRPPhotoImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBC59A5180B2AA200B683A7 /* FRPPhotoImporter.m */; };
+		5EBC59A9180B2C4F00B683A7 /* FRPGalleryFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBC59A8180B2C4F00B683A7 /* FRPGalleryFlowLayout.m */; };
+		5EBE2AF5180B07D0007B6BF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBE2AF4180B07D0007B6BF3 /* Foundation.framework */; };
+		5EBE2AF7180B07D0007B6BF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBE2AF6180B07D0007B6BF3 /* CoreGraphics.framework */; };
+		5EBE2AF9180B07D0007B6BF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBE2AF8180B07D0007B6BF3 /* UIKit.framework */; };
+		5EBE2B01180B07D0007B6BF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EBE2AFF180B07D0007B6BF3 /* InfoPlist.strings */; };
+		5EBE2B03180B07D0007B6BF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE2B02180B07D0007B6BF3 /* main.m */; };
+		5EBE2B07180B07D0007B6BF3 /* FRPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE2B06180B07D0007B6BF3 /* FRPAppDelegate.m */; };
+		5EBE2B13180B07D0007B6BF3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBE2B12180B07D0007B6BF3 /* XCTest.framework */; };
+		5EBE2B14180B07D0007B6BF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBE2AF4180B07D0007B6BF3 /* Foundation.framework */; };
+		5EBE2B15180B07D0007B6BF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBE2AF8180B07D0007B6BF3 /* UIKit.framework */; };
+		5EBE2B16180B07D0007B6BF3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBE2AFA180B07D0007B6BF3 /* CoreData.framework */; };
+		5EBE2B1E180B07D0007B6BF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EBE2B1C180B07D0007B6BF3 /* InfoPlist.strings */; };
+		5EBE2B2B180B0AF1007B6BF3 /* FRPGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE2B2A180B0AF1007B6BF3 /* FRPGalleryViewController.m */; };
+		BBD7E82A92017337A9327B45 /* libPods-FRP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CE287713EF98B13B46C945 /* libPods-FRP.a */; };
+		FBF19D5EAE052AA64F5CA14E /* libPods-FRPTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8809EEB22EB3A6401B76D63 /* libPods-FRPTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5EBE2B17180B07D0007B6BF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EBE2AE9180B07D0007B6BF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EBE2AF0180B07D0007B6BF3;
+			remoteInfo = FRP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17A5BBDA18BB2F6D000E2D24 /* FRPLoginViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPLoginViewModelTests.m; sourceTree = "<group>"; };
+		17E5A10D18BB43C600AFC028 /* FRPPhotoImporterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoImporterTests.m; sourceTree = "<group>"; };
+		1884676F4F8E6D7E06B81205 /* Pods-FRP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FRP/Pods-FRP.debug.xcconfig"; sourceTree = "<group>"; };
+		1E0CF165C6D7AD8C8B9073ED /* Pods-FRPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FRPTests/Pods-FRPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		336A60776C2EF59A8610364C /* Pods-FRPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRPTests/Pods-FRPTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C383D787C0B57F75772E469 /* Pods-FRP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRP.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRP/Pods-FRP.release.xcconfig"; sourceTree = "<group>"; };
+		5E59510F180E065F002F44FA /* FRPFullSizePhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPFullSizePhotoViewController.h; sourceTree = "<group>"; };
+		5E595110180E065F002F44FA /* FRPFullSizePhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPFullSizePhotoViewController.m; sourceTree = "<group>"; };
+		5E595115180E0C33002F44FA /* FRPPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPPhotoViewController.h; sourceTree = "<group>"; };
+		5E595116180E0C33002F44FA /* FRPPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoViewController.m; sourceTree = "<group>"; };
+		5E595118180E21E0002F44FA /* FRPPhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPPhotoDetailViewController.h; sourceTree = "<group>"; };
+		5E595119180E21E0002F44FA /* FRPPhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoDetailViewController.m; sourceTree = "<group>"; };
+		5E59511B181219AC002F44FA /* FRPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPLoginViewController.h; sourceTree = "<group>"; };
+		5E59511C181219AC002F44FA /* FRPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPLoginViewController.m; sourceTree = "<group>"; };
+		5E59511E18121D09002F44FA /* FRPLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FRPLoginViewController.xib; sourceTree = "<group>"; };
+		5E730B0C1815F3E4003FCB43 /* FRPGalleryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPGalleryViewModel.h; sourceTree = "<group>"; };
+		5E730B0D1815F3E4003FCB43 /* FRPGalleryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPGalleryViewModel.m; sourceTree = "<group>"; };
+		5E730B0F1815F78B003FCB43 /* FRPGalleryViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPGalleryViewModelTests.m; sourceTree = "<group>"; };
+		5E730B121815FE97003FCB43 /* FRPFullSizePhotoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPFullSizePhotoViewModel.h; sourceTree = "<group>"; };
+		5E730B131815FE97003FCB43 /* FRPFullSizePhotoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPFullSizePhotoViewModel.m; sourceTree = "<group>"; };
+		5E93AD99186C781000795C9E /* FRPFullSizePhotoViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPFullSizePhotoViewModelTests.m; sourceTree = "<group>"; };
+		5E93AD9B186C80DE00795C9E /* FRPPhotoViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoViewModelTests.m; sourceTree = "<group>"; };
+		5EAD1F5618173A3200C67860 /* FRPPhotoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPPhotoViewModel.h; sourceTree = "<group>"; };
+		5EAD1F5718173A3200C67860 /* FRPPhotoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoViewModel.m; sourceTree = "<group>"; };
+		5EAD1F5A18173F1500C67860 /* FRPLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPLoginViewModel.h; sourceTree = "<group>"; };
+		5EAD1F5B18173F1500C67860 /* FRPLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPLoginViewModel.m; sourceTree = "<group>"; };
+		5EAD1F5E1817418800C67860 /* FRPPhotoDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPPhotoDetailViewModel.h; sourceTree = "<group>"; };
+		5EAD1F5F1817418800C67860 /* FRPPhotoDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoDetailViewModel.m; sourceTree = "<group>"; };
+		5EBC599C180B247500B683A7 /* FRPCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPCell.h; sourceTree = "<group>"; };
+		5EBC599D180B247500B683A7 /* FRPCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPCell.m; sourceTree = "<group>"; };
+		5EBC59A0180B268600B683A7 /* FRPPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPPhotoModel.h; sourceTree = "<group>"; };
+		5EBC59A1180B268600B683A7 /* FRPPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoModel.m; sourceTree = "<group>"; };
+		5EBC59A4180B2AA200B683A7 /* FRPPhotoImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPPhotoImporter.h; sourceTree = "<group>"; };
+		5EBC59A5180B2AA200B683A7 /* FRPPhotoImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPPhotoImporter.m; sourceTree = "<group>"; };
+		5EBC59A7180B2C4F00B683A7 /* FRPGalleryFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPGalleryFlowLayout.h; sourceTree = "<group>"; };
+		5EBC59A8180B2C4F00B683A7 /* FRPGalleryFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPGalleryFlowLayout.m; sourceTree = "<group>"; };
+		5EBE2AF1180B07D0007B6BF3 /* FRP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EBE2AF4180B07D0007B6BF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5EBE2AF6180B07D0007B6BF3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5EBE2AF8180B07D0007B6BF3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5EBE2AFA180B07D0007B6BF3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5EBE2AFE180B07D0007B6BF3 /* FRP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FRP-Info.plist"; sourceTree = "<group>"; };
+		5EBE2B00180B07D0007B6BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5EBE2B02180B07D0007B6BF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5EBE2B04180B07D0007B6BF3 /* FRP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FRP-Prefix.pch"; sourceTree = "<group>"; };
+		5EBE2B05180B07D0007B6BF3 /* FRPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRPAppDelegate.h; sourceTree = "<group>"; };
+		5EBE2B06180B07D0007B6BF3 /* FRPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPAppDelegate.m; sourceTree = "<group>"; };
+		5EBE2B11180B07D0007B6BF3 /* FRPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EBE2B12180B07D0007B6BF3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5EBE2B1B180B07D0007B6BF3 /* FRPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FRPTests-Info.plist"; sourceTree = "<group>"; };
+		5EBE2B1D180B07D0007B6BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5EBE2B29180B0AF1007B6BF3 /* FRPGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPGalleryViewController.h; sourceTree = "<group>"; };
+		5EBE2B2A180B0AF1007B6BF3 /* FRPGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPGalleryViewController.m; sourceTree = "<group>"; };
+		B0CE287713EF98B13B46C945 /* libPods-FRP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FRP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8809EEB22EB3A6401B76D63 /* libPods-FRPTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FRPTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EBE2AEE180B07D0007B6BF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EBE2AF7180B07D0007B6BF3 /* CoreGraphics.framework in Frameworks */,
+				5EBE2AF9180B07D0007B6BF3 /* UIKit.framework in Frameworks */,
+				5EBE2AF5180B07D0007B6BF3 /* Foundation.framework in Frameworks */,
+				BBD7E82A92017337A9327B45 /* libPods-FRP.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EBE2B0E180B07D0007B6BF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EBE2B13180B07D0007B6BF3 /* XCTest.framework in Frameworks */,
+				5EBE2B16180B07D0007B6BF3 /* CoreData.framework in Frameworks */,
+				5EBE2B15180B07D0007B6BF3 /* UIKit.framework in Frameworks */,
+				5EBE2B14180B07D0007B6BF3 /* Foundation.framework in Frameworks */,
+				FBF19D5EAE052AA64F5CA14E /* libPods-FRPTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E59510E180E0634002F44FA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E730B0B1815F39D003FCB43 /* Gallery */,
+				5E730B111815FE81003FCB43 /* Full Size Photo */,
+				5EAD1F5518173A1E00C67860 /* Photo View Controller */,
+				5EAD1F5D1817417B00C67860 /* Photo Details */,
+				5EAD1F5918173E9700C67860 /* Login */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5E730B0B1815F39D003FCB43 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				5EBE2B29180B0AF1007B6BF3 /* FRPGalleryViewController.h */,
+				5EBE2B2A180B0AF1007B6BF3 /* FRPGalleryViewController.m */,
+				5E730B0C1815F3E4003FCB43 /* FRPGalleryViewModel.h */,
+				5E730B0D1815F3E4003FCB43 /* FRPGalleryViewModel.m */,
+			);
+			name = Gallery;
+			sourceTree = "<group>";
+		};
+		5E730B111815FE81003FCB43 /* Full Size Photo */ = {
+			isa = PBXGroup;
+			children = (
+				5E59510F180E065F002F44FA /* FRPFullSizePhotoViewController.h */,
+				5E595110180E065F002F44FA /* FRPFullSizePhotoViewController.m */,
+				5E730B121815FE97003FCB43 /* FRPFullSizePhotoViewModel.h */,
+				5E730B131815FE97003FCB43 /* FRPFullSizePhotoViewModel.m */,
+			);
+			name = "Full Size Photo";
+			sourceTree = "<group>";
+		};
+		5EAD1F5518173A1E00C67860 /* Photo View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5E595115180E0C33002F44FA /* FRPPhotoViewController.h */,
+				5E595116180E0C33002F44FA /* FRPPhotoViewController.m */,
+				5EAD1F5618173A3200C67860 /* FRPPhotoViewModel.h */,
+				5EAD1F5718173A3200C67860 /* FRPPhotoViewModel.m */,
+			);
+			name = "Photo View Controller";
+			sourceTree = "<group>";
+		};
+		5EAD1F5918173E9700C67860 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5E59511B181219AC002F44FA /* FRPLoginViewController.h */,
+				5E59511C181219AC002F44FA /* FRPLoginViewController.m */,
+				5E59511E18121D09002F44FA /* FRPLoginViewController.xib */,
+				5EAD1F5A18173F1500C67860 /* FRPLoginViewModel.h */,
+				5EAD1F5B18173F1500C67860 /* FRPLoginViewModel.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		5EAD1F5D1817417B00C67860 /* Photo Details */ = {
+			isa = PBXGroup;
+			children = (
+				5E595118180E21E0002F44FA /* FRPPhotoDetailViewController.h */,
+				5E595119180E21E0002F44FA /* FRPPhotoDetailViewController.m */,
+				5EAD1F5E1817418800C67860 /* FRPPhotoDetailViewModel.h */,
+				5EAD1F5F1817418800C67860 /* FRPPhotoDetailViewModel.m */,
+			);
+			name = "Photo Details";
+			sourceTree = "<group>";
+		};
+		5EBC599F180B267400B683A7 /* UICollectionView Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5EBC599C180B247500B683A7 /* FRPCell.h */,
+				5EBC599D180B247500B683A7 /* FRPCell.m */,
+				5EBC59A7180B2C4F00B683A7 /* FRPGalleryFlowLayout.h */,
+				5EBC59A8180B2C4F00B683A7 /* FRPGalleryFlowLayout.m */,
+			);
+			name = "UICollectionView Extensions";
+			sourceTree = "<group>";
+		};
+		5EBC59A3180B268A00B683A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5EBC59A0180B268600B683A7 /* FRPPhotoModel.h */,
+				5EBC59A1180B268600B683A7 /* FRPPhotoModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5EBE2AE8180B07D0007B6BF3 = {
+			isa = PBXGroup;
+			children = (
+				5EBE2AFC180B07D0007B6BF3 /* FRP */,
+				5EBE2B19180B07D0007B6BF3 /* FRPTests */,
+				5EBE2AF3180B07D0007B6BF3 /* Frameworks */,
+				5EBE2AF2180B07D0007B6BF3 /* Products */,
+				F9674C9AD4F219EAA94D15CF /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		5EBE2AF2180B07D0007B6BF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EBE2AF1180B07D0007B6BF3 /* FRP.app */,
+				5EBE2B11180B07D0007B6BF3 /* FRPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EBE2AF3180B07D0007B6BF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EBE2AF4180B07D0007B6BF3 /* Foundation.framework */,
+				5EBE2AF6180B07D0007B6BF3 /* CoreGraphics.framework */,
+				5EBE2AF8180B07D0007B6BF3 /* UIKit.framework */,
+				5EBE2AFA180B07D0007B6BF3 /* CoreData.framework */,
+				5EBE2B12180B07D0007B6BF3 /* XCTest.framework */,
+				B0CE287713EF98B13B46C945 /* libPods-FRP.a */,
+				F8809EEB22EB3A6401B76D63 /* libPods-FRPTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EBE2AFC180B07D0007B6BF3 /* FRP */ = {
+			isa = PBXGroup;
+			children = (
+				5EBE2B05180B07D0007B6BF3 /* FRPAppDelegate.h */,
+				5EBE2B06180B07D0007B6BF3 /* FRPAppDelegate.m */,
+				5EBC59A4180B2AA200B683A7 /* FRPPhotoImporter.h */,
+				5EBC59A5180B2AA200B683A7 /* FRPPhotoImporter.m */,
+				5E59510E180E0634002F44FA /* View Controllers */,
+				5EBC59A3180B268A00B683A7 /* Models */,
+				5EBC599F180B267400B683A7 /* UICollectionView Extensions */,
+				5EBE2AFD180B07D0007B6BF3 /* Supporting Files */,
+			);
+			path = FRP;
+			sourceTree = "<group>";
+		};
+		5EBE2AFD180B07D0007B6BF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EBE2AFE180B07D0007B6BF3 /* FRP-Info.plist */,
+				5EBE2AFF180B07D0007B6BF3 /* InfoPlist.strings */,
+				5EBE2B02180B07D0007B6BF3 /* main.m */,
+				5EBE2B04180B07D0007B6BF3 /* FRP-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EBE2B19180B07D0007B6BF3 /* FRPTests */ = {
+			isa = PBXGroup;
+			children = (
+				17E5A10D18BB43C600AFC028 /* FRPPhotoImporterTests.m */,
+				17A5BBDA18BB2F6D000E2D24 /* FRPLoginViewModelTests.m */,
+				5E730B0F1815F78B003FCB43 /* FRPGalleryViewModelTests.m */,
+				5E93AD99186C781000795C9E /* FRPFullSizePhotoViewModelTests.m */,
+				5E93AD9B186C80DE00795C9E /* FRPPhotoViewModelTests.m */,
+				5EBE2B1A180B07D0007B6BF3 /* Supporting Files */,
+			);
+			path = FRPTests;
+			sourceTree = "<group>";
+		};
+		5EBE2B1A180B07D0007B6BF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EBE2B1B180B07D0007B6BF3 /* FRPTests-Info.plist */,
+				5EBE2B1C180B07D0007B6BF3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9674C9AD4F219EAA94D15CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1884676F4F8E6D7E06B81205 /* Pods-FRP.debug.xcconfig */,
+				5C383D787C0B57F75772E469 /* Pods-FRP.release.xcconfig */,
+				1E0CF165C6D7AD8C8B9073ED /* Pods-FRPTests.debug.xcconfig */,
+				336A60776C2EF59A8610364C /* Pods-FRPTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EBE2AF0180B07D0007B6BF3 /* FRP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EBE2B23180B07D0007B6BF3 /* Build configuration list for PBXNativeTarget "FRP" */;
+			buildPhases = (
+				AE3AC3FCAD8C4007AF2BE5C4 /* [CP] Check Pods Manifest.lock */,
+				5EBE2AED180B07D0007B6BF3 /* Sources */,
+				5EBE2AEE180B07D0007B6BF3 /* Frameworks */,
+				5EBE2AEF180B07D0007B6BF3 /* Resources */,
+				F30598B3143E5B15DF0771E8 /* [CP] Embed Pods Frameworks */,
+				FA597E3F427686130EBB1A86 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FRP;
+			productName = FRP;
+			productReference = 5EBE2AF1180B07D0007B6BF3 /* FRP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5EBE2B10180B07D0007B6BF3 /* FRPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EBE2B26180B07D0007B6BF3 /* Build configuration list for PBXNativeTarget "FRPTests" */;
+			buildPhases = (
+				19C6AF34977FC536A3348619 /* [CP] Check Pods Manifest.lock */,
+				5EBE2B0D180B07D0007B6BF3 /* Sources */,
+				5EBE2B0E180B07D0007B6BF3 /* Frameworks */,
+				5EBE2B0F180B07D0007B6BF3 /* Resources */,
+				14850E9A19649CE862B6564B /* [CP] Embed Pods Frameworks */,
+				57F7AAE16DE4C3232DE5E1E4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EBE2B18180B07D0007B6BF3 /* PBXTargetDependency */,
+			);
+			name = FRPTests;
+			productName = FRPTests;
+			productReference = 5EBE2B11180B07D0007B6BF3 /* FRPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EBE2AE9180B07D0007B6BF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FRP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Ash Furrow";
+				TargetAttributes = {
+					5EBE2B10180B07D0007B6BF3 = {
+						TestTargetID = 5EBE2AF0180B07D0007B6BF3;
+					};
+				};
+			};
+			buildConfigurationList = 5EBE2AEC180B07D0007B6BF3 /* Build configuration list for PBXProject "FRP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5EBE2AE8180B07D0007B6BF3;
+			productRefGroup = 5EBE2AF2180B07D0007B6BF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EBE2AF0180B07D0007B6BF3 /* FRP */,
+				5EBE2B10180B07D0007B6BF3 /* FRPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EBE2AEF180B07D0007B6BF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EBE2B01180B07D0007B6BF3 /* InfoPlist.strings in Resources */,
+				5E59511F18121D09002F44FA /* FRPLoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EBE2B0F180B07D0007B6BF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EBE2B1E180B07D0007B6BF3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14850E9A19649CE862B6564B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRPTests/Pods-FRPTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19C6AF34977FC536A3348619 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		57F7AAE16DE4C3232DE5E1E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRPTests/Pods-FRPTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE3AC3FCAD8C4007AF2BE5C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F30598B3143E5B15DF0771E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRP/Pods-FRP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA597E3F427686130EBB1A86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRP/Pods-FRP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EBE2AED180B07D0007B6BF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EBC599E180B247500B683A7 /* FRPCell.m in Sources */,
+				5E595111180E065F002F44FA /* FRPFullSizePhotoViewController.m in Sources */,
+				5EBC59A9180B2C4F00B683A7 /* FRPGalleryFlowLayout.m in Sources */,
+				5EAD1F5C18173F1500C67860 /* FRPLoginViewModel.m in Sources */,
+				5EAD1F601817418800C67860 /* FRPPhotoDetailViewModel.m in Sources */,
+				5E59511D181219AC002F44FA /* FRPLoginViewController.m in Sources */,
+				5EBE2B03180B07D0007B6BF3 /* main.m in Sources */,
+				5E730B0E1815F3E4003FCB43 /* FRPGalleryViewModel.m in Sources */,
+				5E59511A180E21E0002F44FA /* FRPPhotoDetailViewController.m in Sources */,
+				5E595117180E0C33002F44FA /* FRPPhotoViewController.m in Sources */,
+				5EBC59A6180B2AA200B683A7 /* FRPPhotoImporter.m in Sources */,
+				5EBE2B2B180B0AF1007B6BF3 /* FRPGalleryViewController.m in Sources */,
+				5E730B141815FE97003FCB43 /* FRPFullSizePhotoViewModel.m in Sources */,
+				5EAD1F5818173A3200C67860 /* FRPPhotoViewModel.m in Sources */,
+				5EBE2B07180B07D0007B6BF3 /* FRPAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EBE2B0D180B07D0007B6BF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E93AD9A186C781000795C9E /* FRPFullSizePhotoViewModelTests.m in Sources */,
+				17E5A10E18BB43C600AFC028 /* FRPPhotoImporterTests.m in Sources */,
+				5E730B101815F78B003FCB43 /* FRPGalleryViewModelTests.m in Sources */,
+				5E93AD9C186C80DE00795C9E /* FRPPhotoViewModelTests.m in Sources */,
+				17A5BBDB18BB2F6D000E2D24 /* FRPLoginViewModelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5EBE2B18180B07D0007B6BF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EBE2AF0180B07D0007B6BF3 /* FRP */;
+			targetProxy = 5EBE2B17180B07D0007B6BF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5EBE2AFF180B07D0007B6BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EBE2B00180B07D0007B6BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5EBE2B1C180B07D0007B6BF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EBE2B1D180B07D0007B6BF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5EBE2B21180B07D0007B6BF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5EBE2B22180B07D0007B6BF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EBE2B24180B07D0007B6BF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1884676F4F8E6D7E06B81205 /* Pods-FRP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRP/FRP-Prefix.pch";
+				INFOPLIST_FILE = "FRP/FRP-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5EBE2B25180B07D0007B6BF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C383D787C0B57F75772E469 /* Pods-FRP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRP/FRP-Prefix.pch";
+				INFOPLIST_FILE = "FRP/FRP-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5EBE2B27180B07D0007B6BF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E0CF165C6D7AD8C8B9073ED /* Pods-FRPTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FRP.app/FRP";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRP/FRP-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FRPTests/FRPTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5EBE2B28180B07D0007B6BF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 336A60776C2EF59A8610364C /* Pods-FRPTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FRP.app/FRP";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRP/FRP-Prefix.pch";
+				INFOPLIST_FILE = "FRPTests/FRPTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EBE2AEC180B07D0007B6BF3 /* Build configuration list for PBXProject "FRP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EBE2B21180B07D0007B6BF3 /* Debug */,
+				5EBE2B22180B07D0007B6BF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EBE2B23180B07D0007B6BF3 /* Build configuration list for PBXNativeTarget "FRP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EBE2B24180B07D0007B6BF3 /* Debug */,
+				5EBE2B25180B07D0007B6BF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EBE2B26180B07D0007B6BF3 /* Build configuration list for PBXNativeTarget "FRPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EBE2B27180B07D0007B6BF3 /* Debug */,
+				5EBE2B28180B07D0007B6BF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EBE2AE9180B07D0007B6BF3 /* Project object */;
+}
