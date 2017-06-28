@@ -30,7 +30,7 @@
     if (!_contentViewDataArr) {
         _contentViewDataArr = [NSMutableArray array] ;
         NSArray *colorArray = @[[UIColor cyanColor],[UIColor blueColor],[UIColor greenColor],[UIColor yellowColor],[UIColor purpleColor]];
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 3; i++) {
             UILabel *tempLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 280, 200)];
             tempLabel.backgroundColor = colorArray[i];
             tempLabel.textAlignment   = NSTextAlignmentCenter;

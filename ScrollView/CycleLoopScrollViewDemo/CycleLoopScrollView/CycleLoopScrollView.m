@@ -81,11 +81,9 @@
 
 - (UIScrollView *)scrollView {
     if (!_scrollView) {
-        CGFloat height = self.frame.size.height ;
-        CGFloat width = self.frame.size.width ;
-        _scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, width, height)] ;
+        _scrollView = [[UIScrollView alloc]initWithFrame:self.frame] ;
         _scrollView.delegate = self ;
-        _scrollView.contentSize = CGSizeMake(0, height) ;
+        self.scrollView.contentSize  = CGSizeMake(self.frame.size.width * 3, self.frame.size.height);
         _scrollView.pagingEnabled = YES ;
         _scrollView.showsVerticalScrollIndicator = NO ;
         _scrollView.showsHorizontalScrollIndicator = NO ;
@@ -112,6 +110,57 @@
     [_animationTimer restartAfterTimeInterval:_animationDuration] ;
 }
 
+#pragma mark - Action
+- (void)startScroll:(NSTimer *)timer {
+    CGFloat width = self.frame.size.width ;
+    CGFloat contentOffsetX = ( (int)(self.scrollView.contentOffset.x + width) / (int)width) * width;
+    CGPoint newOffset = CGPointMake(contentOffsetX, 0);
+    [self.scrollView setContentOffset:newOffset animated:YES];
+}
+
+- (void)tapContentView:(UITapGestureRecognizer *)gesture{   
+    if ([self.delegate respondsToSelector:@selector(cycleLoopScrollView:didSelectContentViewAtIndex:)]) {
+        [self.delegate cycleLoopScrollView:self didSelectContentViewAtIndex:_currentPageIndex];
+    }
+}
+
+#pragma mark - UIScrollView Delegate
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    // 当手动滑动时 暂停定时器
+    [_animationTimer pause];
+}
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+    // 当手动滑动结束时 开启定时器
+    [_animationTimer restartAfterTimeInterval:_animationDuration];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    int contentOffsetX = scrollView.contentOffset.x ;
+    if(contentOffsetX >= (2 * self.frame.size.width)) {
+        _currentPageIndex = [self getNextPageIndexWithCurrentPageIndex:_currentPageIndex];
+        // 调用代理函数 当前页面序号
+        if ([self.delegate respondsToSelector:@selector(cycleLoopScrollView:currentContentViewAtIndex:)]) {
+            [self.delegate cycleLoopScrollView:self currentContentViewAtIndex:_currentPageIndex];
+        }
+        
+        [self resetContentViews];
+    }
+    
+    if(contentOffsetX <= 0) {
+        _currentPageIndex = [self getPreviousPageIndexWithCurrentPageIndex:_currentPageIndex];
+        // 调用代理函数 当前页面序号
+        if ([self.delegate respondsToSelector:@selector(cycleLoopScrollView:currentContentViewAtIndex:)]) {
+            [self.delegate cycleLoopScrollView:self currentContentViewAtIndex:_currentPageIndex];
+        }
+        [self resetContentViews];
+    }
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    [scrollView setContentOffset:CGPointMake(self.frame.size.width, 0) animated:YES];
+}
+
+#pragma mark - Private
 - (void)resetContentViews {
     // 移除scrollView上的所有子视图
     [self.scrollView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
@@ -119,7 +168,7 @@
     NSInteger previousPageIndex = [self getPreviousPageIndexWithCurrentPageIndex:_currentPageIndex];
     NSInteger currentPageIndex  = _currentPageIndex;
     NSInteger nextPageIndex     = [self getNextPageIndexWithCurrentPageIndex:_currentPageIndex];
-
+    
     if ([self.delegate respondsToSelector:@selector(cycleLoopScrollView:contentViewAtIndex:)]) {
         
         UIView *previousContentView = [self.delegate cycleLoopScrollView:self contentViewAtIndex:previousPageIndex];
@@ -160,57 +209,6 @@
     }
 }
 
-- (void)startScroll:(NSTimer *)timer {
-    CGFloat width = self.frame.size.width ;
-    CGFloat contentOffsetX = ( (int)(_scrollView.contentOffset.x +width) / (int)width) * width;
-    CGPoint newOffset = CGPointMake(contentOffsetX, 0);
-    [self.scrollView setContentOffset:newOffset animated:YES];
-}
-
-- (void)tapContentView:(UITapGestureRecognizer *)gesture{   
-    if ([self.delegate respondsToSelector:@selector(cycleLoopScrollView:didSelectContentViewAtIndex:)]) {
-        [self.delegate cycleLoopScrollView:self didSelectContentViewAtIndex:_currentPageIndex];
-    }
-}
-
-#pragma mark - UIScrollView Delegate
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
-    // 当手动滑动时 暂停定时器
-    [_animationTimer pause];
-}
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-    // 当手动滑动结束时 开启定时器
-    [_animationTimer restartAfterTimeInterval:_animationDuration];
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    int contentOffsetX = scrollView.contentOffset.x ;
-    
-    if(contentOffsetX >= (2 * self.frame.size.width)) {
-        _currentPageIndex = [self getNextPageIndexWithCurrentPageIndex:_currentPageIndex];
-        // 调用代理函数 当前页面序号
-        if ([self.delegate respondsToSelector:@selector(cycleLoopScrollView:currentContentViewAtIndex:)]) {
-            [self.delegate cycleLoopScrollView:self currentContentViewAtIndex:_currentPageIndex];
-        }
-        
-        [self resetContentViews];
-    }
-    
-    if(contentOffsetX <= 0) {
-        _currentPageIndex = [self getPreviousPageIndexWithCurrentPageIndex:_currentPageIndex];
-        // 调用代理函数 当前页面序号
-        if ([self.delegate respondsToSelector:@selector(cycleLoopScrollView:currentContentViewAtIndex:)]) {
-            [self.delegate cycleLoopScrollView:self currentContentViewAtIndex:_currentPageIndex];
-        }
-        [self resetContentViews];
-    }
-    
-    
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    [scrollView setContentOffset:CGPointMake(self.frame.size.width, 0) animated:YES];
-}
 
 
 @end
