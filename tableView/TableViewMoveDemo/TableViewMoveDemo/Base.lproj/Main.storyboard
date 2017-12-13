@@ -30,6 +30,9 @@
                                 <rect key="frame" x="160" y="371" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Custom"/>
+                                <connections>
+                                    <action selector="customTableView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vH4-47-ba5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

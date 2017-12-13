@@ -14,6 +14,8 @@
 		E8CF1B121FE011E30033A848 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8CF1B101FE011E30033A848 /* LaunchScreen.storyboard */; };
 		E8CF1B151FE011E30033A848 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF1B141FE011E30033A848 /* main.m */; };
 		E8CF1B1E1FE012D40033A848 /* SystemMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF1B1D1FE012D40033A848 /* SystemMoveViewController.m */; };
+		E8CF1B221FE16EBA0033A848 /* MoveableTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF1B211FE16EBA0033A848 /* MoveableTableView.m */; };
+		E8CF1B251FE1744A0033A848 /* MoveableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF1B241FE1744A0033A848 /* MoveableTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		E8CF1B141FE011E30033A848 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8CF1B1C1FE012D40033A848 /* SystemMoveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemMoveViewController.h; sourceTree = "<group>"; };
 		E8CF1B1D1FE012D40033A848 /* SystemMoveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemMoveViewController.m; sourceTree = "<group>"; };
+		E8CF1B201FE16EBA0033A848 /* MoveableTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveableTableView.h; sourceTree = "<group>"; };
+		E8CF1B211FE16EBA0033A848 /* MoveableTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveableTableView.m; sourceTree = "<group>"; };
+		E8CF1B231FE1744A0033A848 /* MoveableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveableTableViewController.h; sourceTree = "<group>"; };
+		E8CF1B241FE1744A0033A848 /* MoveableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveableTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		E8CF1B041FE011E30033A848 /* TableViewMoveDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E8CF1B1F1FE16E900033A848 /* Custom */,
 				E8CF1B1B1FE011FC0033A848 /* System */,
 				E8CF1B051FE011E30033A848 /* AppDelegate.h */,
 				E8CF1B061FE011E30033A848 /* AppDelegate.m */,
@@ -82,6 +89,17 @@
 				E8CF1B1D1FE012D40033A848 /* SystemMoveViewController.m */,
 			);
 			path = System;
+			sourceTree = "<group>";
+		};
+		E8CF1B1F1FE16E900033A848 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E8CF1B201FE16EBA0033A848 /* MoveableTableView.h */,
+				E8CF1B211FE16EBA0033A848 /* MoveableTableView.m */,
+				E8CF1B231FE1744A0033A848 /* MoveableTableViewController.h */,
+				E8CF1B241FE1744A0033A848 /* MoveableTableViewController.m */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8CF1B251FE1744A0033A848 /* MoveableTableViewController.m in Sources */,
 				E8CF1B1E1FE012D40033A848 /* SystemMoveViewController.m in Sources */,
+				E8CF1B221FE16EBA0033A848 /* MoveableTableView.m in Sources */,
 				E8CF1B0A1FE011E30033A848 /* ViewController.m in Sources */,
 				E8CF1B151FE011E30033A848 /* main.m in Sources */,
 				E8CF1B071FE011E30033A848 /* AppDelegate.m in Sources */,

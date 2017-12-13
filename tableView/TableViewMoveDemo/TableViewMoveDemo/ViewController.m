@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SystemMoveViewController.h"
+#import "MoveableTableViewController.h"
 
 @interface ViewController ()
 
@@ -20,6 +21,9 @@
 }
 - (IBAction)systemTableMove:(id)sender {
     [self.navigationController pushViewController:[SystemMoveViewController new] animated:YES];
+}
+- (IBAction)customTableView:(id)sender {
+    [self.navigationController pushViewController:[MoveableTableViewController new] animated:YES];
 }
 
 @end
