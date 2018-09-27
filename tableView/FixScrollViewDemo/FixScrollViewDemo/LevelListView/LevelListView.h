@@ -10,6 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface LevelListContainView : UIView
+
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UIImageView *titleImageView;
+
+@end
+
 @class LevelListView;
 
 @protocol LevelListViewDelegate <NSObject>
@@ -26,6 +33,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) LevelListViewConfig *config;
 @property (nonatomic,assign) NSInteger selectedIndex;
+
+- (void)traverseAllSubView:(void(^)(LevelListContainView *subView, NSInteger idx))block;
+- (void)configAnimationOffsetX:(CGFloat)offsetX;
+
 
 @end
 
