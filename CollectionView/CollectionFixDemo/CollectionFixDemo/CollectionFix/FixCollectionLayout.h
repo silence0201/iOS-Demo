@@ -13,10 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol FixCollectionLayoutDelegate <NSObject>
 /// 获取cell的size
 - (CGSize)collectionView:(UICollectionView *)collectionView sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
-/// 次级表头的总层数
-- (NSInteger)levelOfHeadersInCollectionView:(UICollectionView *)collectionView;
-/// 每层表头单个元素所占的格数
-- (NSArray *)collectionView:(UICollectionView *)collectionView eachCellWidthOfLevel:(NSInteger)level;
 @end
 
 @interface FixCollectionLayout : UICollectionViewLayout
