@@ -26,6 +26,11 @@
     NSLog(@"label2:%@",_label2.viewPath);
     NSLog(@"label3:%@",_label3.viewPath);
     NSLog(@"label4:%@",_label4.viewPath);
+    
+    NSLog(@"label1:%@",_label1.viewID);
+    NSLog(@"label2:%@",_label2.viewID);
+    NSLog(@"label3:%@",_label3.viewID);
+    NSLog(@"label4:%@",_label4.viewID);
 }
 
 

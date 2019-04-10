@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) NSString *viewPath;
 
+@property (nonatomic ,readonly) NSString *viewID;
+
 @end
 
 NS_ASSUME_NONNULL_END

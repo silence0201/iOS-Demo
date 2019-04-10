@@ -26,7 +26,7 @@
                         <constraints>
                             <constraint firstItem="xxb-Jf-IkR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ORH-Pa-Nuf"/>
                             <constraint firstItem="xxb-Jf-IkR" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="WaS-TY-e8B"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xxb-Jf-IkR" secondAttribute="bottom" id="soR-lc-AXc"/>
+                            <constraint firstAttribute="bottom" secondItem="xxb-Jf-IkR" secondAttribute="bottom" id="soR-lc-AXc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xxb-Jf-IkR" secondAttribute="trailing" id="wBt-70-byk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
