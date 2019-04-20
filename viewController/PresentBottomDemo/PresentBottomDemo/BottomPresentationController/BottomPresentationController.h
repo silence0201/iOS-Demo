@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BottomPresentationController : UIPresentationController
 
-
+@property (assign, nonatomic) CGFloat controllerHeight;
 
 @end
 

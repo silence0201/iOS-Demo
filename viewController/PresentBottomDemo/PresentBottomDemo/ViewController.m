@@ -22,7 +22,7 @@
 }
 - (IBAction)clickBtn:(id)sender {
     DemoViewController *vc = [DemoViewController new];
-    vc.modalTransitionStyle = UIModalPresentationCustom;
+//    vc.modalTransitionStyle = UIModalPresentationCustom;
     vc.transitioningDelegate = self;
     vc.modalPresentationStyle = UIModalPresentationCustom;
     [self presentViewController:vc animated:YES completion:nil];
@@ -37,7 +37,9 @@
 - (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source {
 //    return [[RoundRectPresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
     
-    return [[BottomPresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
+    BottomPresentationController *vc = [[BottomPresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
+    vc.controllerHeight = 300;
+    return vc;
     
 }
 

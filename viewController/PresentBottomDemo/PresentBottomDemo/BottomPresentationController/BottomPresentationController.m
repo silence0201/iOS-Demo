@@ -16,6 +16,13 @@ static CGFloat controllerHeight = 500;
 
 @implementation BottomPresentationController
 
+- (instancetype)initWithPresentedViewController:(UIViewController *)presentedViewController presentingViewController:(UIViewController *)presentingViewController {
+    if (self = [super initWithPresentedViewController:presentedViewController presentingViewController:presentingViewController]) {
+        _controllerHeight = 500 ;
+    }
+    return self;
+}
+
 - (void)presentationTransitionWillBegin {
     [super presentationTransitionWillBegin];
     self.blackView.alpha = 0;
@@ -41,7 +48,7 @@ static CGFloat controllerHeight = 500;
 
 
 - (CGRect)frameOfPresentedViewInContainerView {
-    return CGRectMake(0, [UIScreen mainScreen].bounds.size.height-controllerHeight, [UIScreen mainScreen].bounds.size.width, controllerHeight);
+    return CGRectMake(0, [UIScreen mainScreen].bounds.size.height-_controllerHeight, [UIScreen mainScreen].bounds.size.width, _controllerHeight);
 }
 
 - (void)onClick:(UIGestureRecognizer *)gestureRecognizer {
