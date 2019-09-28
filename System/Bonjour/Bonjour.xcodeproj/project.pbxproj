@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8CB51EC233F9BC8007B6004 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CB51EB233F9BC8007B6004 /* AppDelegate.m */; };
+		E8CB51EF233F9BC8007B6004 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CB51EE233F9BC8007B6004 /* ViewController.m */; };
+		E8CB51F1233F9BC9007B6004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CB51F0233F9BC9007B6004 /* Assets.xcassets */; };
+		E8CB51F4233F9BC9007B6004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8CB51F2233F9BC9007B6004 /* Main.storyboard */; };
+		E8CB51F7233F9BC9007B6004 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CB51F6233F9BC9007B6004 /* main.m */; };
+		E8CB5206233F9FE7007B6004 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CB5205233F9FE7007B6004 /* AppDelegate.m */; };
+		E8CB5209233F9FE7007B6004 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CB5208233F9FE7007B6004 /* ViewController.m */; };
+		E8CB520B233F9FE8007B6004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CB520A233F9FE8007B6004 /* Assets.xcassets */; };
+		E8CB520E233F9FE8007B6004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8CB520C233F9FE8007B6004 /* Main.storyboard */; };
+		E8CB5211233F9FE8007B6004 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CB5210233F9FE8007B6004 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8CB51E7233F9BC8007B6004 /* BonjourService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonjourService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8CB51EA233F9BC8007B6004 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8CB51EB233F9BC8007B6004 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8CB51ED233F9BC8007B6004 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E8CB51EE233F9BC8007B6004 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E8CB51F0233F9BC9007B6004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8CB51F3233F9BC9007B6004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8CB51F5233F9BC9007B6004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8CB51F6233F9BC9007B6004 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8CB51F8233F9BC9007B6004 /* Bonjour.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bonjour.entitlements; sourceTree = "<group>"; };
+		E8CB5202233F9FE7007B6004 /* BonjourClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonjourClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8CB5204233F9FE7007B6004 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8CB5205233F9FE7007B6004 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8CB5207233F9FE7007B6004 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E8CB5208233F9FE7007B6004 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E8CB520A233F9FE8007B6004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8CB520D233F9FE8007B6004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8CB520F233F9FE8007B6004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8CB5210233F9FE8007B6004 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8CB5212233F9FE8007B6004 /* BonjourClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BonjourClient.entitlements; sourceTree = "<group>"; };
+		E8CB5216233FA329007B6004 /* BonjourService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BonjourService.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8CB51E4233F9BC8007B6004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CB51FF233F9FE7007B6004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8CB51DE233F9BC8007B6004 = {
+			isa = PBXGroup;
+			children = (
+				E8CB5216233FA329007B6004 /* BonjourService.entitlements */,
+				E8CB51E9233F9BC8007B6004 /* Bonjour */,
+				E8CB5203233F9FE7007B6004 /* BonjourClient */,
+				E8CB51E8233F9BC8007B6004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8CB51E8233F9BC8007B6004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8CB51E7233F9BC8007B6004 /* BonjourService.app */,
+				E8CB5202233F9FE7007B6004 /* BonjourClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8CB51E9233F9BC8007B6004 /* Bonjour */ = {
+			isa = PBXGroup;
+			children = (
+				E8CB51EA233F9BC8007B6004 /* AppDelegate.h */,
+				E8CB51EB233F9BC8007B6004 /* AppDelegate.m */,
+				E8CB51ED233F9BC8007B6004 /* ViewController.h */,
+				E8CB51EE233F9BC8007B6004 /* ViewController.m */,
+				E8CB51F0233F9BC9007B6004 /* Assets.xcassets */,
+				E8CB51F2233F9BC9007B6004 /* Main.storyboard */,
+				E8CB51F5233F9BC9007B6004 /* Info.plist */,
+				E8CB51F6233F9BC9007B6004 /* main.m */,
+				E8CB51F8233F9BC9007B6004 /* Bonjour.entitlements */,
+			);
+			path = Bonjour;
+			sourceTree = "<group>";
+		};
+		E8CB5203233F9FE7007B6004 /* BonjourClient */ = {
+			isa = PBXGroup;
+			children = (
+				E8CB5204233F9FE7007B6004 /* AppDelegate.h */,
+				E8CB5205233F9FE7007B6004 /* AppDelegate.m */,
+				E8CB5207233F9FE7007B6004 /* ViewController.h */,
+				E8CB5208233F9FE7007B6004 /* ViewController.m */,
+				E8CB520A233F9FE8007B6004 /* Assets.xcassets */,
+				E8CB520C233F9FE8007B6004 /* Main.storyboard */,
+				E8CB520F233F9FE8007B6004 /* Info.plist */,
+				E8CB5210233F9FE8007B6004 /* main.m */,
+				E8CB5212233F9FE8007B6004 /* BonjourClient.entitlements */,
+			);
+			path = BonjourClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8CB51E6233F9BC8007B6004 /* BonjourService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8CB51FB233F9BC9007B6004 /* Build configuration list for PBXNativeTarget "BonjourService" */;
+			buildPhases = (
+				E8CB51E3233F9BC8007B6004 /* Sources */,
+				E8CB51E4233F9BC8007B6004 /* Frameworks */,
+				E8CB51E5233F9BC8007B6004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BonjourService;
+			productName = Bonjour;
+			productReference = E8CB51E7233F9BC8007B6004 /* BonjourService.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8CB5201233F9FE7007B6004 /* BonjourClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8CB5213233F9FE8007B6004 /* Build configuration list for PBXNativeTarget "BonjourClient" */;
+			buildPhases = (
+				E8CB51FE233F9FE7007B6004 /* Sources */,
+				E8CB51FF233F9FE7007B6004 /* Frameworks */,
+				E8CB5200233F9FE7007B6004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BonjourClient;
+			productName = BonjourClient;
+			productReference = E8CB5202233F9FE7007B6004 /* BonjourClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8CB51DF233F9BC8007B6004 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Silence;
+				TargetAttributes = {
+					E8CB51E6233F9BC8007B6004 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					E8CB5201233F9FE7007B6004 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E8CB51E2233F9BC8007B6004 /* Build configuration list for PBXProject "Bonjour" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8CB51DE233F9BC8007B6004;
+			productRefGroup = E8CB51E8233F9BC8007B6004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8CB51E6233F9BC8007B6004 /* BonjourService */,
+				E8CB5201233F9FE7007B6004 /* BonjourClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8CB51E5233F9BC8007B6004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CB51F1233F9BC9007B6004 /* Assets.xcassets in Resources */,
+				E8CB51F4233F9BC9007B6004 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CB5200233F9FE7007B6004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CB520B233F9FE8007B6004 /* Assets.xcassets in Resources */,
+				E8CB520E233F9FE8007B6004 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8CB51E3233F9BC8007B6004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CB51EF233F9BC8007B6004 /* ViewController.m in Sources */,
+				E8CB51F7233F9BC9007B6004 /* main.m in Sources */,
+				E8CB51EC233F9BC8007B6004 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CB51FE233F9FE7007B6004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CB5209233F9FE7007B6004 /* ViewController.m in Sources */,
+				E8CB5211233F9FE8007B6004 /* main.m in Sources */,
+				E8CB5206233F9FE7007B6004 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8CB51F2233F9BC9007B6004 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8CB51F3233F9BC9007B6004 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8CB520C233F9FE8007B6004 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8CB520D233F9FE8007B6004 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8CB51F9233F9BC9007B6004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E8CB51FA233F9BC9007B6004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E8CB51FC233F9BC9007B6004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Bonjour/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.Bonjour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8CB51FD233F9BC9007B6004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Bonjour/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.Bonjour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E8CB5214233F9FE8007B6004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BonjourClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.BonjourClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8CB5215233F9FE8007B6004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BonjourClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.BonjourClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8CB51E2233F9BC8007B6004 /* Build configuration list for PBXProject "Bonjour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CB51F9233F9BC9007B6004 /* Debug */,
+				E8CB51FA233F9BC9007B6004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8CB51FB233F9BC9007B6004 /* Build configuration list for PBXNativeTarget "BonjourService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CB51FC233F9BC9007B6004 /* Debug */,
+				E8CB51FD233F9BC9007B6004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8CB5213233F9FE8007B6004 /* Build configuration list for PBXNativeTarget "BonjourClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CB5214233F9FE8007B6004 /* Debug */,
+				E8CB5215233F9FE8007B6004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8CB51DF233F9BC8007B6004 /* Project object */;
+}
